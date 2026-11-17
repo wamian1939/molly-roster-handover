@@ -1,0 +1,31 @@
+{
+  "date": "2026-11-17",
+  "backendTests": {
+    "passed": 134,
+    "payrollMockTests": 34,
+    "existingRouteAndAppTests": 100
+  },
+  "frontendTests": {
+    "passed": 26,
+    "payrollComponentTests": 3,
+    "existingExportTests": 23
+  },
+  "sitesChecks": {
+    "roster": 16,
+    "evaluate": 18,
+    "authSmoke": true
+  },
+  "builds": {
+    "frontend": true,
+    "backend": true,
+    "sitesWorker": true
+  },
+  "postgresMigration": "20261117010000_xero_payroll",
+  "originalBusinessTables": 12,
+  "originalBusinessRows": 530,
+  "allBusinessFieldsMatchRestoredBackup": true,
+  "realXeroOAuthVerified": false,
+  "realXeroWritesPerformed": false,
+  "browserAcceptance": "Browser access host unavailable",
+  "automaticSync": "off/unavailable"
+}

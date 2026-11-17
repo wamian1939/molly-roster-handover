@@ -1,0 +1,278 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum RosterCycleType {
+  WEEK
+  FORTNIGHT
+}
+
+enum RosterStatus {
+  DRAFT
+  PUBLISHED
+}
+
+enum AvailabilityStatus {
+  AVAILABLE
+  UNAVAILABLE
+  UNKNOWN
+}
+
+enum AvailabilitySource {
+  MANUAL
+  TEMPLATE
+  SCRIPT
+}
+
+model RosterPeriod {
+  id                 String              @id @default(cuid())
+  storeId            String
+  startDate          DateTime            @db.Date
+  endDate            DateTime            @db.Date
+  cycleType          RosterCycleType
+  status             RosterStatus        @default(DRAFT)
+  version            Int                 @default(1)
+  createdByAccountId String
+  createdAt          DateTime            @default(now())
+  updatedAt          DateTime            @updatedAt
+  publishedAt        DateTime?
+  shifts             Shift[]
+  publications       RosterPublication[]
+
+  @@unique([storeId, startDate, endDate])
+  @@unique([id, storeId])
+  @@index([storeId, status, startDate])
+  @@index([storeId, endDate])
+  @@map("roster_periods")
+}
+
+model ShiftRole {
+  id                  String          @id @default(cuid())
+  storeId             String?
+  code                String
+  nameZh              String
+  colorToken          String
+  requiredSkillCodes  String[]        @default([])
+  isActive            Boolean         @default(true)
+  displayOrder        Int             @default(0)
+  version             Int             @default(1)
+  createdAt           DateTime        @default(now())
+  updatedAt           DateTime        @updatedAt
+  shifts              Shift[]
+  templates           ShiftTemplate[]
+
+  @@unique([storeId, code])
+  @@index([storeId, isActive, displayOrder])
+  @@map("shift_roles")
+}
+
+model Shift {
+  id                 String            @id @default(cuid())
+  rosterPeriodId     String
+  storeId            String
+  date               DateTime          @db.Date
+  startAt            DateTime
+  endAt              DateTime
+  breakMinutes       Int               @default(0)
+  shiftRoleId        String
+  roleNameSnapshot   String
+  roleColorSnapshot  String
+  publicNote         String?
+  internalNote       String?
+  version            Int               @default(1)
+  createdByAccountId String
+  updatedByAccountId String
+  createdAt          DateTime          @default(now())
+  updatedAt          DateTime          @updatedAt
+  rosterPeriod       RosterPeriod      @relation(fields: [rosterPeriodId, storeId], references: [id, storeId], onDelete: Cascade)
+  shiftRole          ShiftRole         @relation(fields: [shiftRoleId], references: [id], onDelete: Restrict)
+  assignments        ShiftAssignment[]
+
+  @@index([storeId, date, startAt])
+  @@index([rosterPeriodId, date])
+  @@index([shiftRoleId])
+  @@map("shifts")
+}
+
+model ShiftAssignment {
+  id                       String   @id @default(cuid())
+  shiftId                  String
+  employeeId               String
+  employeeNameSnapshot     String
+  employeeTypeSnapshot     String
+  employmentTypeSnapshot   String?
+  officialScoreSnapshot    Decimal? @db.Decimal(5, 2)
+  tierSnapshot             String?
+  officialScoreRoundId     String?
+  officialScoreClosedAt    DateTime?
+  createdAt                DateTime @default(now())
+  shift                    Shift    @relation(fields: [shiftId], references: [id], onDelete: Cascade)
+
+  @@unique([shiftId, employeeId])
+  @@index([employeeId])
+  @@index([shiftId])
+  @@map("shift_assignments")
+}
+
+model ShiftCreateRequest {
+  id          String   @id @db.Uuid
+  storeId     String
+  accountId   String
+  shiftId     String   @unique
+  payloadHash String
+  createdAt   DateTime @default(now())
+
+  @@index([storeId, accountId])
+  @@map("shift_create_requests")
+}
+
+model EmployeeAvailability {
+  id             String             @id @default(cuid())
+  employeeId     String
+  storeId        String
+  date           DateTime           @db.Date
+  startAt        DateTime?
+  endAt          DateTime?
+  status         AvailabilityStatus
+  note           String?
+  source         AvailabilitySource @default(MANUAL)
+  version        Int                @default(1)
+  createdAt      DateTime           @default(now())
+  updatedAt      DateTime           @updatedAt
+
+  @@index([storeId, date])
+  @@index([employeeId, date])
+  @@index([storeId, employeeId, date])
+  @@map("employee_availability")
+}
+
+model AvailabilityScriptImport {
+  id             String   @id @default(cuid())
+  storeId        String
+  actorAccountId String
+  sourceHash     String
+  weekStart      DateTime @db.Date
+  mode           String   @default("APPEND")
+  createdCount   Int
+  unchangedCount Int
+  createdAt      DateTime @default(now())
+
+  @@unique([storeId, sourceHash])
+  @@index([storeId, createdAt])
+  @@map("availability_script_imports")
+}
+
+model AvailabilityScriptShortcuts {
+  storeId            String   @id
+  shortcuts          Json
+  version            Int      @default(1)
+  updatedByAccountId String
+  createdAt          DateTime @default(now())
+  updatedAt          DateTime @updatedAt
+
+  @@map("availability_script_shortcuts")
+}
+
+model ShiftTemplate {
+  id             String     @id @default(cuid())
+  storeId        String
+  name           String
+  startTime      String
+  endTime        String
+  breakMinutes   Int        @default(0)
+  shiftRoleId    String?
+  isActive       Boolean    @default(true)
+  displayOrder   Int        @default(0)
+  version        Int        @default(1)
+  createdAt      DateTime   @default(now())
+  updatedAt      DateTime   @updatedAt
+  shiftRole      ShiftRole? @relation(fields: [shiftRoleId], references: [id], onDelete: SetNull)
+
+  @@unique([storeId, name])
+  @@index([storeId, isActive, displayOrder])
+  @@map("shift_templates")
+}
+
+model AvailabilityTemplate {
+  id           String   @id @default(cuid())
+  storeId      String
+  name         String
+  slots        Json
+  isActive     Boolean  @default(true)
+  displayOrder Int      @default(0)
+  version      Int      @default(1)
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  @@unique([storeId, name])
+  @@index([storeId, isActive, displayOrder])
+  @@map("availability_templates")
+}
+
+model RosterPublication {
+  id                   String       @id @default(cuid())
+  rosterPeriodId       String
+  periodVersion        Int
+  publishedByAccountId String
+  publishedAt          DateTime     @default(now())
+  snapshot             Json
+  rosterPeriod         RosterPeriod @relation(fields: [rosterPeriodId], references: [id], onDelete: Restrict)
+
+  @@unique([rosterPeriodId, periodVersion])
+  @@index([rosterPeriodId, publishedAt])
+  @@map("roster_publications")
+}
+
+model RosterStoreSettings {
+  id                     String          @id @default(cuid())
+  storeId                String          @unique
+  timezone               String          @default("Australia/Sydney")
+  openingTime            String          @default("09:00")
+  closingTime            String          @default("22:00")
+  slotIntervalMinutes    Int             @default(30)
+  minimumShiftMinutes    Int             @default(60)
+  defaultBreakMinutes    Int             @default(30)
+  weekStartsOn           Int             @default(1)
+  cycleType              RosterCycleType @default(WEEK)
+  fortnightAnchorDate    String?         @db.VarChar(10)
+  weeklyHourWarning      Int             @default(38)
+  dailyHourWarning       Int             @default(10)
+  version                Int             @default(1)
+  createdAt              DateTime        @default(now())
+  updatedAt              DateTime        @updatedAt
+
+  @@map("roster_store_settings")
+}
+
+
+
+// Integration data contains no employee master records. References remain in Evaluate.
+model PayrollDocument {
+ id String @id
+ kind String
+ body String
+ version Int @default(1)
+ updatedAt String @map("updated_at")
+ @@index([kind, updatedAt], map: "payroll_documents_kind_updated")
+ @@map("payroll_documents")
+}
+model PayrollLock {
+ id String @id
+ owner String
+ expiresAt BigInt @map("expires_at")
+ @@map("payroll_locks")
+}
+model PayrollAudit {
+ id String @id
+ actorId String @map("actor_id")
+ event String
+ body String
+ createdAt String @map("created_at")
+ @@index([createdAt], map: "payroll_audit_created")
+ @@map("payroll_audit")
+}

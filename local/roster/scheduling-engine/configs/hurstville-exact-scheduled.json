@@ -1,0 +1,223 @@
+{
+  "store_id": "hurstville",
+  "timezone": "Australia/Sydney",
+  "timezone_source": "ROSTER",
+  "version": "hurstville:v20",
+  "copied_from": "hurstville:v19",
+  "global_base_version": "lab-global-base-v1",
+  "slot_minutes": 30,
+  "base_day": {
+    "patterns": [
+      {
+        "name": "开早",
+        "role_code": "cmvhbqjln0001iv2k5ru6q1na",
+        "starts": [
+          "10:00"
+        ],
+        "ends": [
+          "16:00",
+          "17:00"
+        ],
+        "end_next_day": false,
+        "preferred": true,
+        "allow_early_late_start": false,
+        "break_rule": {
+          "count": 1,
+          "duration_minutes": 30,
+          "paid": false
+        }
+      },
+      {
+        "name": "Early",
+        "role_code": "cmvhbqjln0001iv2k5ru6q1na",
+        "starts": [
+          "11:00"
+        ],
+        "ends": [
+          "17:00"
+        ],
+        "end_next_day": false,
+        "preferred": true,
+        "allow_early_late_start": false,
+        "break_rule": {
+          "count": 1,
+          "duration_minutes": 30,
+          "paid": false
+        }
+      },
+      {
+        "name": "Full",
+        "role_code": "job_edea2cdc3c93dbfde34d3a228095cb24",
+        "starts": [
+          "10:00"
+        ],
+        "ends": [
+          "22:00"
+        ],
+        "end_next_day": false,
+        "preferred": true,
+        "allow_early_late_start": false,
+        "break_rule": {
+          "count": 1,
+          "duration_minutes": 60,
+          "paid": false
+        }
+      },
+      {
+        "name": "Late",
+        "role_code": "cmvhbqjln0001iv2k5ru6q1na",
+        "starts": [
+          "16:00",
+          "17:00"
+        ],
+        "ends": [
+          "22:00"
+        ],
+        "end_next_day": false,
+        "preferred": true,
+        "allow_early_late_start": true,
+        "break_rule": {
+          "count": 0,
+          "duration_minutes": 30,
+          "paid": false
+        }
+      }
+    ]
+  },
+  "pattern_only": true,
+  "requirement_mode": "EXACT_SCHEDULED",
+  "minimum_complete_shift_minutes": 180,
+  "weekly_exact_staffing": {
+    "0": [
+      {
+        "start": "10:00",
+        "end": "11:00",
+        "staff": 3
+      },
+      {
+        "start": "11:00",
+        "end": "17:00",
+        "staff": 4
+      },
+      {
+        "start": "17:00",
+        "end": "22:00",
+        "staff": 4
+      }
+    ],
+    "1": [
+      {
+        "start": "10:00",
+        "end": "11:00",
+        "staff": 3
+      },
+      {
+        "start": "11:00",
+        "end": "17:00",
+        "staff": 4
+      },
+      {
+        "start": "17:00",
+        "end": "22:00",
+        "staff": 4
+      }
+    ],
+    "2": [
+      {
+        "start": "10:00",
+        "end": "11:00",
+        "staff": 3
+      },
+      {
+        "start": "11:00",
+        "end": "17:00",
+        "staff": 4
+      },
+      {
+        "start": "17:00",
+        "end": "22:00",
+        "staff": 4
+      }
+    ],
+    "3": [
+      {
+        "start": "10:00",
+        "end": "11:00",
+        "staff": 3
+      },
+      {
+        "start": "11:00",
+        "end": "17:00",
+        "staff": 5
+      },
+      {
+        "start": "17:00",
+        "end": "22:00",
+        "staff": 5
+      }
+    ],
+    "4": [
+      {
+        "start": "10:00",
+        "end": "11:00",
+        "staff": 3
+      },
+      {
+        "start": "11:00",
+        "end": "17:00",
+        "staff": 5
+      },
+      {
+        "start": "17:00",
+        "end": "22:00",
+        "staff": 5
+      }
+    ],
+    "5": [
+      {
+        "start": "10:00",
+        "end": "11:00",
+        "staff": 3
+      },
+      {
+        "start": "11:00",
+        "end": "17:00",
+        "staff": 7
+      },
+      {
+        "start": "17:00",
+        "end": "22:00",
+        "staff": 6
+      }
+    ],
+    "6": [
+      {
+        "start": "10:00",
+        "end": "11:00",
+        "staff": 3
+      },
+      {
+        "start": "11:00",
+        "end": "17:00",
+        "staff": 7
+      },
+      {
+        "start": "17:00",
+        "end": "22:00",
+        "staff": 5
+      }
+    ]
+  },
+  "employee_preferences": {},
+  "weights": {
+    "skill": 2,
+    "fairness": 1,
+    "regular_pattern": 15,
+    "early_late_start": 20,
+    "stability": 20,
+    "labor_cost": 0,
+    "unnecessary_work": 10
+  },
+  "solve_seconds": 0,
+  "random_seed": 17
+}

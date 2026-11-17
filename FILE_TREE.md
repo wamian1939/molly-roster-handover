@@ -1,383 +1,1577 @@
-# Production snapshot file tree
+# 交接文件树
 
-Local development sources are on development branch only.
+不包含运行依赖、构建产物、缓存和旧 Git 历史。源码目录结构保留；每文件来源/哈希见 MANIFEST 与 SOURCE_FILES。
 
 ```text
-.env.example
-.github/pull_request_template.md
-.gitignore
-CONTRIBUTING.md
-database/MIGRATION_INDEX.md
-database/sanitized-samples/README.md
-database/schema/MODEL_CATALOG.md
-docs/API_INVENTORY.json
-docs/API_REFERENCE.md
-docs/ARCHITECTURE.md
-docs/AUTHENTICATION.md
-docs/DATABASE.md
-docs/DEPENDENCY_AUDIT.json
-docs/DEPLOYMENT.md
-docs/DEVELOPMENT_STATUS.md
-docs/EXCLUDED_FILES.json
-docs/EXTERNAL_SERVICES.md
-docs/FASTAPI_ROUTES.md
-docs/FEATURE_STATUS.md
-docs/FINAL_VALIDATION.json
-docs/KNOWN_ISSUES.md
-docs/LOCAL_DEVELOPMENT.md
-docs/PERMISSIONS.md
-docs/PROVENANCE.json
-docs/SECURITY_REPORT.md
-docs/SOURCE_FILES.json
-docs/STAFF_INTEGRATION.md
-docs/STORE_MAPPING.md
-docs/TEST_REPORT.md
-docs/TEST_RESULTS.json
-FILE_TREE.md
-MANIFEST.json
-MISSING_ITEMS.md
-production-site/.env.example
-production-site/.gitignore
-production-site/.openai/hosting.json
-production-site/build/build.mjs
-production-site/build/evaluate-migration.mjs
-production-site/build/evaluate-prepare.mjs
-production-site/build/prepare.mjs
-production-site/docs/XERO_PAYROLL_INTEGRATION.md
-production-site/drizzle/0000_roster.sql
-production-site/drizzle/0001_sites.sql
-production-site/drizzle/0002_evaluate_guards.sql
-production-site/drizzle/0003_xero_payroll.sql
-production-site/drizzle/meta/_journal.json
-production-site/evaluate-frontend/index.html
-production-site/evaluate-frontend/Molly LOGO/__MACOSX/Molly LOGO/._logo+slogan组合.png
-production-site/evaluate-frontend/Molly LOGO/__MACOSX/Molly LOGO/._logo中文-白字透明底.png
-production-site/evaluate-frontend/Molly LOGO/__MACOSX/Molly LOGO/._logo中文-黑字透明底.png
-production-site/evaluate-frontend/Molly LOGO/__MACOSX/Molly LOGO/._logo中英文-白字透明底.png
-production-site/evaluate-frontend/Molly LOGO/__MACOSX/Molly LOGO/._logo中英文-黑字透明底.png
-production-site/evaluate-frontend/Molly LOGO/__MACOSX/Molly LOGO/._logo横-黑字.png
-production-site/evaluate-frontend/Molly LOGO/__MACOSX/Molly LOGO/._logo组合-白字透明底.png
-production-site/evaluate-frontend/Molly LOGO/__MACOSX/Molly LOGO/._logo组合-黑字透明底.png
-production-site/evaluate-frontend/Molly LOGO/__MACOSX/Molly LOGO/._logo组合横-黑字透明底.png
-production-site/evaluate-frontend/Molly LOGO/__MACOSX/Molly LOGO/._logo英文-黑字透明底.png
-production-site/evaluate-frontend/Molly LOGO/__MACOSX/Molly LOGO/._四叶星-白.png
-production-site/evaluate-frontend/Molly LOGO/__MACOSX/Molly LOGO/._四叶星-黑.png
-production-site/evaluate-frontend/Molly LOGO/Molly LOGO/logo+slogan组合.png
-production-site/evaluate-frontend/Molly LOGO/Molly LOGO/logo中文-白字透明底.png
-production-site/evaluate-frontend/Molly LOGO/Molly LOGO/logo中文-黑字透明底.png
-production-site/evaluate-frontend/Molly LOGO/Molly LOGO/logo中英文-白字透明底.png
-production-site/evaluate-frontend/Molly LOGO/Molly LOGO/logo中英文-黑字透明底.png
-production-site/evaluate-frontend/Molly LOGO/Molly LOGO/logo横-黑字.png
-production-site/evaluate-frontend/Molly LOGO/Molly LOGO/logo组合-白字透明底.png
-production-site/evaluate-frontend/Molly LOGO/Molly LOGO/logo组合-黑字透明底.png
-production-site/evaluate-frontend/Molly LOGO/Molly LOGO/logo组合横-黑字透明底.png
-production-site/evaluate-frontend/Molly LOGO/Molly LOGO/logo英文-黑字透明底.png
-production-site/evaluate-frontend/Molly LOGO/Molly LOGO/四叶星-白.png
-production-site/evaluate-frontend/Molly LOGO/Molly LOGO/四叶星-黑.png
-production-site/evaluate-frontend/postcss.config.js
-production-site/evaluate-frontend/src/App.tsx
-production-site/evaluate-frontend/src/auth/AuthContext.tsx
-production-site/evaluate-frontend/src/components/badges/EmployeeStatusBadge.tsx
-production-site/evaluate-frontend/src/components/badges/EmployeeTypeBadge.tsx
-production-site/evaluate-frontend/src/components/badges/HistoricalIdentityNote.tsx
-production-site/evaluate-frontend/src/components/badges/StoreJobTag.tsx
-production-site/evaluate-frontend/src/components/brand/brandAssets.ts
-production-site/evaluate-frontend/src/components/brand/BrandLoader.tsx
-production-site/evaluate-frontend/src/components/brand/BrandTransitionLayer.tsx
-production-site/evaluate-frontend/src/components/brand/MollyClover.tsx
-production-site/evaluate-frontend/src/components/employee-detail/CurrentSkillEditor.tsx
-production-site/evaluate-frontend/src/components/employee-detail/EvaluationHistorySection.tsx
-production-site/evaluate-frontend/src/components/employee-detail/ReadOnlySkillMatrix.tsx
-production-site/evaluate-frontend/src/components/employee-detail/V1EvaluationDetail.tsx
-production-site/evaluate-frontend/src/components/employee-detail/V1ScoreTrend.tsx
-production-site/evaluate-frontend/src/components/evaluation/EmployeeEvaluationTable.tsx
-production-site/evaluate-frontend/src/components/evaluation/ScoreCard.tsx
-production-site/evaluate-frontend/src/components/evaluation-v1/EvaluationV1Form.tsx
-production-site/evaluate-frontend/src/components/evaluation-v1/evaluationV1FormModel.ts
-production-site/evaluate-frontend/src/components/evaluation-v1/OverallRatings.tsx
-production-site/evaluate-frontend/src/components/evaluation-v1/RatingControl.tsx
-production-site/evaluate-frontend/src/components/evaluation-v1/ScorePreviewCard.tsx
-production-site/evaluate-frontend/src/components/evaluation-v1/SkillMatrix.tsx
-production-site/evaluate-frontend/src/components/evaluation-v1/skillPresentation.ts
-production-site/evaluate-frontend/src/components/evaluation-v1/SkillStatusControl.tsx
-production-site/evaluate-frontend/src/components/evaluation-v1/TextFeedbackPanel.tsx
-production-site/evaluate-frontend/src/components/layout/AppShell.tsx
-production-site/evaluate-frontend/src/components/layout/PageContainer.tsx
-production-site/evaluate-frontend/src/components/motion/GsapScore.tsx
-production-site/evaluate-frontend/src/components/motion/MotionCard.tsx
-production-site/evaluate-frontend/src/components/motion/motionConfig.ts
-production-site/evaluate-frontend/src/components/motion/MotionList.tsx
-production-site/evaluate-frontend/src/components/motion/MotionPage.tsx
-production-site/evaluate-frontend/src/components/motion/ScoreOrb.tsx
-production-site/evaluate-frontend/src/components/states/EmptyState.tsx
-production-site/evaluate-frontend/src/components/states/ErrorState.tsx
-production-site/evaluate-frontend/src/components/states/LoadingState.tsx
-production-site/evaluate-frontend/src/components/ui/AppSelect.tsx
-production-site/evaluate-frontend/src/components/ui/Dialog.tsx
-production-site/evaluate-frontend/src/components/ui/SectionHeader.tsx
-production-site/evaluate-frontend/src/components/ui/StoreMultiSelect.tsx
-production-site/evaluate-frontend/src/components/ui/ToastProvider.tsx
-production-site/evaluate-frontend/src/lib/evaluationNavigation.ts
-production-site/evaluate-frontend/src/lib/format.ts
-production-site/evaluate-frontend/src/lib/mutationFeedback.ts
-production-site/evaluate-frontend/src/lib/presentation.ts
-production-site/evaluate-frontend/src/main.tsx
-production-site/evaluate-frontend/src/pages/AccountManagementPage.tsx
-production-site/evaluate-frontend/src/pages/DashboardPage.tsx
-production-site/evaluate-frontend/src/pages/EmployeeDetailPage.tsx
-production-site/evaluate-frontend/src/pages/EmployeeManagementPage.tsx
-production-site/evaluate-frontend/src/pages/EvaluationAnalyticsPage.tsx
-production-site/evaluate-frontend/src/pages/EvaluationEntryPage.tsx
-production-site/evaluate-frontend/src/pages/EvaluationHistoryIndexPage.tsx
-production-site/evaluate-frontend/src/pages/EvaluationRoundDetailPage.tsx
-production-site/evaluate-frontend/src/pages/EvaluationV1Page.tsx
-production-site/evaluate-frontend/src/pages/LiveEvaluationPage.tsx
-production-site/evaluate-frontend/src/pages/LoginPage.tsx
-production-site/evaluate-frontend/src/pages/RosterSkillBoardPage.tsx
-production-site/evaluate-frontend/src/pages/StoreEmployeeTypeSelectionPage.tsx
-production-site/evaluate-frontend/src/pages/StoreEvaluationPage.tsx
-production-site/evaluate-frontend/src/pages/StoreManagementPage.tsx
-production-site/evaluate-frontend/src/services/apiClient.ts
-production-site/evaluate-frontend/src/services/authRepository.ts
-production-site/evaluate-frontend/src/services/employeeRepository.ts
-production-site/evaluate-frontend/src/services/evaluationRepository.ts
-production-site/evaluate-frontend/src/services/performanceNoteRepository.ts
-production-site/evaluate-frontend/src/services/storeRepository.ts
-production-site/evaluate-frontend/src/styles.css
-production-site/evaluate-frontend/src/types/analyticsV1.ts
-production-site/evaluate-frontend/src/types/evaluation.ts
-production-site/evaluate-frontend/src/utils/rosterSkillUtils.ts
-production-site/evaluate-frontend/src/vite-env.d.ts
-production-site/evaluate-frontend/tailwind.config.js
-production-site/evaluate-frontend/vite.config.mjs
-production-site/evidence/backend-postgres-tests.json
-production-site/evidence/cloud-data-verification.json
-production-site/evidence/cloud-smoke.json
-production-site/evidence/data-audit.json
-production-site/evidence/evaluate-e2e.json
-production-site/evidence/frontend-template-tests.json
-production-site/evidence/import-manifest.json
-production-site/evidence/initial-migration-status.md
-production-site/evidence/solver-benchmark.json
-production-site/evidence/solver-container.json
-production-site/evidence/source-snapshot.json
-production-site/evidence/worker-e2e.json
-production-site/evidence/xero-postgres-preservation.json
-production-site/evidence/xero-verification.json
-production-site/frontend/index.html
-production-site/frontend/postcss.config.js
-production-site/frontend/src/App.tsx
-production-site/frontend/src/assets/molly-clover.png
-production-site/frontend/src/auth/AuthContext.tsx
-production-site/frontend/src/auth/authRepository.ts
-production-site/frontend/src/components/brand/MollyBrand.tsx
-production-site/frontend/src/components/calendar/AgentRunProgress.tsx
-production-site/frontend/src/components/calendar/CalendarAgentPanel.tsx
-production-site/frontend/src/components/calendar/CalendarDraftBar.tsx
-production-site/frontend/src/components/calendar/CalendarEventContent.tsx
-production-site/frontend/src/components/calendar/CalendarScheduledSidebar.tsx
-production-site/frontend/src/components/calendar/CalendarViewSwitch.tsx
-production-site/frontend/src/components/calendar/EmployeeLaneBoard.tsx
-production-site/frontend/src/components/calendar/GroupedShiftDialog.tsx
-production-site/frontend/src/components/calendar/PublishedShiftDetail.tsx
-production-site/frontend/src/components/calendar/RepeatShiftDialog.tsx
-production-site/frontend/src/components/calendar/RoleChipSelector.tsx
-production-site/frontend/src/components/calendar/RoleLegend.tsx
-production-site/frontend/src/components/calendar/ShiftDialog.tsx
-production-site/frontend/src/components/calendar/ShiftEventCard.tsx
-production-site/frontend/src/components/calendar/StaffRoleFilter.tsx
-production-site/frontend/src/components/employee/EmployeeWeekForm.tsx
-production-site/frontend/src/components/layout/AppShell.tsx
-production-site/frontend/src/components/payroll/PayrollPanel.tsx
-production-site/frontend/src/components/settings/DraftRoleReconciliation.tsx
-production-site/frontend/src/components/settings/FormalJobCatalog.tsx
-production-site/frontend/src/components/settings/PresetShortcutSettings.tsx
-production-site/frontend/src/components/settings/SkillRequirementPicker.tsx
-production-site/frontend/src/components/staff/AvailabilityEditor.tsx
-production-site/frontend/src/components/staff/ManualAvailabilityBatchDialog.tsx
-production-site/frontend/src/components/staff/PresetScriptPreviewGroups.tsx
-production-site/frontend/src/components/staff/PresetTimeSlotScriptDialog.tsx
-production-site/frontend/src/components/states/LoadingState.tsx
-production-site/frontend/src/components/ui/AppErrorBoundary.tsx
-production-site/frontend/src/components/ui/AppSelect.tsx
-production-site/frontend/src/components/ui/Dialog.tsx
-production-site/frontend/src/components/ui/ToastProvider.tsx
-production-site/frontend/src/lib/agentCalendarPreview.ts
-production-site/frontend/src/lib/agentProgress.ts
-production-site/frontend/src/lib/agentShift.ts
-production-site/frontend/src/lib/apiClient.ts
-production-site/frontend/src/lib/availability.ts
-production-site/frontend/src/lib/availabilityResponse.ts
-production-site/frontend/src/lib/breakMinuteOptions.ts
-production-site/frontend/src/lib/calendarAvailability.ts
-production-site/frontend/src/lib/calendarDomPlacement.ts
-production-site/frontend/src/lib/calendarDraftQueue.ts
-production-site/frontend/src/lib/calendarEmployeeWindow.ts
-production-site/frontend/src/lib/calendarGrouping.ts
-production-site/frontend/src/lib/calendarLoad.ts
-production-site/frontend/src/lib/calendarLocation.ts
-production-site/frontend/src/lib/calendarOverlap.ts
-production-site/frontend/src/lib/calendarPeriod.ts
-production-site/frontend/src/lib/calendarPublish.ts
-production-site/frontend/src/lib/calendarResize.ts
-production-site/frontend/src/lib/calendarResponse.ts
-production-site/frontend/src/lib/calendarSelection.ts
-production-site/frontend/src/lib/confirmedBatchDelete.ts
-production-site/frontend/src/lib/copyDayResponse.ts
-production-site/frontend/src/lib/copyPeriodResponse.ts
-production-site/frontend/src/lib/dateTime.ts
-production-site/frontend/src/lib/draftCommitReconciliation.ts
-production-site/frontend/src/lib/draftCommitResponse.ts
-production-site/frontend/src/lib/draftRoleUsageResponse.ts
-production-site/frontend/src/lib/evaluateJobColor.ts
-production-site/frontend/src/lib/manualAvailabilityBatch.ts
-production-site/frontend/src/lib/mutationReconciliation.ts
-production-site/frontend/src/lib/presetScriptInput.ts
-production-site/frontend/src/lib/presetScriptResponse.ts
-production-site/frontend/src/lib/publicationMutationResponse.ts
-production-site/frontend/src/lib/repeatDates.ts
-production-site/frontend/src/lib/roleColor.ts
-production-site/frontend/src/lib/roleMutationResponse.ts
-production-site/frontend/src/lib/rosterBatchResponse.ts
-production-site/frontend/src/lib/rosterSettingsResponse.ts
-production-site/frontend/src/lib/scheduledShiftSummary.ts
-production-site/frontend/src/lib/scheduling.ts
-production-site/frontend/src/lib/schedulingFeedback.ts
-production-site/frontend/src/lib/shiftMutationResponse.ts
-production-site/frontend/src/lib/storeTime.ts
-production-site/frontend/src/lib/templateResponses.ts
-production-site/frontend/src/lib/timeGridPointer.ts
-production-site/frontend/src/lib/uncertainDelete.ts
-production-site/frontend/src/lib/verifiedShiftRoles.ts
-production-site/frontend/src/main.tsx
-production-site/frontend/src/pages/agentRules.css
-production-site/frontend/src/pages/AgentRulesPage.tsx
-production-site/frontend/src/pages/CalendarPage.tsx
-production-site/frontend/src/pages/employeeAvailability.css
-production-site/frontend/src/pages/EmployeeAvailabilityPage.tsx
-production-site/frontend/src/pages/ExportPage.tsx
-production-site/frontend/src/pages/FoundationPage.tsx
-production-site/frontend/src/pages/HelpPage.tsx
-production-site/frontend/src/pages/LoginPage.tsx
-production-site/frontend/src/pages/multiAgent.css
-production-site/frontend/src/pages/MultiAgentPage.tsx
-production-site/frontend/src/pages/SettingsPage.tsx
-production-site/frontend/src/pages/StaffPage.tsx
-production-site/frontend/src/pages/TemplatesPage.tsx
-production-site/frontend/src/services/employeePortalRepository.ts
-production-site/frontend/src/services/multiAgentRepository.ts
-production-site/frontend/src/services/rosterRepository.ts
-production-site/frontend/src/services/workforceRepository.ts
-production-site/frontend/src/store/StoreContext.tsx
-production-site/frontend/src/styles.css
-production-site/frontend/src/test/setup.ts
-production-site/frontend/src/types/roster.ts
-production-site/frontend/src/types/workforce.ts
-production-site/frontend/src/vite-env.d.ts
-production-site/frontend/tailwind.config.js
-production-site/frontend/vite.config.mjs
-production-site/generated/evaluate/accountService.ts
-production-site/generated/evaluate/aiTextEvaluationV1.ts
-production-site/generated/evaluate/analyticsV1Service.ts
-production-site/generated/evaluate/app.ts
-production-site/generated/evaluate/auth.ts
-production-site/generated/evaluate/currentSkillService.ts
-production-site/generated/evaluate/domain.ts
-production-site/generated/evaluate/employeeEvaluationSummaryService.ts
-production-site/generated/evaluate/employeeService.ts
-production-site/generated/evaluate/evaluationCatalogService.ts
-production-site/generated/evaluate/evaluationReadService.ts
-production-site/generated/evaluate/evaluationRoundService.ts
-production-site/generated/evaluate/evaluationV1Service.ts
-production-site/generated/evaluate/historicalIdentity.ts
-production-site/generated/evaluate/httpError.ts
-production-site/generated/evaluate/loginRateLimitService.ts
-production-site/generated/evaluate/performanceNoteService.ts
-production-site/generated/evaluate/prisma.ts
-production-site/generated/evaluate/rosterIntegrationService.ts
-production-site/generated/evaluate/rosterSkillBoardService.ts
-production-site/generated/evaluate/roundAggregateRead.ts
-production-site/generated/evaluate/routes.ts
-production-site/generated/evaluate/safeLogging.ts
-production-site/generated/evaluate/scoringPolicyV1.ts
-production-site/generated/evaluate/server.ts
-production-site/generated/evaluate/storeJobService.ts
-production-site/generated/evaluate/storeService.ts
-production-site/generated/evaluate/validation.ts
-production-site/generated/evaluate-models.json
-production-site/generated/evaluate.prisma
-production-site/generated/models.json
-production-site/generated/roster.prisma
-production-site/generated/vendor/app.ts
-production-site/generated/vendor/auth.ts
-production-site/generated/vendor/employeeCapacity.ts
-production-site/generated/vendor/employeeDemoRoutes.ts
-production-site/generated/vendor/evaluateClient.ts
-production-site/generated/vendor/evaluateJobColor.ts
-production-site/generated/vendor/formalRoleMatch.ts
-production-site/generated/vendor/httpError.ts
-production-site/generated/vendor/multiAgentRoutes.ts
-production-site/generated/vendor/payroll/crypto.ts
-production-site/generated/vendor/payroll/preparation.ts
-production-site/generated/vendor/payroll/reconciliation.ts
-production-site/generated/vendor/payroll/routes.ts
-production-site/generated/vendor/payroll/service.ts
-production-site/generated/vendor/payroll/sources.ts
-production-site/generated/vendor/payroll/store.ts
-production-site/generated/vendor/payroll/sync.ts
-production-site/generated/vendor/payroll/xero.ts
-production-site/generated/vendor/presetTimeSlotPreview.ts
-production-site/generated/vendor/presetTimeSlotReview.ts
-production-site/generated/vendor/presetTimeSlotScript.ts
-production-site/generated/vendor/prisma.ts
-production-site/generated/vendor/rosterService.ts
-production-site/generated/vendor/routes.ts
-production-site/generated/vendor/safeLogging.ts
-production-site/generated/vendor/schedulingIssue.ts
-production-site/generated/vendor/server.ts
-production-site/generated/vendor/types.ts
-production-site/generated/vendor/validation.ts
-production-site/generated/vendor/zonedCopy.ts
-production-site/MIGRATION_STATUS.md
-production-site/package-lock.json
-production-site/package.json
-production-site/PRODUCT.md
-production-site/README.md
-production-site/server/argon2.mjs
-production-site/server/crypto.mjs
-production-site/server/demo.mjs
-production-site/server/evaluate-auth.mjs
-production-site/server/evaluate-db.mjs
-production-site/server/evaluate.mjs
-production-site/server/password.mjs
-production-site/server/path.mjs
-production-site/server/prisma-shim.mjs
-production-site/server/router.mjs
-production-site/server/runtime-env.mjs
-production-site/server/snapshot-db.mjs
-production-site/server/unavailable-fs.mjs
-production-site/server/worker.mjs
-production-site/solver-service/app.py
-production-site/solver-service/Dockerfile
-production-site/solver-service/README.md
-production-site/solver-service/run.py
-production-site/tests/e2e.mjs
-production-site/tests/evaluate-e2e.mjs
-production-site/tests/smoke.mjs
-production-site/tools/audit_sources.py
-production-site/tools/backup.py
-production-site/tools/benchmark_solver.py
-production-site/tools/cloud-import.mjs
-production-site/tools/cloud-smoke.mjs
-production-site/tools/data.py
-production-site/tools/export-workforce.mjs
-production-site/tools/handover-local.mjs
-production-site/tools/prepare_import.py
-production-site/tools/schema.py
-production-site/tools/test_migration.py
-production-site/tools/test_postgres.py
-production-site/tools/test_solver_container.py
-production-site/tools/verify_backup.py
-README.md
-SHA256SUMS.txt
+molly-roster-handover/
+  .env.example
+  .github/pull_request_template.md
+  .gitignore
+  CONTRIBUTING.md
+  database/MIGRATION_INDEX.md
+  database/sanitized-samples/README.md
+  database/schema/MODEL_CATALOG.md
+  docs/API_INVENTORY.json
+  docs/API_REFERENCE.md
+  docs/ARCHITECTURE.md
+  docs/AUTHENTICATION.md
+  docs/DATABASE.md
+  docs/DEPENDENCY_AUDIT.json
+  docs/DEPLOYMENT.md
+  docs/DEVELOPMENT_STATUS.md
+  docs/EXCLUDED_FILES.json
+  docs/EXTERNAL_SERVICES.md
+  docs/FASTAPI_ROUTES.md
+  docs/FEATURE_STATUS.md
+  docs/FINAL_VALIDATION.json
+  docs/KNOWN_ISSUES.md
+  docs/LOCAL_DEVELOPMENT.md
+  docs/PERMISSIONS.md
+  docs/PROVENANCE.json
+  docs/SECURITY_REPORT.md
+  docs/SOURCE_FILES.json
+  docs/STAFF_INTEGRATION.md
+  docs/STORE_MAPPING.md
+  docs/TEST_REPORT.md
+  docs/TEST_RESULTS.json
+  local/evaluate/.env.example
+  local/evaluate/.github/workflows/validate.yml
+  local/evaluate/.gitignore
+  local/evaluate/ADVERSARIAL_QA_REPORT.md
+  local/evaluate/ARCHITECTURE_CONSOLIDATION_REPORT.md
+  local/evaluate/AUDIT_BASELINE.md
+  local/evaluate/AUDIT_FIX_LOG.md
+  local/evaluate/backend/.env.example
+  local/evaluate/backend/package-lock.json
+  local/evaluate/backend/package.json
+  local/evaluate/backend/prisma/bootstrap-admin.ts
+  local/evaluate/backend/prisma/migrations/20260607110000_init_evaluation_module/migration.sql
+  local/evaluate/backend/prisma/migrations/20260607125000_add_employee_management_fields/migration.sql
+  local/evaluate/backend/prisma/migrations/20260612091952_init/migration.sql
+  local/evaluate/backend/prisma/migrations/20260612115000_add_performance_notes/migration.sql
+  local/evaluate/backend/prisma/migrations/20260613100000_add_ai_analysis_runs/migration.sql
+  local/evaluate/backend/prisma/migrations/20260811120000_add_scoring_v1_foundation/migration.sql
+  local/evaluate/backend/prisma/migrations/20260812090000_add_evaluation_v1_records/migration.sql
+  local/evaluate/backend/prisma/migrations/20260812120000_add_employee_qualifications/migration.sql
+  local/evaluate/backend/prisma/migrations/20260813123000_add_v1_analytics_indexes/migration.sql
+  local/evaluate/backend/prisma/migrations/20260817090000_stabilize_v1_workflow/migration.sql
+  local/evaluate/backend/prisma/migrations/20260817110000_clear_untouched_legacy_unknown_drafts/migration.sql
+  local/evaluate/backend/prisma/migrations/20260817150000_add_formal_auth/migration.sql
+  local/evaluate/backend/prisma/migrations/20260818100000_harden_authentication/migration.sql
+  local/evaluate/backend/prisma/migrations/20260821100000_archive_stores_and_decouple_v1_period/migration.sql
+  local/evaluate/backend/prisma/migrations/20260824100000_add_employee_type_dual_scoring_policy/migration.sql
+  local/evaluate/backend/prisma/migrations/20260830110000_add_multi_evaluator_rounds/migration.sql
+  local/evaluate/backend/prisma/migrations/20260830130000_enforce_round_scope_consistency/migration.sql
+  local/evaluate/backend/prisma/migrations/20260901090000_employee_profile_qualification_refactor/migration.sql
+  local/evaluate/backend/prisma/migrations/20260904120000_scoring_availability_training_policy_t5/migration.sql
+  local/evaluate/backend/prisma/migrations/20260905100000_operational_skills_regular_v2/migration.sql
+  local/evaluate/backend/prisma/migrations/20260905101000_migrate_qualification_capabilities/migration.sql
+  local/evaluate/backend/prisma/migrations/20260905102000_backfill_operational_skill_drafts/migration.sql
+  local/evaluate/backend/prisma/migrations/20260905103000_expand_policy_component_ranges/migration.sql
+  local/evaluate/backend/prisma/migrations/20260905180000_live_scoring_admin_snapshot_rounds/migration.sql
+  local/evaluate/backend/prisma/migrations/20260905190000_enrich_legacy_open_round_skill_snapshots/migration.sql
+  local/evaluate/backend/prisma/migrations/20260905210000_remove_drafts_and_freeze_closed_rounds/migration.sql
+  local/evaluate/backend/prisma/migrations/20260905213000_remove_legacy_evaluation_activities/migration.sql
+  local/evaluate/backend/prisma/migrations/20260905214000_restore_closed_evaluation_trigger/migration.sql
+  local/evaluate/backend/prisma/migrations/20260907010000_upgrade_open_round_scoring_policies/migration.sql
+  local/evaluate/backend/prisma/migrations/20260909110000_expand_multi_store_account_access/migration.sql
+  local/evaluate/backend/prisma/migrations/20260909120000_contract_legacy_account_store/migration.sql
+  local/evaluate/backend/prisma/migrations/20260913110000_store_jobs_and_round_job_snapshot/migration.sql
+  local/evaluate/backend/prisma/migrations/20261008130000_enforce_employee_job_store_scope/migration.sql
+  local/evaluate/backend/prisma/migrations/20261009150000_enforce_employee_archive_state/migration.sql
+  local/evaluate/backend/prisma/migrations/20261009170000_latest_closed_round_lookup_index/migration.sql
+  local/evaluate/backend/prisma/migrations/20261009180000_history_job_snapshot_gin_index/migration.sql
+  local/evaluate/backend/prisma/migrations/20261009190000_shared_login_rate_limit/migration.sql
+  local/evaluate/backend/prisma/migrations/20261009200000_current_skill_confirmation_history/migration.sql
+  local/evaluate/backend/prisma/migrations/20261107090000_transfer_employee_evaluation_store/migration.sql
+  local/evaluate/backend/prisma/migrations/migration_lock.toml
+  local/evaluate/backend/prisma/schema.prisma
+  local/evaluate/backend/prisma/seed.ts
+  local/evaluate/backend/README.md
+  local/evaluate/backend/scripts/audit-current-positions.ts
+  local/evaluate/backend/scripts/audit-current-skill-provenance.ts
+  local/evaluate/backend/scripts/audit-employee-master-completeness.ts
+  local/evaluate/backend/scripts/audit-legacy-round-identity.ts
+  local/evaluate/backend/scripts/audit-live-scoring.ts
+  local/evaluate/backend/scripts/benchmark-history-job-query.ts
+  local/evaluate/backend/scripts/benchmark-latest-score-query.ts
+  local/evaluate/backend/scripts/benchmark-population.ts
+  local/evaluate/backend/scripts/browser-acceptance-environment.ts
+  local/evaluate/backend/scripts/inspect-browser-acceptance.ts
+  local/evaluate/backend/scripts/inspect-browser-login-audit.ts
+  local/evaluate/backend/scripts/preflight-account-access-migration.ts
+  local/evaluate/backend/scripts/preflight-history-privacy-jobs-migration.ts
+  local/evaluate/backend/scripts/seed-history-privacy-acceptance.ts
+  local/evaluate/backend/scripts/seed-roster-day-formal-job.ts
+  local/evaluate/backend/scripts/seed-transfer-score-browser.ts
+  local/evaluate/backend/scripts/seed-workforce-revision-acceptance.ts
+  local/evaluate/backend/scripts/sync-hurstville-bhs-jobs.ts
+  local/evaluate/backend/scripts/verify-isolated-master-api.ps1
+  local/evaluate/backend/scripts/verify-latest-official-score-query.ts
+  local/evaluate/backend/scripts/verify-latest-score-index.ts
+  local/evaluate/backend/scripts/verify-official-score-http.ps1
+  local/evaluate/backend/scripts/verify-round-integrity.ts
+  local/evaluate/backend/scripts/write-database-schema-inventory.ts
+  local/evaluate/backend/src/accountService.ts
+  local/evaluate/backend/src/aiTextEvaluationV1.ts
+  local/evaluate/backend/src/analyticsV1Service.ts
+  local/evaluate/backend/src/app.ts
+  local/evaluate/backend/src/auth.ts
+  local/evaluate/backend/src/currentSkillService.ts
+  local/evaluate/backend/src/domain.ts
+  local/evaluate/backend/src/employeeEvaluationSummaryService.ts
+  local/evaluate/backend/src/employeeService.ts
+  local/evaluate/backend/src/evaluationCatalogService.ts
+  local/evaluate/backend/src/evaluationReadService.ts
+  local/evaluate/backend/src/evaluationRoundService.ts
+  local/evaluate/backend/src/evaluationV1Service.ts
+  local/evaluate/backend/src/historicalIdentity.ts
+  local/evaluate/backend/src/httpError.ts
+  local/evaluate/backend/src/loginRateLimitService.ts
+  local/evaluate/backend/src/performanceNoteService.ts
+  local/evaluate/backend/src/prisma.ts
+  local/evaluate/backend/src/rosterIntegrationService.ts
+  local/evaluate/backend/src/rosterSkillBoardService.ts
+  local/evaluate/backend/src/roundAggregateRead.ts
+  local/evaluate/backend/src/routes.ts
+  local/evaluate/backend/src/safeLogging.ts
+  local/evaluate/backend/src/scoringPolicyV1.ts
+  local/evaluate/backend/src/server.ts
+  local/evaluate/backend/src/storeJobService.ts
+  local/evaluate/backend/src/storeService.ts
+  local/evaluate/backend/src/validation.ts
+  local/evaluate/backend/tests/accountRoutes.test.ts
+  local/evaluate/backend/tests/accountService.test.ts
+  local/evaluate/backend/tests/analyticsV1Service.test.ts
+  local/evaluate/backend/tests/auth.test.ts
+  local/evaluate/backend/tests/currentSkillRoutes.test.ts
+  local/evaluate/backend/tests/employeeArchiveConstraint.integration.test.ts
+  local/evaluate/backend/tests/employeeEvaluationSummaryService.test.ts
+  local/evaluate/backend/tests/employeeRoutes.test.ts
+  local/evaluate/backend/tests/employeeService.test.ts
+  local/evaluate/backend/tests/employeeTransferJobDatabase.integration.test.ts
+  local/evaluate/backend/tests/evaluationHistoryService.test.ts
+  local/evaluate/backend/tests/evaluationReadService.test.ts
+  local/evaluate/backend/tests/evaluationRoundService.test.ts
+  local/evaluate/backend/tests/evaluationRoutes.test.ts
+  local/evaluate/backend/tests/evaluationV1Routes.test.ts
+  local/evaluate/backend/tests/historicalIdentity.test.ts
+  local/evaluate/backend/tests/liveEvaluationV1Service.test.ts
+  local/evaluate/backend/tests/liveRoundDatabase.integration.test.ts
+  local/evaluate/backend/tests/loginRateLimitDatabase.integration.test.ts
+  local/evaluate/backend/tests/multiStoreAccountDatabase.integration.test.ts
+  local/evaluate/backend/tests/performanceNoteRoutes.test.ts
+  local/evaluate/backend/tests/performanceNoteService.test.ts
+  local/evaluate/backend/tests/productionApp.test.ts
+  local/evaluate/backend/tests/rosterIntegrationRoutes.test.ts
+  local/evaluate/backend/tests/rosterIntegrationService.test.ts
+  local/evaluate/backend/tests/rosterSkillBoardRoutes.test.ts
+  local/evaluate/backend/tests/rosterSkillBoardService.test.ts
+  local/evaluate/backend/tests/rosterWorkforceRevisionDatabase.integration.test.ts
+  local/evaluate/backend/tests/roundTestFixtures.ts
+  local/evaluate/backend/tests/safeLogging.test.ts
+  local/evaluate/backend/tests/scoringPolicyV1.test.ts
+  local/evaluate/backend/tests/securityRoutes.test.ts
+  local/evaluate/backend/tests/storeJobService.test.ts
+  local/evaluate/backend/tests/storeService.test.ts
+  local/evaluate/backend/tsconfig.json
+  local/evaluate/backend/vitest.config.ts
+  local/evaluate/CLEANUP_LOG.md
+  local/evaluate/DEAD_CODE_CANDIDATES.md
+  local/evaluate/DEEP_CLEANUP_LOG.md
+  local/evaluate/DEPLOYMENT.md
+  local/evaluate/docs/access-control.md
+  local/evaluate/docs/ai-analysis.md
+  local/evaluate/docs/DATA_MIGRATION_PLAN.md
+  local/evaluate/docs/DATABASE_AUDIT.md
+  local/evaluate/docs/DATABASE_SCHEMA_INVENTORY.md
+  local/evaluate/docs/employee-api-contract.md
+  local/evaluate/docs/EMPLOYEE_MASTER_DATA_CONTRACT.md
+  local/evaluate/docs/evaluation-api-contract.md
+  local/evaluate/docs/performance-notes-api-contract.md
+  local/evaluate/docs/ROSTER_INTEGRATION_CONTRACT.md
+  local/evaluate/EMPLOYEE_EVALUATION_AUDIT.md
+  local/evaluate/EMPLOYEE_EVALUATION_REMEDIATION_PLAN.md
+  local/evaluate/eslint.config.js
+  local/evaluate/EVALUATE_CHANGES_FOR_ROSTER.md
+  local/evaluate/FILE_AUDIT_MATRIX.md
+  local/evaluate/FINAL_DEEP_REFACTOR_REPORT.md
+  local/evaluate/FINAL_EVALUATE_DATABASE_REPORT.md
+  local/evaluate/FINAL_PRODUCTION_AUDIT_REPORT.md
+  local/evaluate/FRONTEND_TECHNICAL_AUDIT.md
+  local/evaluate/FULL_CODE_AUDIT_REPORT.md
+  local/evaluate/GOAL_MODE_PROGRESS.md
+  local/evaluate/index.html
+  local/evaluate/LOCAL_ACCOUNT_CREDENTIALS.md
+  local/evaluate/Molly LOGO/__MACOSX/Molly LOGO/._logo+slogan组合.png
+  local/evaluate/Molly LOGO/__MACOSX/Molly LOGO/._logo中文-白字透明底.png
+  local/evaluate/Molly LOGO/__MACOSX/Molly LOGO/._logo中文-黑字透明底.png
+  local/evaluate/Molly LOGO/__MACOSX/Molly LOGO/._logo中英文-白字透明底.png
+  local/evaluate/Molly LOGO/__MACOSX/Molly LOGO/._logo中英文-黑字透明底.png
+  local/evaluate/Molly LOGO/__MACOSX/Molly LOGO/._logo横-黑字.png
+  local/evaluate/Molly LOGO/__MACOSX/Molly LOGO/._logo组合-白字透明底.png
+  local/evaluate/Molly LOGO/__MACOSX/Molly LOGO/._logo组合-黑字透明底.png
+  local/evaluate/Molly LOGO/__MACOSX/Molly LOGO/._logo组合横-黑字透明底.png
+  local/evaluate/Molly LOGO/__MACOSX/Molly LOGO/._logo英文-黑字透明底.png
+  local/evaluate/Molly LOGO/__MACOSX/Molly LOGO/._四叶星-白.png
+  local/evaluate/Molly LOGO/__MACOSX/Molly LOGO/._四叶星-黑.png
+  local/evaluate/Molly LOGO/Molly LOGO/logo+slogan组合.png
+  local/evaluate/Molly LOGO/Molly LOGO/logo中文-白字透明底.png
+  local/evaluate/Molly LOGO/Molly LOGO/logo中文-黑字透明底.png
+  local/evaluate/Molly LOGO/Molly LOGO/logo中英文-白字透明底.png
+  local/evaluate/Molly LOGO/Molly LOGO/logo中英文-黑字透明底.png
+  local/evaluate/Molly LOGO/Molly LOGO/logo横-黑字.png
+  local/evaluate/Molly LOGO/Molly LOGO/logo组合-白字透明底.png
+  local/evaluate/Molly LOGO/Molly LOGO/logo组合-黑字透明底.png
+  local/evaluate/Molly LOGO/Molly LOGO/logo组合横-黑字透明底.png
+  local/evaluate/Molly LOGO/Molly LOGO/logo英文-黑字透明底.png
+  local/evaluate/Molly LOGO/Molly LOGO/四叶星-白.png
+  local/evaluate/Molly LOGO/Molly LOGO/四叶星-黑.png
+  local/evaluate/MULTI_STORE_AUTH_INTEGRATION.md
+  local/evaluate/need to do.md
+  local/evaluate/package-lock.json
+  local/evaluate/package.json
+  local/evaluate/postcss.config.js
+  local/evaluate/PRODUCT.md
+  local/evaluate/PRODUCTION_READINESS_REMEDIATION_REPORT.md
+  local/evaluate/PROJECT_AUDIT_MAP.md
+  local/evaluate/public/favicon.svg
+  local/evaluate/render.yaml
+  local/evaluate/RISK_REGISTER.md
+  local/evaluate/scripts/run-production-smoke.ps1
+  local/evaluate/scripts/start-browser-acceptance.ps1
+  local/evaluate/scripts/start-dev.ps1
+  local/evaluate/skills-lock.json
+  local/evaluate/src/App.tsx
+  local/evaluate/src/auth/AuthContext.test.tsx
+  local/evaluate/src/auth/AuthContext.tsx
+  local/evaluate/src/components/badges/EmployeeStatusBadge.tsx
+  local/evaluate/src/components/badges/EmployeeTypeBadge.tsx
+  local/evaluate/src/components/badges/HistoricalIdentityNote.tsx
+  local/evaluate/src/components/badges/StoreJobTag.tsx
+  local/evaluate/src/components/brand/brandAssets.ts
+  local/evaluate/src/components/brand/BrandLoader.tsx
+  local/evaluate/src/components/brand/BrandTransitionLayer.tsx
+  local/evaluate/src/components/brand/MollyClover.tsx
+  local/evaluate/src/components/employee-detail/CurrentSkillEditor.test.tsx
+  local/evaluate/src/components/employee-detail/CurrentSkillEditor.tsx
+  local/evaluate/src/components/employee-detail/EvaluationHistorySection.tsx
+  local/evaluate/src/components/employee-detail/ReadOnlySkillMatrix.tsx
+  local/evaluate/src/components/employee-detail/V1EvaluationDetail.tsx
+  local/evaluate/src/components/employee-detail/V1ScoreTrend.tsx
+  local/evaluate/src/components/evaluation/EmployeeEvaluationTable.test.tsx
+  local/evaluate/src/components/evaluation/EmployeeEvaluationTable.tsx
+  local/evaluate/src/components/evaluation/ScoreCard.tsx
+  local/evaluate/src/components/evaluation-v1/EvaluationV1Form.test.tsx
+  local/evaluate/src/components/evaluation-v1/EvaluationV1Form.tsx
+  local/evaluate/src/components/evaluation-v1/evaluationV1FormModel.test.ts
+  local/evaluate/src/components/evaluation-v1/evaluationV1FormModel.ts
+  local/evaluate/src/components/evaluation-v1/OverallRatings.tsx
+  local/evaluate/src/components/evaluation-v1/RatingControl.tsx
+  local/evaluate/src/components/evaluation-v1/ScorePreviewCard.test.tsx
+  local/evaluate/src/components/evaluation-v1/ScorePreviewCard.tsx
+  local/evaluate/src/components/evaluation-v1/SkillMatrix.tsx
+  local/evaluate/src/components/evaluation-v1/skillPresentation.ts
+  local/evaluate/src/components/evaluation-v1/SkillStatusControl.test.tsx
+  local/evaluate/src/components/evaluation-v1/SkillStatusControl.tsx
+  local/evaluate/src/components/evaluation-v1/TextFeedbackPanel.tsx
+  local/evaluate/src/components/layout/AppShell.test.tsx
+  local/evaluate/src/components/layout/AppShell.tsx
+  local/evaluate/src/components/layout/PageContainer.tsx
+  local/evaluate/src/components/motion/GsapScore.tsx
+  local/evaluate/src/components/motion/MotionCard.tsx
+  local/evaluate/src/components/motion/motionConfig.ts
+  local/evaluate/src/components/motion/MotionList.tsx
+  local/evaluate/src/components/motion/MotionPage.tsx
+  local/evaluate/src/components/motion/ScoreOrb.tsx
+  local/evaluate/src/components/states/EmptyState.tsx
+  local/evaluate/src/components/states/ErrorState.tsx
+  local/evaluate/src/components/states/LoadingState.tsx
+  local/evaluate/src/components/ui/AppSelect.test.tsx
+  local/evaluate/src/components/ui/AppSelect.tsx
+  local/evaluate/src/components/ui/Dialog.test.tsx
+  local/evaluate/src/components/ui/Dialog.tsx
+  local/evaluate/src/components/ui/SectionHeader.tsx
+  local/evaluate/src/components/ui/StoreMultiSelect.test.tsx
+  local/evaluate/src/components/ui/StoreMultiSelect.tsx
+  local/evaluate/src/components/ui/ToastProvider.tsx
+  local/evaluate/src/lib/evaluationNavigation.test.ts
+  local/evaluate/src/lib/evaluationNavigation.ts
+  local/evaluate/src/lib/format.ts
+  local/evaluate/src/lib/mutationFeedback.ts
+  local/evaluate/src/lib/presentation.ts
+  local/evaluate/src/main.tsx
+  local/evaluate/src/pages/AccountManagementPage.test.tsx
+  local/evaluate/src/pages/AccountManagementPage.tsx
+  local/evaluate/src/pages/DashboardPage.test.tsx
+  local/evaluate/src/pages/DashboardPage.tsx
+  local/evaluate/src/pages/EmployeeDetailPage.test.tsx
+  local/evaluate/src/pages/EmployeeDetailPage.tsx
+  local/evaluate/src/pages/EmployeeManagementPage.test.tsx
+  local/evaluate/src/pages/EmployeeManagementPage.tsx
+  local/evaluate/src/pages/EvaluationAnalyticsPage.test.tsx
+  local/evaluate/src/pages/EvaluationAnalyticsPage.tsx
+  local/evaluate/src/pages/EvaluationEntryPage.tsx
+  local/evaluate/src/pages/EvaluationHistoryIndexPage.test.tsx
+  local/evaluate/src/pages/EvaluationHistoryIndexPage.tsx
+  local/evaluate/src/pages/EvaluationRoundDetailPage.test.tsx
+  local/evaluate/src/pages/EvaluationRoundDetailPage.tsx
+  local/evaluate/src/pages/EvaluationV1Page.tsx
+  local/evaluate/src/pages/LiveEvaluationPage.tsx
+  local/evaluate/src/pages/LoginPage.tsx
+  local/evaluate/src/pages/RosterSkillBoardPage.test.tsx
+  local/evaluate/src/pages/RosterSkillBoardPage.tsx
+  local/evaluate/src/pages/StoreEmployeeTypeSelectionPage.test.tsx
+  local/evaluate/src/pages/StoreEmployeeTypeSelectionPage.tsx
+  local/evaluate/src/pages/StoreEvaluationPage.test.tsx
+  local/evaluate/src/pages/StoreEvaluationPage.tsx
+  local/evaluate/src/pages/StoreManagementPage.tsx
+  local/evaluate/src/services/apiClient.test.ts
+  local/evaluate/src/services/apiClient.ts
+  local/evaluate/src/services/authRepository.ts
+  local/evaluate/src/services/employeeRepository.test.ts
+  local/evaluate/src/services/employeeRepository.ts
+  local/evaluate/src/services/evaluationRepository.test.ts
+  local/evaluate/src/services/evaluationRepository.ts
+  local/evaluate/src/services/performanceNoteRepository.test.ts
+  local/evaluate/src/services/performanceNoteRepository.ts
+  local/evaluate/src/services/storeRepository.test.ts
+  local/evaluate/src/services/storeRepository.ts
+  local/evaluate/src/styles.css
+  local/evaluate/src/types/analyticsV1.ts
+  local/evaluate/src/types/evaluation.ts
+  local/evaluate/src/utils/rosterSkillUtils.test.ts
+  local/evaluate/src/utils/rosterSkillUtils.ts
+  local/evaluate/src/vite-env.d.ts
+  local/evaluate/tailwind.config.js
+  local/evaluate/TEST_COVERAGE_GAP_MATRIX.md
+  local/evaluate/tsconfig.app.json
+  local/evaluate/tsconfig.json
+  local/evaluate/tsconfig.node.json
+  local/evaluate/vite.config.ts
+  local/evaluate/vitest.config.ts
+  local/roster/.env.example
+  local/roster/.github/workflows/validate.yml
+  local/roster/.gitignore
+  local/roster/backend/.env.example
+  local/roster/backend/package-lock.json
+  local/roster/backend/package.json
+  local/roster/backend/prisma/migrations/20260906145438_init/migration.sql
+  local/roster/backend/prisma/migrations/20260906151000_add_roster_constraints/migration.sql
+  local/roster/backend/prisma/migrations/20260928010000_prevent_overlapping_roster_periods/migration.sql
+  local/roster/backend/prisma/migrations/20261008140000_align_default_shift_role_skill_codes/migration.sql
+  local/roster/backend/prisma/migrations/20261015160000_enforce_shift_period_store/migration.sql
+  local/roster/backend/prisma/migrations/20261015170000_fortnight_anchor_date/migration.sql
+  local/roster/backend/prisma/migrations/20261017010000_shift_create_request_ledger/migration.sql
+  local/roster/backend/prisma/migrations/20261020161000_availability_script_import/migration.sql
+  local/roster/backend/prisma/migrations/20261020163000_store_availability_script_shortcuts/migration.sql
+  local/roster/backend/prisma/migrations/20261117010000_xero_payroll/migration.sql
+  local/roster/backend/prisma/migrations/migration_lock.toml
+  local/roster/backend/prisma/schema.prisma
+  local/roster/backend/prisma/seed.ts
+  local/roster/backend/scripts/add-hurstville-bhs-shift-presets.ts
+  local/roster/backend/scripts/align-hurstville-bhs-default-break.ts
+  local/roster/backend/scripts/align-hurstville-bhs-minimum-shift.ts
+  local/roster/backend/scripts/audit-cross-system-employee-references.ts
+  local/roster/backend/scripts/audit-hurstville-presets.ts
+  local/roster/backend/scripts/audit-hurstville-script-preview.ts
+  local/roster/backend/scripts/audit-legacy-role-usage.ts
+  local/roster/backend/scripts/audit-publication-timezone-snapshots.ts
+  local/roster/backend/scripts/audit-role-provenance.ts
+  local/roster/backend/scripts/audit-shift-period-integrity.ts
+  local/roster/backend/scripts/audit-store-templates.ts
+  local/roster/backend/scripts/benchmark-copy-day.ts
+  local/roster/backend/scripts/benchmark-copy-execute.ts
+  local/roster/backend/scripts/benchmark-copy-preview.ts
+  local/roster/backend/scripts/benchmark-repeat.ts
+  local/roster/backend/scripts/benchmark-valid-publication.ts
+  local/roster/backend/scripts/calendar-name-browser-fixture.ts
+  local/roster/backend/scripts/deactivate-greensquare-qa-template.ts
+  local/roster/backend/scripts/deactivate-hurstville-qa-role.ts
+  local/roster/backend/scripts/deactivate-legacy-qa-availability-templates.ts
+  local/roster/backend/scripts/deactivate-legacy-qa-template.ts
+  local/roster/backend/scripts/disposable-database-test.ts
+  local/roster/backend/scripts/extend-thirty-minute-browser-availability.ts
+  local/roster/backend/scripts/prepare-thirty-minute-browser-fixture.ts
+  local/roster/backend/scripts/remove-day-overlap-browser.ts
+  local/roster/backend/scripts/seed-batch-settings-browser.ts
+  local/roster/backend/scripts/seed-batch-unavailable-browser.ts
+  local/roster/backend/scripts/seed-bhs-day-card-browser.ts
+  local/roster/backend/scripts/seed-calendar-grouping-browser.ts
+  local/roster/backend/scripts/seed-calendar-interaction-browser.ts
+  local/roster/backend/scripts/seed-copy-day-browser.ts
+  local/roster/backend/scripts/seed-formal-role-alias-browser-fixture.ts
+  local/roster/backend/scripts/seed-inactive-role-copy-browser.ts
+  local/roster/backend/scripts/seed-legacy-role-batch-browser.ts
+  local/roster/backend/scripts/seed-legacy-role-browser-fixture.ts
+  local/roster/backend/scripts/seed-legacy-role-repair-browser.ts
+  local/roster/backend/scripts/seed-legacy-template-browser-fixture.ts
+  local/roster/backend/scripts/seed-misplaced-period-browser.ts
+  local/roster/backend/scripts/seed-publication-settings-browser.ts
+  local/roster/backend/scripts/seed-script-prior-day-shift-browser.ts
+  local/roster/backend/scripts/seed-stale-lane-browser.ts
+  local/roster/backend/scripts/sync-hurstville-bhs-shift-roles.ts
+  local/roster/backend/scripts/verify-copy-day-stale-preview.ts
+  local/roster/backend/scripts/verify-copy-shift-target-conflict.ts
+  local/roster/backend/scripts/verify-copy-shift-target-context.ts
+  local/roster/backend/scripts/verify-day-click-edit-browser.ts
+  local/roster/backend/scripts/verify-day-directional-snap-browser.ts
+  local/roster/backend/scripts/verify-day-drag-create-current.ts
+  local/roster/backend/scripts/verify-day-refresh-readonly.ts
+  local/roster/backend/scripts/verify-day-script-shift-browser.ts
+  local/roster/backend/scripts/verify-dst-cross-day-move.ts
+  local/roster/backend/scripts/verify-dst-upward-selection-browser.ts
+  local/roster/backend/scripts/verify-dst-week-cancel-browser.ts
+  local/roster/backend/scripts/verify-explicit-formal-role-browser.ts
+  local/roster/backend/scripts/verify-fallback-publication-export.ts
+  local/roster/backend/scripts/verify-fallback-selection-cancel.ts
+  local/roster/backend/scripts/verify-fallback-timegrid-resize.ts
+  local/roster/backend/scripts/verify-formal-grant-http.ts
+  local/roster/backend/scripts/verify-formal-position-picker.ts
+  local/roster/backend/scripts/verify-former-assignment-repair.ts
+  local/roster/backend/scripts/verify-hurstville-bhs-default-break.ts
+  local/roster/backend/scripts/verify-lane-auto-scroll-browser.ts
+  local/roster/backend/scripts/verify-manual-multi-date-browser.ts
+  local/roster/backend/scripts/verify-multi-employee-script-browser.ts
+  local/roster/backend/scripts/verify-overnight-script-browser.ts
+  local/roster/backend/scripts/verify-payroll-postgres.ts
+  local/roster/backend/scripts/verify-preset-script-alias-browser.ts
+  local/roster/backend/scripts/verify-preset-script-browser.ts
+  local/roster/backend/scripts/verify-preset-script-preview-cancel-browser.ts
+  local/roster/backend/scripts/verify-script-alias-collision-browser.ts
+  local/roster/backend/scripts/verify-script-joined-commit-browser.ts
+  local/roster/backend/scripts/verify-script-new-append-browser.ts
+  local/roster/backend/scripts/verify-script-punctuation-alias-browser.ts
+  local/roster/backend/scripts/verify-script-swapped-status-browser.ts
+  local/roster/backend/scripts/verify-script-tabs-browser.ts
+  local/roster/backend/scripts/verify-settings-cross-store.ts
+  local/roster/backend/scripts/verify-single-employee-script-browser.ts
+  local/roster/backend/scripts/verify-spring-forward-availability-browser.ts
+  local/roster/backend/scripts/verify-staff-availability-concurrency.ts
+  local/roster/backend/scripts/verify-staff-delayed-save.ts
+  local/roster/backend/scripts/verify-staff-fallback-availability.ts
+  local/roster/backend/scripts/verify-templates-cross-store.ts
+  local/roster/backend/scripts/verify-thirty-minute-browser-save.ts
+  local/roster/backend/scripts/verify-thirty-minute-shift-fixture.ts
+  local/roster/backend/scripts/verify-transferred-employee-drag-recovery.ts
+  local/roster/backend/scripts/verify-upward-bhs-parity.ts
+  local/roster/backend/scripts/verify-workforce-revision-http.ts
+  local/roster/backend/src/app.ts
+  local/roster/backend/src/auth.ts
+  local/roster/backend/src/employeeCapacity.ts
+  local/roster/backend/src/employeeDemoRoutes.ts
+  local/roster/backend/src/evaluateClient.ts
+  local/roster/backend/src/evaluateJobColor.ts
+  local/roster/backend/src/formalRoleMatch.ts
+  local/roster/backend/src/httpError.ts
+  local/roster/backend/src/multiAgentRoutes.ts
+  local/roster/backend/src/payroll/crypto.ts
+  local/roster/backend/src/payroll/preparation.ts
+  local/roster/backend/src/payroll/reconciliation.ts
+  local/roster/backend/src/payroll/routes.ts
+  local/roster/backend/src/payroll/service.ts
+  local/roster/backend/src/payroll/sources.ts
+  local/roster/backend/src/payroll/store.ts
+  local/roster/backend/src/payroll/sync.ts
+  local/roster/backend/src/payroll/xero.ts
+  local/roster/backend/src/presetTimeSlotPreview.ts
+  local/roster/backend/src/presetTimeSlotReview.ts
+  local/roster/backend/src/presetTimeSlotScript.ts
+  local/roster/backend/src/prisma.ts
+  local/roster/backend/src/rosterService.ts
+  local/roster/backend/src/routes.ts
+  local/roster/backend/src/safeLogging.ts
+  local/roster/backend/src/schedulingIssue.ts
+  local/roster/backend/src/server.ts
+  local/roster/backend/src/types.ts
+  local/roster/backend/src/validation.ts
+  local/roster/backend/src/zonedCopy.ts
+  local/roster/backend/tests/agentCalendar.integration.test.ts
+  local/roster/backend/tests/app.test.ts
+  local/roster/backend/tests/atomicCreate.integration.test.ts
+  local/roster/backend/tests/availabilityCoverage.test.ts
+  local/roster/backend/tests/availabilityEnforcement.integration.test.ts
+  local/roster/backend/tests/availabilityUnknown.integration.test.ts
+  local/roster/backend/tests/calendarSnapshot.integration.test.ts
+  local/roster/backend/tests/copyDay.integration.test.ts
+  local/roster/backend/tests/copyPeriod.integration.test.ts
+  local/roster/backend/tests/crossDay.integration.test.ts
+  local/roster/backend/tests/crossStoreConcurrency.integration.test.ts
+  local/roster/backend/tests/draftCommit.integration.test.ts
+  local/roster/backend/tests/draftRoleUsage.integration.test.ts
+  local/roster/backend/tests/employeeCapacity.test.ts
+  local/roster/backend/tests/employeeDemoRoutes.test.ts
+  local/roster/backend/tests/evaluateClient.test.ts
+  local/roster/backend/tests/exportSnapshot.integration.test.ts
+  local/roster/backend/tests/formalRoleMatch.test.ts
+  local/roster/backend/tests/fortnightCycle.integration.test.ts
+  local/roster/backend/tests/laneReposition.integration.test.ts
+  local/roster/backend/tests/multiAgentRoutes.test.ts
+  local/roster/backend/tests/payroll.test.ts
+  local/roster/backend/tests/periodSummarySnapshot.integration.test.ts
+  local/roster/backend/tests/presetTimeSlotImport.integration.test.ts
+  local/roster/backend/tests/presetTimeSlotPreview.test.ts
+  local/roster/backend/tests/presetTimeSlotScript.test.ts
+  local/roster/backend/tests/publicationHistory.integration.test.ts
+  local/roster/backend/tests/publicationMutationConcurrency.integration.test.ts
+  local/roster/backend/tests/publicationValidation.integration.test.ts
+  local/roster/backend/tests/roleMutationConcurrency.integration.test.ts
+  local/roster/backend/tests/rosterPeriodConcurrency.integration.test.ts
+  local/roster/backend/tests/rosterRoutes.test.ts
+  local/roster/backend/tests/rosterService.test.ts
+  local/roster/backend/tests/schedulingIssue.test.ts
+  local/roster/backend/tests/settingsCycle.integration.test.ts
+  local/roster/backend/tests/shiftRoleSkillCodeMigration.integration.test.ts
+  local/roster/backend/tests/templateVersion.integration.test.ts
+  local/roster/backend/tests/validation.test.ts
+  local/roster/backend/tests/zonedCopy.test.ts
+  local/roster/backend/tsconfig.json
+  local/roster/backend/vitest.config.ts
+  local/roster/CALENDAR_AND_STAFF_REFACTOR_REPORT.md
+  local/roster/CALENDAR_AUTONOMOUS_COMPLETION_REPORT.md
+  local/roster/CALENDAR_IMPLEMENTATION_REPORT.md
+  local/roster/CALENDAR_PARITY_MATRIX.md
+  local/roster/CALENDAR_READABILITY_AUDIT.md
+  local/roster/CALENDAR_RUNTIME_CRASH_FIX_REPORT.md
+  local/roster/CURRENT_STATUS_2026-10-20.md
+  local/roster/CURRENT_STATUS_2026-10-21.md
+  local/roster/DEAD_CODE_CANDIDATES.md
+  local/roster/DESIGN.md
+  local/roster/docker-compose.yml
+  local/roster/docs/AGENT_RULES_AND_CALENDAR_WRITE.md
+  local/roster/docs/BHS_AVAILABILITY_SCRIPT_SPEC.md
+  local/roster/docs/BHS_FULL_FEATURE_AUDIT.md
+  local/roster/docs/BHS_SIDEBAR_PARITY.md
+  local/roster/docs/BHS_VISUAL_PARITY.md
+  local/roster/docs/CALENDAR_INTERACTION_SPEC.md
+  local/roster/docs/CALENDAR_STATE_MACHINE.md
+  local/roster/docs/EMPLOYEE_AVAILABILITY_DEMO.md
+  local/roster/docs/EMPLOYEE_PORTAL_ACCOUNT_INTEGRATION.md
+  local/roster/docs/EVALUATE_INTEGRATION_CONTRACT.md
+  local/roster/docs/EVALUATE_STYLE_CONTRACT.md
+  local/roster/docs/evidence/greensquare-legacy-qa-template-before-2026-10-21.json
+  local/roster/docs/evidence/hurstville-bhs-default-break-before-2026-10-21.json
+  local/roster/docs/evidence/hurstville-bhs-minimum-shift-before-2026-10-21.json
+  local/roster/docs/evidence/hurstville-bhs-shift-presets-before-2026-10-21.json
+  local/roster/docs/evidence/hurstville-legacy-qa-role-before-2026-10-21.json
+  local/roster/docs/evidence/hurstville-legacy-qa-template-before-2026-10-20.json
+  local/roster/docs/evidence/legacy-qa-availability-templates-before-2026-10-21.json
+  local/roster/docs/MULTI_AGENT_ROSTER_INTEGRATION.md
+  local/roster/docs/ROSTER_ARCHITECTURE_AUDIT.md
+  local/roster/docs/ROSTER_BROWSER_QA.md
+  local/roster/docs/ROSTER_DATABASE_AUDIT.md
+  local/roster/docs/ROSTER_DEPLOYMENT_READINESS.md
+  local/roster/docs/ROSTER_FEATURE_PARITY_MATRIX.md
+  local/roster/docs/ROSTER_TEST_RESULTS.md
+  local/roster/docs/SHIFTHELPER_INTERACTION_PARITY.md
+  local/roster/docs/XERO_PAYROLL_INTEGRATION.md
+  local/roster/docs/XERO_PAYROLL_VERIFICATION.json
+  local/roster/eslint.config.js
+  local/roster/FINAL_MOLLY_ROSTER_REPORT.md
+  local/roster/FULL_ROSTER_CODE_AUDIT_REPORT.md
+  local/roster/FUNCTIONAL_PARITY_MATRIX.md
+  local/roster/GOAL_MODE_PROGRESS.md
+  local/roster/index.html
+  local/roster/multi-agent-engine/.env.example
+  local/roster/multi-agent-engine/.gitignore
+  local/roster/multi-agent-engine/configs/hurstville-business-v1.json
+  local/roster/multi-agent-engine/docs/acceptance-2026-10-31.md
+  local/roster/multi-agent-engine/docs/real-database-no-fairness-2026-10-31.md
+  local/roster/multi-agent-engine/docs/score-targets-bob-rule-v1.md
+  local/roster/multi-agent-engine/multi_agent/__init__.py
+  local/roster/multi-agent-engine/multi_agent/api.py
+  local/roster/multi-agent-engine/multi_agent/business.py
+  local/roster/multi-agent-engine/multi_agent/calendar_preview.py
+  local/roster/multi-agent-engine/multi_agent/cli.py
+  local/roster/multi-agent-engine/multi_agent/contracts.py
+  local/roster/multi-agent-engine/multi_agent/domain.py
+  local/roster/multi-agent-engine/multi_agent/fixtures.py
+  local/roster/multi-agent-engine/multi_agent/local_source.py
+  local/roster/multi-agent-engine/multi_agent/orchestrator.py
+  local/roster/multi-agent-engine/multi_agent/preflight.py
+  local/roster/multi-agent-engine/multi_agent/prompts/audit.txt
+  local/roster/multi-agent-engine/multi_agent/prompts/daily.txt
+  local/roster/multi-agent-engine/multi_agent/prompts/daily_select.txt
+  local/roster/multi-agent-engine/multi_agent/prompts/requirement.txt
+  local/roster/multi-agent-engine/multi_agent/prompts/review.txt
+  local/roster/multi-agent-engine/multi_agent/provider.py
+  local/roster/multi-agent-engine/multi_agent/retained_work.py
+  local/roster/multi-agent-engine/multi_agent/roster_integration.py
+  local/roster/multi-agent-engine/multi_agent/rule_settings.py
+  local/roster/multi-agent-engine/multi_agent/serialization.py
+  local/roster/multi-agent-engine/multi_agent/source.py
+  local/roster/multi-agent-engine/multi_agent/validator.py
+  local/roster/multi-agent-engine/multi_agent/working_snapshot.py
+  local/roster/multi-agent-engine/README.md
+  local/roster/multi-agent-engine/requirements.txt
+  local/roster/multi-agent-engine/scripts/analyze_snapshot.py
+  local/roster/multi-agent-engine/scripts/compare.py
+  local/roster/multi-agent-engine/scripts/export-vertical.mts
+  local/roster/multi-agent-engine/scripts/export-workforce.mts
+  local/roster/multi-agent-engine/scripts/run-real.py
+  local/roster/multi-agent-engine/scripts/start.ps1
+  local/roster/multi-agent-engine/scripts/verify-best-effort-real.py
+  local/roster/multi-agent-engine/tests/conftest.py
+  local/roster/multi-agent-engine/tests/scripted_provider.py
+  local/roster/multi-agent-engine/tests/test_best_effort.py
+  local/roster/multi-agent-engine/tests/test_boundaries.py
+  local/roster/multi-agent-engine/tests/test_business_rules.py
+  local/roster/multi-agent-engine/tests/test_calendar_preview.py
+  local/roster/multi-agent-engine/tests/test_engine.py
+  local/roster/multi-agent-engine/tests/test_preflight_diagnostics.py
+  local/roster/multi-agent-engine/tests/test_retained_work.py
+  local/roster/multi-agent-engine/tests/test_roster_integration.py
+  local/roster/multi-agent-engine/tests/test_rule_settings.py
+  local/roster/multi-agent-engine/tests/test_working_snapshot.py
+  local/roster/package-lock.json
+  local/roster/package.json
+  local/roster/postcss.config.js
+  local/roster/preview.md
+  local/roster/PRODUCT.md
+  local/roster/PROJECT_STRUCTURE_AUDIT.md
+  local/roster/README.md
+  local/roster/ROLE_DATA_SOURCE_AUDIT.md
+  local/roster/ROSTER_API_CONTRACT.md
+  local/roster/ROSTER_ARCHITECTURE.md
+  local/roster/ROSTER_AUDIT_BASELINE.md
+  local/roster/ROSTER_DATABASE_MODEL.md
+  local/roster/ROSTER_DEPLOYMENT_READINESS.md
+  local/roster/ROSTER_QA_REPORT.md
+  local/roster/ROSTER_REMEDIATION_REPORT.md
+  local/roster/ROSTER_RISK_REGISTER.md
+  local/roster/scheduling-engine/.env.example
+  local/roster/scheduling-engine/.gitignore
+  local/roster/scheduling-engine/adapters/__init__.py
+  local/roster/scheduling-engine/adapters/manual_breaks.py
+  local/roster/scheduling-engine/adapters/manual_leave.py
+  local/roster/scheduling-engine/adapters/real.py
+  local/roster/scheduling-engine/adapters/reference.py
+  local/roster/scheduling-engine/api/__init__.py
+  local/roster/scheduling-engine/api/app.py
+  local/roster/scheduling-engine/api/storage.py
+  local/roster/scheduling-engine/configs/global-base.json
+  local/roster/scheduling-engine/configs/hurstville-exact-scheduled.json
+  local/roster/scheduling-engine/configs/hurstville-two-layer-proposal.json
+  local/roster/scheduling-engine/docs/acceptance-audit-2026-10-25.md
+  local/roster/scheduling-engine/docs/final-delivery-audit.md
+  local/roster/scheduling-engine/docs/hurstville-exploratory-2026-10-26.md
+  local/roster/scheduling-engine/docs/hurstville-opening-score-2026-10-27.md
+  local/roster/scheduling-engine/docs/hurstville-pilot-rule-review.md
+  local/roster/scheduling-engine/docs/hurstville-real-week-test-2026-10-26.md
+  local/roster/scheduling-engine/docs/hurstville-two-layer-audit-2026-10-30.md
+  local/roster/scheduling-engine/docs/hurstville-two-layer-results-2026-10-30.md
+  local/roster/scheduling-engine/docs/integration-readiness.md
+  local/roster/scheduling-engine/docs/pattern-count-only-2026-10-27.md
+  local/roster/scheduling-engine/docs/pattern-only-real-week-2026-10-26.md
+  local/roster/scheduling-engine/docs/phase-0-audit.md
+  local/roster/scheduling-engine/docs/phase-progress.md
+  local/roster/scheduling-engine/docs/roster-readonly-connection.md
+  local/roster/scheduling-engine/docs/unified-daily-rules-2026-10-26.md
+  local/roster/scheduling-engine/docs/v2-isolated-coverage-2026-10-28.md
+  local/roster/scheduling-engine/docs/v2-lab-integration-2026-10-29.md
+  local/roster/scheduling-engine/docs/v2-opening-score-audit-2026-10-29.md
+  local/roster/scheduling-engine/docs/v2-scoring-preferences-2026-10-28.md
+  local/roster/scheduling-engine/engine/__init__.py
+  local/roster/scheduling-engine/engine/candidates.py
+  local/roster/scheduling-engine/engine/cli.py
+  local/roster/scheduling-engine/engine/clock.py
+  local/roster/scheduling-engine/engine/config.py
+  local/roster/scheduling-engine/engine/global_base.py
+  local/roster/scheduling-engine/engine/models.py
+  local/roster/scheduling-engine/engine/solver.py
+  local/roster/scheduling-engine/engine/v2.py
+  local/roster/scheduling-engine/engine/validation.py
+  local/roster/scheduling-engine/fixtures/__init__.py
+  local/roster/scheduling-engine/fixtures/demo.py
+  local/roster/scheduling-engine/lab-ui/index.html
+  local/roster/scheduling-engine/lab-ui/multi-agent.html
+  local/roster/scheduling-engine/lab-ui/package-lock.json
+  local/roster/scheduling-engine/lab-ui/package.json
+  local/roster/scheduling-engine/lab-ui/scripts/test-comparison.cjs
+  local/roster/scheduling-engine/lab-ui/scripts/test-time-display.cjs
+  local/roster/scheduling-engine/lab-ui/src/apiErrors.ts
+  local/roster/scheduling-engine/lab-ui/src/ComparisonModeControl.tsx
+  local/roster/scheduling-engine/lab-ui/src/CoverageAnalysis.tsx
+  local/roster/scheduling-engine/lab-ui/src/coverageSummary.ts
+  local/roster/scheduling-engine/lab-ui/src/CurrentRuleNotice.tsx
+  local/roster/scheduling-engine/lab-ui/src/EmployeePreferencesEditor.tsx
+  local/roster/scheduling-engine/lab-ui/src/ExactCoverageAnalysis.tsx
+  local/roster/scheduling-engine/lab-ui/src/ExactStaffingEditor.css
+  local/roster/scheduling-engine/lab-ui/src/ExactStaffingEditor.tsx
+  local/roster/scheduling-engine/lab-ui/src/main.tsx
+  local/roster/scheduling-engine/lab-ui/src/multi-agent/main.tsx
+  local/roster/scheduling-engine/lab-ui/src/multi-agent/RealResultApp.tsx
+  local/roster/scheduling-engine/lab-ui/src/multi-agent/style.css
+  local/roster/scheduling-engine/lab-ui/src/PatternGapNotice.tsx
+  local/roster/scheduling-engine/lab-ui/src/publishedReferenceDates.ts
+  local/roster/scheduling-engine/lab-ui/src/RealAcceptanceNotice.tsx
+  local/roster/scheduling-engine/lab-ui/src/RuleClonePanel.tsx
+  local/roster/scheduling-engine/lab-ui/src/RuleEditors.tsx
+  local/roster/scheduling-engine/lab-ui/src/RunSourceNotice.tsx
+  local/roster/scheduling-engine/lab-ui/src/scheduleViewGeometry.ts
+  local/roster/scheduling-engine/lab-ui/src/ScheduleViews.tsx
+  local/roster/scheduling-engine/lab-ui/src/ScoreAllocation.tsx
+  local/roster/scheduling-engine/lab-ui/src/SourceComparison.tsx
+  local/roster/scheduling-engine/lab-ui/src/SourceReference.tsx
+  local/roster/scheduling-engine/lab-ui/src/SourceRuleHints.tsx
+  local/roster/scheduling-engine/lab-ui/src/style.css
+  local/roster/scheduling-engine/lab-ui/src/timeDisplay.ts
+  local/roster/scheduling-engine/lab-ui/src/WeekOutcomes.css
+  local/roster/scheduling-engine/lab-ui/src/WeekOutcomes.tsx
+  local/roster/scheduling-engine/lab-ui/tsconfig.json
+  local/roster/scheduling-engine/lab-ui/vite.config.ts
+  local/roster/scheduling-engine/README.md
+  local/roster/scheduling-engine/requirements.txt
+  local/roster/scheduling-engine/scripts/audit_hurstville_two_layer.py
+  local/roster/scheduling-engine/scripts/audit_roster_readonly_digest.py
+  local/roster/scheduling-engine/scripts/capture_browser_snapshot.py
+  local/roster/scheduling-engine/scripts/compare_v1_v2.py
+  local/roster/scheduling-engine/scripts/provision_local_readonly.py
+  local/roster/scheduling-engine/scripts/prune_hurstville_old_lab_versions.py
+  local/roster/scheduling-engine/scripts/regress_hurstville_exact_scheduled.py
+  local/roster/scheduling-engine/scripts/start-lab.ps1
+  local/roster/scheduling-engine/scripts/stop-lab.ps1
+  local/roster/scheduling-engine/scripts/test-lab.ps1
+  local/roster/scheduling-engine/tests/conftest.py
+  local/roster/scheduling-engine/tests/test_cli_reporting.py
+  local/roster/scheduling-engine/tests/test_draft_stability.py
+  local/roster/scheduling-engine/tests/test_dst_instant_order.py
+  local/roster/scheduling-engine/tests/test_employee_limits.py
+  local/roster/scheduling-engine/tests/test_engine_scenarios.py
+  local/roster/scheduling-engine/tests/test_fairness_with_fixed.py
+  local/roster/scheduling-engine/tests/test_fixed_conflicts.py
+  local/roster/scheduling-engine/tests/test_formal_role_mapping.py
+  local/roster/scheduling-engine/tests/test_global_base.py
+  local/roster/scheduling-engine/tests/test_independent_replay.py
+  local/roster/scheduling-engine/tests/test_joint_breaks_and_overnight.py
+  local/roster/scheduling-engine/tests/test_lab_api.py
+  local/roster/scheduling-engine/tests/test_manual_fixed_breaks.py
+  local/roster/scheduling-engine/tests/test_manual_leave_version.py
+  local/roster/scheduling-engine/tests/test_objective_priority.py
+  local/roster/scheduling-engine/tests/test_optional_work_rest_limits.py
+  local/roster/scheduling-engine/tests/test_pattern_only_rules.py
+  local/roster/scheduling-engine/tests/test_published_reference.py
+  local/roster/scheduling-engine/tests/test_read_only_roster_connection.py
+  local/roster/scheduling-engine/tests/test_real_source_scope.py
+  local/roster/scheduling-engine/tests/test_required_role_skills.py
+  local/roster/scheduling-engine/tests/test_snapshot_integrity.py
+  local/roster/scheduling-engine/tests/test_source_fingerprint.py
+  local/roster/scheduling-engine/tests/test_unknown_rule_fields.py
+  local/roster/scheduling-engine/tests/test_v2_coverage.py
+  local/roster/scheduling-engine/tests/test_week_boundary_validation.py
+  local/roster/scripts/audit-australia-timezone-parity.ts
+  local/roster/scripts/audit-evaluate-store-jobs.mjs
+  local/roster/scripts/benchmark-calendar.ts
+  local/roster/scripts/benchmark-scheduled-dots.ts
+  local/roster/scripts/deactivate-disposable-published-role.mjs
+  local/roster/scripts/inspect-dst-grid-browser.py
+  local/roster/scripts/move-shift-during-uncertain-delete.mjs
+  local/roster/scripts/prepare-upward-browser-fixture.py
+  local/roster/scripts/qa-adelaide-dst-grid-browser.py
+  local/roster/scripts/qa-batch-misdated-shift-browser.py
+  local/roster/scripts/qa-batch-published-selection-browser.py
+  local/roster/scripts/qa-batch-response-contract-browser.py
+  local/roster/scripts/qa-batch-settings-browser.py
+  local/roster/scripts/qa-batch-unavailable-browser.py
+  local/roster/scripts/qa-bhs-drag-semantics-browser.py
+  local/roster/scripts/qa-break-preset-browser.py
+  local/roster/scripts/qa-calendar-availability-failure-browser.py
+  local/roster/scripts/qa-calendar-drag-text-selection-browser.py
+  local/roster/scripts/qa-calendar-fast-gesture-browser.py
+  local/roster/scripts/qa-calendar-grouping-browser.py
+  local/roster/scripts/qa-calendar-pointer-jitter-browser.py
+  local/roster/scripts/qa-calendar-summary-failure-browser.py
+  local/roster/scripts/qa-calendar-template-isolation-browser.py
+  local/roster/scripts/qa-calendar-url-context-browser.py
+  local/roster/scripts/qa-calendar-week-day-measure-browser.py
+  local/roster/scripts/qa-click-near-closing-browser.py
+  local/roster/scripts/qa-copy-current-workforce-browser.py
+  local/roster/scripts/qa-copy-day-after-cross-row-browser.py
+  local/roster/scripts/qa-copy-day-auto-preview-browser.py
+  local/roster/scripts/qa-copy-day-response-browser.py
+  local/roster/scripts/qa-copy-day-stale-preview-browser.py
+  local/roster/scripts/qa-copy-formal-role-snapshot-browser.py
+  local/roster/scripts/qa-copy-period-response-browser.py
+  local/roster/scripts/qa-copy-preview-concurrency-browser.py
+  local/roster/scripts/qa-copy-preview-transfer-recovery-browser.py
+  local/roster/scripts/qa-copy-published-shift-browser.py
+  local/roster/scripts/qa-copy-shift-target-conflict-browser.py
+  local/roster/scripts/qa-copy-shift-target-context-browser.py
+  local/roster/scripts/qa-copy-shift-target-positive-browser.py
+  local/roster/scripts/qa-copy-week-pending-browser.py
+  local/roster/scripts/qa-copy-week-start-browser.py
+  local/roster/scripts/qa-create-overnight-for-resize-browser.py
+  local/roster/scripts/qa-day-click-edit-browser.py
+  local/roster/scripts/qa-day-current-reference-browser.py
+  local/roster/scripts/qa-day-employee-pages-browser.py
+  local/roster/scripts/qa-day-keyboard-edit-browser.py
+  local/roster/scripts/qa-day-overlap-reflow-browser.py
+  local/roster/scripts/qa-day-refresh-stale-card-browser.py
+  local/roster/scripts/qa-day-scale-load-browser.py
+  local/roster/scripts/qa-day-scheduled-name-search-browser.py
+  local/roster/scripts/qa-day-secondary-actions-browser.py
+  local/roster/scripts/qa-day-sidebar-worklog-card-browser.py
+  local/roster/scripts/qa-deleted-shift-editor-browser.py
+  local/roster/scripts/qa-double-save-shift-browser.py
+  local/roster/scripts/qa-draft-role-deactivation-browser.py
+  local/roster/scripts/qa-draft-role-inventory-browser.py
+  local/roster/scripts/qa-draft-role-pending-browser.py
+  local/roster/scripts/qa-draft-role-retry-browser.py
+  local/roster/scripts/qa-drag-create-browser.py
+  local/roster/scripts/qa-drag-frame-browser.py
+  local/roster/scripts/qa-dst-cross-day-move-browser.py
+  local/roster/scripts/qa-dst-drag-save-browser.py
+  local/roster/scripts/qa-dst-upward-drag-browser.py
+  local/roster/scripts/qa-duplicate-role-activation-browser.py
+  local/roster/scripts/qa-early-morning-availability-browser.py
+  local/roster/scripts/qa-early-morning-visibility-browser.py
+  local/roster/scripts/qa-employee-lane-create-browser.py
+  local/roster/scripts/qa-employee-row-click-only-browser.py
+  local/roster/scripts/qa-empty-week-copy-preview-browser.py
+  local/roster/scripts/qa-evaluator-script-browser.py
+  local/roster/scripts/qa-export-store-year-browser.py
+  local/roster/scripts/qa-fallback-availability-badge-browser.py
+  local/roster/scripts/qa-fallback-click-create-browser.py
+  local/roster/scripts/qa-fallback-clock-browser.py
+  local/roster/scripts/qa-fallback-copy-day-browser.py
+  local/roster/scripts/qa-fallback-copy-shift-browser.py
+  local/roster/scripts/qa-fallback-drag-selection-browser.py
+  local/roster/scripts/qa-fallback-export-browser.py
+  local/roster/scripts/qa-fallback-grid-geometry-browser.py
+  local/roster/scripts/qa-fallback-resize-validation-rollback-browser.py
+  local/roster/scripts/qa-fallback-timegrid-geometry-browser.py
+  local/roster/scripts/qa-fallback-timegrid-move-browser.py
+  local/roster/scripts/qa-fallback-timegrid-resize-browser.py
+  local/roster/scripts/qa-formal-jobs-browser.py
+  local/roster/scripts/qa-formal-position-picker-browser.py
+  local/roster/scripts/qa-formal-position-warning-browser.py
+  local/roster/scripts/qa-formal-role-alias-browser.py
+  local/roster/scripts/qa-former-assignment-repair-browser.py
+  local/roster/scripts/qa-fortnight-boundary-move-browser.py
+  local/roster/scripts/qa-fortnight-cycle-browser.py
+  local/roster/scripts/qa-full-day-grid-browser.py
+  local/roster/scripts/qa-full-day-saved-card-browser.py
+  local/roster/scripts/qa-grouped-draft-name-browser.py
+  local/roster/scripts/qa-inactive-role-copy-browser.py
+  local/roster/scripts/qa-inactive-role-reposition-browser.py
+  local/roster/scripts/qa-inactive-role-republish-browser.py
+  local/roster/scripts/qa-inactive-time-only-template-browser.py
+  local/roster/scripts/qa-interactive-browser-host-isolation.py
+  local/roster/scripts/qa-invalid-calendar-date-browser.py
+  local/roster/scripts/qa-invalid-lane-drop-browser.py
+  local/roster/scripts/qa-lane-auto-scroll-browser.py
+  local/roster/scripts/qa-lane-auto-scroll-drop-browser.py
+  local/roster/scripts/qa-lane-horizontal-scroll-browser.py
+  local/roster/scripts/qa-lane-touch-alternative-browser.py
+  local/roster/scripts/qa-legacy-publication-timezone-browser.py
+  local/roster/scripts/qa-legacy-role-batch-concurrency-browser.py
+  local/roster/scripts/qa-legacy-role-repair-browser.py
+  local/roster/scripts/qa-malformed-period-browser.py
+  local/roster/scripts/qa-malformed-success-save-browser.py
+  local/roster/scripts/qa-manual-batch-cross-month-conflict-browser.py
+  local/roster/scripts/qa-manual-multi-date-browser.py
+  local/roster/scripts/qa-mid-dialog-employee-transfer-browser.py
+  local/roster/scripts/qa-minimum-click-create-browser.py
+  local/roster/scripts/qa-misaligned-week-create-browser.py
+  local/roster/scripts/qa-misdated-day-repeat-browser.py
+  local/roster/scripts/qa-misplaced-period-browser.py
+  local/roster/scripts/qa-month-blank-create-browser.py
+  local/roster/scripts/qa-month-boundary-overnight-browser.py
+  local/roster/scripts/qa-month-focused-draft-drag-browser.py
+  local/roster/scripts/qa-month-focused-period-browser.py
+  local/roster/scripts/qa-month-focused-reopen-browser.py
+  local/roster/scripts/qa-month-published-lock-browser.py
+  local/roster/scripts/qa-multi-employee-script-browser.py
+  local/roster/scripts/qa-odd-minimum-create-browser.py
+  local/roster/scripts/qa-overnight-availability-ui-browser.py
+  local/roster/scripts/qa-overnight-create-hours-browser.py
+  local/roster/scripts/qa-overnight-sidebar-date-dot-browser.py
+  local/roster/scripts/qa-overnight-split-move-browser.py
+  local/roster/scripts/qa-overnight-split-network-rollback-browser.py
+  local/roster/scripts/qa-overnight-split-resize-browser.py
+  local/roster/scripts/qa-overnight-split-top-resize-browser.py
+  local/roster/scripts/qa-overnight-split-visibility-browser.py
+  local/roster/scripts/qa-overnight-template-browser.py
+  local/roster/scripts/qa-overnight-template-carryover-browser.py
+  local/roster/scripts/qa-previous-fortnight-source-browser.py
+  local/roster/scripts/qa-publication-response-browser.py
+  local/roster/scripts/qa-publication-settings-browser.py
+  local/roster/scripts/qa-publish-formal-role-snapshot-browser.py
+  local/roster/scripts/qa-publish-transferred-employee-browser.py
+  local/roster/scripts/qa-published-create-lock-browser.py
+  local/roster/scripts/qa-published-employee-rename-browser.py
+  local/roster/scripts/qa-published-employee-rename-db.mjs
+  local/roster/scripts/qa-published-role-snapshot-browser.py
+  local/roster/scripts/qa-published-role-snapshots-browser.py
+  local/roster/scripts/qa-published-shift-detail-browser.py
+  local/roster/scripts/qa-reopened-publication-history-browser.py
+  local/roster/scripts/qa-repeat-preview-transfer-recovery-browser.py
+  local/roster/scripts/qa-repeat-stale-preview-browser.py
+  local/roster/scripts/qa-resize-failure-rollback-browser.py
+  local/roster/scripts/qa-saved-card-blank-drag-browser.py
+  local/roster/scripts/qa-scheduled-range-cap-browser.py
+  local/roster/scripts/qa-script-joined-commit-browser.py
+  local/roster/scripts/qa-script-name-mapping-browser.py
+  local/roster/scripts/qa-script-new-append-browser.py
+  local/roster/scripts/qa-script-proposed-overlap-browser.py
+  local/roster/scripts/qa-script-punctuation-alias-browser.py
+  local/roster/scripts/qa-script-replay-toast-browser.py
+  local/roster/scripts/qa-script-response-browser.py
+  local/roster/scripts/qa-script-shortcut-load-retry-browser.py
+  local/roster/scripts/qa-script-swapped-status-browser.py
+  local/roster/scripts/qa-script-tabs-browser.py
+  local/roster/scripts/qa-script-trailing-blank-browser.py
+  local/roster/scripts/qa-settings-cross-store-load-browser.py
+  local/roster/scripts/qa-settings-duplicate-role-browser.py
+  local/roster/scripts/qa-settings-formal-job-status-browser.py
+  local/roster/scripts/qa-settings-minimum-hours-browser.py
+  local/roster/scripts/qa-settings-role-reactivation-browser.py
+  local/roster/scripts/qa-settings-save-response-browser.py
+  local/roster/scripts/qa-shift-edit-exit-browser.py
+  local/roster/scripts/qa-sidebar-measured-browser.py
+  local/roster/scripts/qa-single-employee-script-browser.py
+  local/roster/scripts/qa-spring-forward-availability-browser.py
+  local/roster/scripts/qa-spring-forward-grid-browser.py
+  local/roster/scripts/qa-staff-availability-concurrency-browser.py
+  local/roster/scripts/qa-staff-availability-response-browser.py
+  local/roster/scripts/qa-staff-availability-scope-browser.py
+  local/roster/scripts/qa-staff-cross-store-browser.py
+  local/roster/scripts/qa-staff-delayed-save-browser.py
+  local/roster/scripts/qa-staff-fallback-availability-browser.py
+  local/roster/scripts/qa-staff-late-save-browser.py
+  local/roster/scripts/qa-stale-lane-reload-browser.py
+  local/roster/scripts/qa-stale-timegrid-resize-browser.py
+  local/roster/scripts/qa-sunday-week-staff-browser.py
+  local/roster/scripts/qa-templates-cross-store-load-browser.py
+  local/roster/scripts/qa-timegrid-gesture-cancel-browser.py
+  local/roster/scripts/qa-transferred-employee-drag-recovery-browser.py
+  local/roster/scripts/qa-transferred-timegrid-move-recovery-browser.py
+  local/roster/scripts/qa-two-evaluator-edit-concurrency-browser.py
+  local/roster/scripts/qa-two-evaluator-resize-concurrency-browser.py
+  local/roster/scripts/qa-uncertain-batch-delete-browser.py
+  local/roster/scripts/qa-uncertain-copy-browser.py
+  local/roster/scripts/qa-uncertain-copy-existing-browser.py
+  local/roster/scripts/qa-uncertain-delete-after-move-browser.py
+  local/roster/scripts/qa-uncertain-delete-browser.py
+  local/roster/scripts/qa-uncertain-publication-browser.py
+  local/roster/scripts/qa-uncertain-published-copy-browser.py
+  local/roster/scripts/qa-uncertain-repeat-browser.py
+  local/roster/scripts/qa-uncertain-script-commit-browser.py
+  local/roster/scripts/qa-unfit-minimum-create-browser.py
+  local/roster/scripts/qa-unknown-availability-browser.py
+  local/roster/scripts/qa-upward-drag-create-browser.py
+  local/roster/scripts/qa-week-availability-browser.py
+  local/roster/scripts/qa-week-availability-scale-browser.py
+  local/roster/scripts/qa-week-crossday-selection-browser.py
+  local/roster/scripts/qa-week-day-drag-repeat-browser.py
+  local/roster/scripts/qa-week-overnight-lane-continuation-browser.py
+  local/roster/scripts/qa-week-scale-load-browser.py
+  local/roster/scripts/read-employee-capacity-rules.py
+  local/roster/scripts/seed-calendar-performance-browser.mjs
+  local/roster/scripts/seed-calendar-valid-browser.mjs
+  local/roster/scripts/seed-copy-current-workforce-browser.mjs
+  local/roster/scripts/seed-copy-target-availability-browser.mjs
+  local/roster/scripts/seed-copy-target-conflict-browser.mjs
+  local/roster/scripts/seed-day-overlap-browser.mjs
+  local/roster/scripts/seed-double-save-availability-browser.mjs
+  local/roster/scripts/seed-draft-role-deactivation-browser.mjs
+  local/roster/scripts/seed-dst-grid-browser.mjs
+  local/roster/scripts/seed-duplicate-role-activation-browser.mjs
+  local/roster/scripts/seed-early-morning-availability-browser.mjs
+  local/roster/scripts/seed-export-archive-browser.mjs
+  local/roster/scripts/seed-fallback-publication-browser.mjs
+  local/roster/scripts/seed-formal-position-browser.mjs
+  local/roster/scripts/seed-formal-position-warning-browser.mjs
+  local/roster/scripts/seed-former-employee-browser.mjs
+  local/roster/scripts/seed-invalid-lane-drop-browser.mjs
+  local/roster/scripts/seed-month-boundary-overnight-browser.mjs
+  local/roster/scripts/seed-overnight-availability-ui-browser.mjs
+  local/roster/scripts/seed-overnight-boundary-browser.mjs
+  local/roster/scripts/seed-overnight-split-browser.mjs
+  local/roster/scripts/seed-overnight-template-browser.mjs
+  local/roster/scripts/seed-publication-response-formal-role.mjs
+  local/roster/scripts/seed-publication-timezone-browser.mjs
+  local/roster/scripts/seed-published-role-snapshots-browser.mjs
+  local/roster/scripts/seed-scheduled-job-browser.mjs
+  local/roster/scripts/seed-script-alias-collision-browser.mjs
+  local/roster/scripts/seed-sunday-week-staff-browser.mjs
+  local/roster/scripts/seed-transferred-timegrid-browser.mjs
+  local/roster/scripts/seed-uncertain-copy-browser.mjs
+  local/roster/scripts/start-dev.ps1
+  local/roster/scripts/start-disposable-roster-browser-qa.ps1
+  local/roster/scripts/start-script-browser-qa.ps1
+  local/roster/scripts/stop-disposable-roster-browser-qa.ps1
+  local/roster/scripts/verify-bhs-day-card-browser.mjs
+  local/roster/scripts/verify-calendar-availability-failure-browser.mjs
+  local/roster/scripts/verify-calendar-url-context-browser.mjs
+  local/roster/scripts/verify-calendar-valid-browser.mjs
+  local/roster/scripts/verify-copy-target-browser.mjs
+  local/roster/scripts/verify-diagonal-lane-browser.mjs
+  local/roster/scripts/verify-double-save-shift-browser.mjs
+  local/roster/scripts/verify-drag-frame-browser.mjs
+  local/roster/scripts/verify-early-morning-availability-browser.mjs
+  local/roster/scripts/verify-employee-lane-create-browser.mjs
+  local/roster/scripts/verify-fallback-availability-badge-browser.mjs
+  local/roster/scripts/verify-fortnight-boundary-move-browser.mjs
+  local/roster/scripts/verify-fortnight-cycle-browser.mjs
+  local/roster/scripts/verify-invalid-lane-drop-browser.mjs
+  local/roster/scripts/verify-malformed-success-save-browser.mjs
+  local/roster/scripts/verify-month-blank-create-browser.mjs
+  local/roster/scripts/verify-month-focused-period-browser.mjs
+  local/roster/scripts/verify-month-focused-reopen-browser.mjs
+  local/roster/scripts/verify-overnight-availability-ui-browser.mjs
+  local/roster/scripts/verify-overnight-split-move-browser.mjs
+  local/roster/scripts/verify-overnight-split-resize-browser.mjs
+  local/roster/scripts/verify-overnight-template-browser.mjs
+  local/roster/scripts/verify-previous-fortnight-source-browser.mjs
+  local/roster/scripts/verify-published-role-snapshots-browser.mjs
+  local/roster/scripts/verify-scheduled-role-browser.mjs
+  local/roster/scripts/verify-staff-availability-scope-browser.mjs
+  local/roster/scripts/verify-sunday-week-staff-browser.mjs
+  local/roster/scripts/verify-uncertain-copy-browser.mjs
+  local/roster/scripts/verify-uncertain-delete-browser.mjs
+  local/roster/scripts/verify-uncertain-publication-browser.mjs
+  local/roster/scripts/verify-uncertain-repeat-browser.mjs
+  local/roster/scripts/verify-week-availability-browser.mjs
+  local/roster/scripts/verify-week-availability-scale-browser.mjs
+  local/roster/scripts/verify-week-overnight-lane-continuation-browser.mjs
+  local/roster/SHIFTHELPER_BEHAVIOUR_MAP_2026-10-07.md
+  local/roster/SHIFTHELPER_CALENDAR_AND_STAFF_AUDIT.md
+  local/roster/SHIFTHELPER_CALENDAR_REFERENCE_AUDIT.md
+  local/roster/SHIFTHELPER_PARITY_FINAL_REPORT.md
+  local/roster/SHIFTHELPER_PARITY_MATRIX.md
+  local/roster/src/App.tsx
+  local/roster/src/assets/molly-clover.png
+  local/roster/src/auth/AuthContext.test.tsx
+  local/roster/src/auth/AuthContext.tsx
+  local/roster/src/auth/authRepository.ts
+  local/roster/src/components/brand/MollyBrand.tsx
+  local/roster/src/components/calendar/AgentRunProgress.tsx
+  local/roster/src/components/calendar/CalendarAgentPanel.test.tsx
+  local/roster/src/components/calendar/CalendarAgentPanel.tsx
+  local/roster/src/components/calendar/CalendarDraftBar.test.tsx
+  local/roster/src/components/calendar/CalendarDraftBar.tsx
+  local/roster/src/components/calendar/CalendarEventContent.test.tsx
+  local/roster/src/components/calendar/CalendarEventContent.tsx
+  local/roster/src/components/calendar/CalendarScheduledSidebar.test.tsx
+  local/roster/src/components/calendar/CalendarScheduledSidebar.tsx
+  local/roster/src/components/calendar/CalendarViewSwitch.test.tsx
+  local/roster/src/components/calendar/CalendarViewSwitch.tsx
+  local/roster/src/components/calendar/EmployeeLaneBoard.test.tsx
+  local/roster/src/components/calendar/EmployeeLaneBoard.tsx
+  local/roster/src/components/calendar/GroupedShiftDialog.tsx
+  local/roster/src/components/calendar/PublishedShiftDetail.tsx
+  local/roster/src/components/calendar/RepeatShiftDialog.test.tsx
+  local/roster/src/components/calendar/RepeatShiftDialog.tsx
+  local/roster/src/components/calendar/RoleChipSelector.tsx
+  local/roster/src/components/calendar/RoleLegend.test.tsx
+  local/roster/src/components/calendar/RoleLegend.tsx
+  local/roster/src/components/calendar/ShiftDialog.test.tsx
+  local/roster/src/components/calendar/ShiftDialog.tsx
+  local/roster/src/components/calendar/ShiftEventCard.test.tsx
+  local/roster/src/components/calendar/ShiftEventCard.tsx
+  local/roster/src/components/calendar/StaffRoleFilter.test.tsx
+  local/roster/src/components/calendar/StaffRoleFilter.tsx
+  local/roster/src/components/employee/EmployeeWeekForm.tsx
+  local/roster/src/components/layout/AppShell.tsx
+  local/roster/src/components/payroll/PayrollPanel.test.tsx
+  local/roster/src/components/payroll/PayrollPanel.tsx
+  local/roster/src/components/settings/DraftRoleReconciliation.test.tsx
+  local/roster/src/components/settings/DraftRoleReconciliation.tsx
+  local/roster/src/components/settings/FormalJobCatalog.test.tsx
+  local/roster/src/components/settings/FormalJobCatalog.tsx
+  local/roster/src/components/settings/PresetShortcutSettings.test.tsx
+  local/roster/src/components/settings/PresetShortcutSettings.tsx
+  local/roster/src/components/settings/SkillRequirementPicker.test.tsx
+  local/roster/src/components/settings/SkillRequirementPicker.tsx
+  local/roster/src/components/staff/AvailabilityEditor.test.tsx
+  local/roster/src/components/staff/AvailabilityEditor.tsx
+  local/roster/src/components/staff/ManualAvailabilityBatchDialog.test.tsx
+  local/roster/src/components/staff/ManualAvailabilityBatchDialog.tsx
+  local/roster/src/components/staff/PresetScriptPreviewGroups.test.tsx
+  local/roster/src/components/staff/PresetScriptPreviewGroups.tsx
+  local/roster/src/components/staff/PresetTimeSlotScriptDialog.test.tsx
+  local/roster/src/components/staff/PresetTimeSlotScriptDialog.tsx
+  local/roster/src/components/states/LoadingState.tsx
+  local/roster/src/components/ui/AppErrorBoundary.tsx
+  local/roster/src/components/ui/AppSelect.tsx
+  local/roster/src/components/ui/Dialog.test.tsx
+  local/roster/src/components/ui/Dialog.tsx
+  local/roster/src/components/ui/ToastProvider.tsx
+  local/roster/src/lib/agentCalendarPreview.test.ts
+  local/roster/src/lib/agentCalendarPreview.ts
+  local/roster/src/lib/agentProgress.test.ts
+  local/roster/src/lib/agentProgress.ts
+  local/roster/src/lib/agentShift.ts
+  local/roster/src/lib/apiClient.test.ts
+  local/roster/src/lib/apiClient.ts
+  local/roster/src/lib/availability.test.ts
+  local/roster/src/lib/availability.ts
+  local/roster/src/lib/availabilityResponse.test.ts
+  local/roster/src/lib/availabilityResponse.ts
+  local/roster/src/lib/breakMinuteOptions.test.ts
+  local/roster/src/lib/breakMinuteOptions.ts
+  local/roster/src/lib/calendarAvailability.test.ts
+  local/roster/src/lib/calendarAvailability.ts
+  local/roster/src/lib/calendarDomPlacement.ts
+  local/roster/src/lib/calendarDraftQueue.test.ts
+  local/roster/src/lib/calendarDraftQueue.ts
+  local/roster/src/lib/calendarEmployeeWindow.test.ts
+  local/roster/src/lib/calendarEmployeeWindow.ts
+  local/roster/src/lib/calendarGrouping.test.ts
+  local/roster/src/lib/calendarGrouping.ts
+  local/roster/src/lib/calendarLoad.test.ts
+  local/roster/src/lib/calendarLoad.ts
+  local/roster/src/lib/calendarLocation.test.ts
+  local/roster/src/lib/calendarLocation.ts
+  local/roster/src/lib/calendarOverlap.test.ts
+  local/roster/src/lib/calendarOverlap.ts
+  local/roster/src/lib/calendarPeriod.test.ts
+  local/roster/src/lib/calendarPeriod.ts
+  local/roster/src/lib/calendarPublish.test.ts
+  local/roster/src/lib/calendarPublish.ts
+  local/roster/src/lib/calendarResize.test.ts
+  local/roster/src/lib/calendarResize.ts
+  local/roster/src/lib/calendarResponse.test.ts
+  local/roster/src/lib/calendarResponse.ts
+  local/roster/src/lib/calendarSelection.test.ts
+  local/roster/src/lib/calendarSelection.ts
+  local/roster/src/lib/confirmedBatchDelete.test.ts
+  local/roster/src/lib/confirmedBatchDelete.ts
+  local/roster/src/lib/copyDayResponse.test.ts
+  local/roster/src/lib/copyDayResponse.ts
+  local/roster/src/lib/copyPeriodResponse.test.ts
+  local/roster/src/lib/copyPeriodResponse.ts
+  local/roster/src/lib/dateTime.test.ts
+  local/roster/src/lib/dateTime.ts
+  local/roster/src/lib/draftCommitReconciliation.test.ts
+  local/roster/src/lib/draftCommitReconciliation.ts
+  local/roster/src/lib/draftCommitResponse.test.ts
+  local/roster/src/lib/draftCommitResponse.ts
+  local/roster/src/lib/draftRoleUsageResponse.ts
+  local/roster/src/lib/evaluateJobColor.ts
+  local/roster/src/lib/manualAvailabilityBatch.test.ts
+  local/roster/src/lib/manualAvailabilityBatch.ts
+  local/roster/src/lib/mutationReconciliation.test.ts
+  local/roster/src/lib/mutationReconciliation.ts
+  local/roster/src/lib/presetScriptInput.test.ts
+  local/roster/src/lib/presetScriptInput.ts
+  local/roster/src/lib/presetScriptResponse.ts
+  local/roster/src/lib/publicationMutationResponse.ts
+  local/roster/src/lib/repeatDates.test.ts
+  local/roster/src/lib/repeatDates.ts
+  local/roster/src/lib/roleColor.test.ts
+  local/roster/src/lib/roleColor.ts
+  local/roster/src/lib/roleMutationResponse.ts
+  local/roster/src/lib/rosterBatchResponse.ts
+  local/roster/src/lib/rosterSettingsResponse.ts
+  local/roster/src/lib/scheduledShiftSummary.test.ts
+  local/roster/src/lib/scheduledShiftSummary.ts
+  local/roster/src/lib/scheduling.test.ts
+  local/roster/src/lib/scheduling.ts
+  local/roster/src/lib/schedulingFeedback.test.ts
+  local/roster/src/lib/schedulingFeedback.ts
+  local/roster/src/lib/shiftMutationResponse.test.ts
+  local/roster/src/lib/shiftMutationResponse.ts
+  local/roster/src/lib/storeTime.test.ts
+  local/roster/src/lib/storeTime.ts
+  local/roster/src/lib/templateResponses.ts
+  local/roster/src/lib/timeGridPointer.test.ts
+  local/roster/src/lib/timeGridPointer.ts
+  local/roster/src/lib/uncertainDelete.test.ts
+  local/roster/src/lib/uncertainDelete.ts
+  local/roster/src/lib/verifiedShiftRoles.test.ts
+  local/roster/src/lib/verifiedShiftRoles.ts
+  local/roster/src/main.tsx
+  local/roster/src/pages/agentRules.css
+  local/roster/src/pages/AgentRulesPage.test.tsx
+  local/roster/src/pages/AgentRulesPage.tsx
+  local/roster/src/pages/calendarLifecycleAudit.test.tsx
+  local/roster/src/pages/CalendarPage.editability.test.tsx
+  local/roster/src/pages/CalendarPage.tsx
+  local/roster/src/pages/employeeAvailability.css
+  local/roster/src/pages/EmployeeAvailabilityPage.test.tsx
+  local/roster/src/pages/EmployeeAvailabilityPage.tsx
+  local/roster/src/pages/ExportPage.test.tsx
+  local/roster/src/pages/ExportPage.tsx
+  local/roster/src/pages/FoundationPage.tsx
+  local/roster/src/pages/HelpPage.tsx
+  local/roster/src/pages/LoginPage.tsx
+  local/roster/src/pages/multiAgent.css
+  local/roster/src/pages/MultiAgentPage.test.tsx
+  local/roster/src/pages/MultiAgentPage.tsx
+  local/roster/src/pages/SettingsPage.test.tsx
+  local/roster/src/pages/SettingsPage.tsx
+  local/roster/src/pages/StaffPage.test.tsx
+  local/roster/src/pages/StaffPage.tsx
+  local/roster/src/pages/TemplatesPage.test.tsx
+  local/roster/src/pages/TemplatesPage.tsx
+  local/roster/src/services/employeePortalRepository.test.ts
+  local/roster/src/services/employeePortalRepository.ts
+  local/roster/src/services/multiAgentRepository.ts
+  local/roster/src/services/rosterRepository.test.ts
+  local/roster/src/services/rosterRepository.ts
+  local/roster/src/services/workforceRepository.ts
+  local/roster/src/store/StoreContext.test.tsx
+  local/roster/src/store/StoreContext.tsx
+  local/roster/src/styles.css
+  local/roster/src/test/setup.ts
+  local/roster/src/types/roster.ts
+  local/roster/src/types/workforce.ts
+  local/roster/src/vite-env.d.ts
+  local/roster/tailwind.config.js
+  local/roster/TEST_GAP_MATRIX.md
+  local/roster/tsconfig.app.json
+  local/roster/tsconfig.json
+  local/roster/tsconfig.node.json
+  local/roster/VALIDATION_AND_INTERACTION_HARDENING_REPORT.md
+  local/roster/vite.config.ts
+  local/roster/vitest.config.ts
+  MISSING_ITEMS.md
+  production-site/.env.example
+  production-site/.gitignore
+  production-site/.openai/hosting.json
+  production-site/build/build.mjs
+  production-site/build/evaluate-migration.mjs
+  production-site/build/evaluate-prepare.mjs
+  production-site/build/prepare.mjs
+  production-site/docs/XERO_PAYROLL_INTEGRATION.md
+  production-site/drizzle/0000_roster.sql
+  production-site/drizzle/0001_sites.sql
+  production-site/drizzle/0002_evaluate_guards.sql
+  production-site/drizzle/0003_xero_payroll.sql
+  production-site/drizzle/meta/_journal.json
+  production-site/evaluate-frontend/index.html
+  production-site/evaluate-frontend/Molly LOGO/__MACOSX/Molly LOGO/._logo+slogan组合.png
+  production-site/evaluate-frontend/Molly LOGO/__MACOSX/Molly LOGO/._logo中文-白字透明底.png
+  production-site/evaluate-frontend/Molly LOGO/__MACOSX/Molly LOGO/._logo中文-黑字透明底.png
+  production-site/evaluate-frontend/Molly LOGO/__MACOSX/Molly LOGO/._logo中英文-白字透明底.png
+  production-site/evaluate-frontend/Molly LOGO/__MACOSX/Molly LOGO/._logo中英文-黑字透明底.png
+  production-site/evaluate-frontend/Molly LOGO/__MACOSX/Molly LOGO/._logo横-黑字.png
+  production-site/evaluate-frontend/Molly LOGO/__MACOSX/Molly LOGO/._logo组合-白字透明底.png
+  production-site/evaluate-frontend/Molly LOGO/__MACOSX/Molly LOGO/._logo组合-黑字透明底.png
+  production-site/evaluate-frontend/Molly LOGO/__MACOSX/Molly LOGO/._logo组合横-黑字透明底.png
+  production-site/evaluate-frontend/Molly LOGO/__MACOSX/Molly LOGO/._logo英文-黑字透明底.png
+  production-site/evaluate-frontend/Molly LOGO/__MACOSX/Molly LOGO/._四叶星-白.png
+  production-site/evaluate-frontend/Molly LOGO/__MACOSX/Molly LOGO/._四叶星-黑.png
+  production-site/evaluate-frontend/Molly LOGO/Molly LOGO/logo+slogan组合.png
+  production-site/evaluate-frontend/Molly LOGO/Molly LOGO/logo中文-白字透明底.png
+  production-site/evaluate-frontend/Molly LOGO/Molly LOGO/logo中文-黑字透明底.png
+  production-site/evaluate-frontend/Molly LOGO/Molly LOGO/logo中英文-白字透明底.png
+  production-site/evaluate-frontend/Molly LOGO/Molly LOGO/logo中英文-黑字透明底.png
+  production-site/evaluate-frontend/Molly LOGO/Molly LOGO/logo横-黑字.png
+  production-site/evaluate-frontend/Molly LOGO/Molly LOGO/logo组合-白字透明底.png
+  production-site/evaluate-frontend/Molly LOGO/Molly LOGO/logo组合-黑字透明底.png
+  production-site/evaluate-frontend/Molly LOGO/Molly LOGO/logo组合横-黑字透明底.png
+  production-site/evaluate-frontend/Molly LOGO/Molly LOGO/logo英文-黑字透明底.png
+  production-site/evaluate-frontend/Molly LOGO/Molly LOGO/四叶星-白.png
+  production-site/evaluate-frontend/Molly LOGO/Molly LOGO/四叶星-黑.png
+  production-site/evaluate-frontend/postcss.config.js
+  production-site/evaluate-frontend/src/App.tsx
+  production-site/evaluate-frontend/src/auth/AuthContext.tsx
+  production-site/evaluate-frontend/src/components/badges/EmployeeStatusBadge.tsx
+  production-site/evaluate-frontend/src/components/badges/EmployeeTypeBadge.tsx
+  production-site/evaluate-frontend/src/components/badges/HistoricalIdentityNote.tsx
+  production-site/evaluate-frontend/src/components/badges/StoreJobTag.tsx
+  production-site/evaluate-frontend/src/components/brand/brandAssets.ts
+  production-site/evaluate-frontend/src/components/brand/BrandLoader.tsx
+  production-site/evaluate-frontend/src/components/brand/BrandTransitionLayer.tsx
+  production-site/evaluate-frontend/src/components/brand/MollyClover.tsx
+  production-site/evaluate-frontend/src/components/employee-detail/CurrentSkillEditor.tsx
+  production-site/evaluate-frontend/src/components/employee-detail/EvaluationHistorySection.tsx
+  production-site/evaluate-frontend/src/components/employee-detail/ReadOnlySkillMatrix.tsx
+  production-site/evaluate-frontend/src/components/employee-detail/V1EvaluationDetail.tsx
+  production-site/evaluate-frontend/src/components/employee-detail/V1ScoreTrend.tsx
+  production-site/evaluate-frontend/src/components/evaluation/EmployeeEvaluationTable.tsx
+  production-site/evaluate-frontend/src/components/evaluation/ScoreCard.tsx
+  production-site/evaluate-frontend/src/components/evaluation-v1/EvaluationV1Form.tsx
+  production-site/evaluate-frontend/src/components/evaluation-v1/evaluationV1FormModel.ts
+  production-site/evaluate-frontend/src/components/evaluation-v1/OverallRatings.tsx
+  production-site/evaluate-frontend/src/components/evaluation-v1/RatingControl.tsx
+  production-site/evaluate-frontend/src/components/evaluation-v1/ScorePreviewCard.tsx
+  production-site/evaluate-frontend/src/components/evaluation-v1/SkillMatrix.tsx
+  production-site/evaluate-frontend/src/components/evaluation-v1/skillPresentation.ts
+  production-site/evaluate-frontend/src/components/evaluation-v1/SkillStatusControl.tsx
+  production-site/evaluate-frontend/src/components/evaluation-v1/TextFeedbackPanel.tsx
+  production-site/evaluate-frontend/src/components/layout/AppShell.tsx
+  production-site/evaluate-frontend/src/components/layout/PageContainer.tsx
+  production-site/evaluate-frontend/src/components/motion/GsapScore.tsx
+  production-site/evaluate-frontend/src/components/motion/MotionCard.tsx
+  production-site/evaluate-frontend/src/components/motion/motionConfig.ts
+  production-site/evaluate-frontend/src/components/motion/MotionList.tsx
+  production-site/evaluate-frontend/src/components/motion/MotionPage.tsx
+  production-site/evaluate-frontend/src/components/motion/ScoreOrb.tsx
+  production-site/evaluate-frontend/src/components/states/EmptyState.tsx
+  production-site/evaluate-frontend/src/components/states/ErrorState.tsx
+  production-site/evaluate-frontend/src/components/states/LoadingState.tsx
+  production-site/evaluate-frontend/src/components/ui/AppSelect.tsx
+  production-site/evaluate-frontend/src/components/ui/Dialog.tsx
+  production-site/evaluate-frontend/src/components/ui/SectionHeader.tsx
+  production-site/evaluate-frontend/src/components/ui/StoreMultiSelect.tsx
+  production-site/evaluate-frontend/src/components/ui/ToastProvider.tsx
+  production-site/evaluate-frontend/src/lib/evaluationNavigation.ts
+  production-site/evaluate-frontend/src/lib/format.ts
+  production-site/evaluate-frontend/src/lib/mutationFeedback.ts
+  production-site/evaluate-frontend/src/lib/presentation.ts
+  production-site/evaluate-frontend/src/main.tsx
+  production-site/evaluate-frontend/src/pages/AccountManagementPage.tsx
+  production-site/evaluate-frontend/src/pages/DashboardPage.tsx
+  production-site/evaluate-frontend/src/pages/EmployeeDetailPage.tsx
+  production-site/evaluate-frontend/src/pages/EmployeeManagementPage.tsx
+  production-site/evaluate-frontend/src/pages/EvaluationAnalyticsPage.tsx
+  production-site/evaluate-frontend/src/pages/EvaluationEntryPage.tsx
+  production-site/evaluate-frontend/src/pages/EvaluationHistoryIndexPage.tsx
+  production-site/evaluate-frontend/src/pages/EvaluationRoundDetailPage.tsx
+  production-site/evaluate-frontend/src/pages/EvaluationV1Page.tsx
+  production-site/evaluate-frontend/src/pages/LiveEvaluationPage.tsx
+  production-site/evaluate-frontend/src/pages/LoginPage.tsx
+  production-site/evaluate-frontend/src/pages/RosterSkillBoardPage.tsx
+  production-site/evaluate-frontend/src/pages/StoreEmployeeTypeSelectionPage.tsx
+  production-site/evaluate-frontend/src/pages/StoreEvaluationPage.tsx
+  production-site/evaluate-frontend/src/pages/StoreManagementPage.tsx
+  production-site/evaluate-frontend/src/services/apiClient.ts
+  production-site/evaluate-frontend/src/services/authRepository.ts
+  production-site/evaluate-frontend/src/services/employeeRepository.ts
+  production-site/evaluate-frontend/src/services/evaluationRepository.ts
+  production-site/evaluate-frontend/src/services/performanceNoteRepository.ts
+  production-site/evaluate-frontend/src/services/storeRepository.ts
+  production-site/evaluate-frontend/src/styles.css
+  production-site/evaluate-frontend/src/types/analyticsV1.ts
+  production-site/evaluate-frontend/src/types/evaluation.ts
+  production-site/evaluate-frontend/src/utils/rosterSkillUtils.ts
+  production-site/evaluate-frontend/src/vite-env.d.ts
+  production-site/evaluate-frontend/tailwind.config.js
+  production-site/evaluate-frontend/vite.config.mjs
+  production-site/evidence/backend-postgres-tests.json
+  production-site/evidence/cloud-data-verification.json
+  production-site/evidence/cloud-smoke.json
+  production-site/evidence/data-audit.json
+  production-site/evidence/evaluate-e2e.json
+  production-site/evidence/frontend-template-tests.json
+  production-site/evidence/import-manifest.json
+  production-site/evidence/initial-migration-status.md
+  production-site/evidence/solver-benchmark.json
+  production-site/evidence/solver-container.json
+  production-site/evidence/source-snapshot.json
+  production-site/evidence/worker-e2e.json
+  production-site/evidence/xero-postgres-preservation.json
+  production-site/evidence/xero-verification.json
+  production-site/frontend/index.html
+  production-site/frontend/postcss.config.js
+  production-site/frontend/src/App.tsx
+  production-site/frontend/src/assets/molly-clover.png
+  production-site/frontend/src/auth/AuthContext.tsx
+  production-site/frontend/src/auth/authRepository.ts
+  production-site/frontend/src/components/brand/MollyBrand.tsx
+  production-site/frontend/src/components/calendar/AgentRunProgress.tsx
+  production-site/frontend/src/components/calendar/CalendarAgentPanel.tsx
+  production-site/frontend/src/components/calendar/CalendarDraftBar.tsx
+  production-site/frontend/src/components/calendar/CalendarEventContent.tsx
+  production-site/frontend/src/components/calendar/CalendarScheduledSidebar.tsx
+  production-site/frontend/src/components/calendar/CalendarViewSwitch.tsx
+  production-site/frontend/src/components/calendar/EmployeeLaneBoard.tsx
+  production-site/frontend/src/components/calendar/GroupedShiftDialog.tsx
+  production-site/frontend/src/components/calendar/PublishedShiftDetail.tsx
+  production-site/frontend/src/components/calendar/RepeatShiftDialog.tsx
+  production-site/frontend/src/components/calendar/RoleChipSelector.tsx
+  production-site/frontend/src/components/calendar/RoleLegend.tsx
+  production-site/frontend/src/components/calendar/ShiftDialog.tsx
+  production-site/frontend/src/components/calendar/ShiftEventCard.tsx
+  production-site/frontend/src/components/calendar/StaffRoleFilter.tsx
+  production-site/frontend/src/components/employee/EmployeeWeekForm.tsx
+  production-site/frontend/src/components/layout/AppShell.tsx
+  production-site/frontend/src/components/payroll/PayrollPanel.tsx
+  production-site/frontend/src/components/settings/DraftRoleReconciliation.tsx
+  production-site/frontend/src/components/settings/FormalJobCatalog.tsx
+  production-site/frontend/src/components/settings/PresetShortcutSettings.tsx
+  production-site/frontend/src/components/settings/SkillRequirementPicker.tsx
+  production-site/frontend/src/components/staff/AvailabilityEditor.tsx
+  production-site/frontend/src/components/staff/ManualAvailabilityBatchDialog.tsx
+  production-site/frontend/src/components/staff/PresetScriptPreviewGroups.tsx
+  production-site/frontend/src/components/staff/PresetTimeSlotScriptDialog.tsx
+  production-site/frontend/src/components/states/LoadingState.tsx
+  production-site/frontend/src/components/ui/AppErrorBoundary.tsx
+  production-site/frontend/src/components/ui/AppSelect.tsx
+  production-site/frontend/src/components/ui/Dialog.tsx
+  production-site/frontend/src/components/ui/ToastProvider.tsx
+  production-site/frontend/src/lib/agentCalendarPreview.ts
+  production-site/frontend/src/lib/agentProgress.ts
+  production-site/frontend/src/lib/agentShift.ts
+  production-site/frontend/src/lib/apiClient.ts
+  production-site/frontend/src/lib/availability.ts
+  production-site/frontend/src/lib/availabilityResponse.ts
+  production-site/frontend/src/lib/breakMinuteOptions.ts
+  production-site/frontend/src/lib/calendarAvailability.ts
+  production-site/frontend/src/lib/calendarDomPlacement.ts
+  production-site/frontend/src/lib/calendarDraftQueue.ts
+  production-site/frontend/src/lib/calendarEmployeeWindow.ts
+  production-site/frontend/src/lib/calendarGrouping.ts
+  production-site/frontend/src/lib/calendarLoad.ts
+  production-site/frontend/src/lib/calendarLocation.ts
+  production-site/frontend/src/lib/calendarOverlap.ts
+  production-site/frontend/src/lib/calendarPeriod.ts
+  production-site/frontend/src/lib/calendarPublish.ts
+  production-site/frontend/src/lib/calendarResize.ts
+  production-site/frontend/src/lib/calendarResponse.ts
+  production-site/frontend/src/lib/calendarSelection.ts
+  production-site/frontend/src/lib/confirmedBatchDelete.ts
+  production-site/frontend/src/lib/copyDayResponse.ts
+  production-site/frontend/src/lib/copyPeriodResponse.ts
+  production-site/frontend/src/lib/dateTime.ts
+  production-site/frontend/src/lib/draftCommitReconciliation.ts
+  production-site/frontend/src/lib/draftCommitResponse.ts
+  production-site/frontend/src/lib/draftRoleUsageResponse.ts
+  production-site/frontend/src/lib/evaluateJobColor.ts
+  production-site/frontend/src/lib/manualAvailabilityBatch.ts
+  production-site/frontend/src/lib/mutationReconciliation.ts
+  production-site/frontend/src/lib/presetScriptInput.ts
+  production-site/frontend/src/lib/presetScriptResponse.ts
+  production-site/frontend/src/lib/publicationMutationResponse.ts
+  production-site/frontend/src/lib/repeatDates.ts
+  production-site/frontend/src/lib/roleColor.ts
+  production-site/frontend/src/lib/roleMutationResponse.ts
+  production-site/frontend/src/lib/rosterBatchResponse.ts
+  production-site/frontend/src/lib/rosterSettingsResponse.ts
+  production-site/frontend/src/lib/scheduledShiftSummary.ts
+  production-site/frontend/src/lib/scheduling.ts
+  production-site/frontend/src/lib/schedulingFeedback.ts
+  production-site/frontend/src/lib/shiftMutationResponse.ts
+  production-site/frontend/src/lib/storeTime.ts
+  production-site/frontend/src/lib/templateResponses.ts
+  production-site/frontend/src/lib/timeGridPointer.ts
+  production-site/frontend/src/lib/uncertainDelete.ts
+  production-site/frontend/src/lib/verifiedShiftRoles.ts
+  production-site/frontend/src/main.tsx
+  production-site/frontend/src/pages/agentRules.css
+  production-site/frontend/src/pages/AgentRulesPage.tsx
+  production-site/frontend/src/pages/CalendarPage.tsx
+  production-site/frontend/src/pages/employeeAvailability.css
+  production-site/frontend/src/pages/EmployeeAvailabilityPage.tsx
+  production-site/frontend/src/pages/ExportPage.tsx
+  production-site/frontend/src/pages/FoundationPage.tsx
+  production-site/frontend/src/pages/HelpPage.tsx
+  production-site/frontend/src/pages/LoginPage.tsx
+  production-site/frontend/src/pages/multiAgent.css
+  production-site/frontend/src/pages/MultiAgentPage.tsx
+  production-site/frontend/src/pages/SettingsPage.tsx
+  production-site/frontend/src/pages/StaffPage.tsx
+  production-site/frontend/src/pages/TemplatesPage.tsx
+  production-site/frontend/src/services/employeePortalRepository.ts
+  production-site/frontend/src/services/multiAgentRepository.ts
+  production-site/frontend/src/services/rosterRepository.ts
+  production-site/frontend/src/services/workforceRepository.ts
+  production-site/frontend/src/store/StoreContext.tsx
+  production-site/frontend/src/styles.css
+  production-site/frontend/src/test/setup.ts
+  production-site/frontend/src/types/roster.ts
+  production-site/frontend/src/types/workforce.ts
+  production-site/frontend/src/vite-env.d.ts
+  production-site/frontend/tailwind.config.js
+  production-site/frontend/vite.config.mjs
+  production-site/generated/evaluate/accountService.ts
+  production-site/generated/evaluate/aiTextEvaluationV1.ts
+  production-site/generated/evaluate/analyticsV1Service.ts
+  production-site/generated/evaluate/app.ts
+  production-site/generated/evaluate/auth.ts
+  production-site/generated/evaluate/currentSkillService.ts
+  production-site/generated/evaluate/domain.ts
+  production-site/generated/evaluate/employeeEvaluationSummaryService.ts
+  production-site/generated/evaluate/employeeService.ts
+  production-site/generated/evaluate/evaluationCatalogService.ts
+  production-site/generated/evaluate/evaluationReadService.ts
+  production-site/generated/evaluate/evaluationRoundService.ts
+  production-site/generated/evaluate/evaluationV1Service.ts
+  production-site/generated/evaluate/historicalIdentity.ts
+  production-site/generated/evaluate/httpError.ts
+  production-site/generated/evaluate/loginRateLimitService.ts
+  production-site/generated/evaluate/performanceNoteService.ts
+  production-site/generated/evaluate/prisma.ts
+  production-site/generated/evaluate/rosterIntegrationService.ts
+  production-site/generated/evaluate/rosterSkillBoardService.ts
+  production-site/generated/evaluate/roundAggregateRead.ts
+  production-site/generated/evaluate/routes.ts
+  production-site/generated/evaluate/safeLogging.ts
+  production-site/generated/evaluate/scoringPolicyV1.ts
+  production-site/generated/evaluate/server.ts
+  production-site/generated/evaluate/storeJobService.ts
+  production-site/generated/evaluate/storeService.ts
+  production-site/generated/evaluate/validation.ts
+  production-site/generated/evaluate-models.json
+  production-site/generated/evaluate.prisma
+  production-site/generated/models.json
+  production-site/generated/roster.prisma
+  production-site/generated/vendor/app.ts
+  production-site/generated/vendor/auth.ts
+  production-site/generated/vendor/employeeCapacity.ts
+  production-site/generated/vendor/employeeDemoRoutes.ts
+  production-site/generated/vendor/evaluateClient.ts
+  production-site/generated/vendor/evaluateJobColor.ts
+  production-site/generated/vendor/formalRoleMatch.ts
+  production-site/generated/vendor/httpError.ts
+  production-site/generated/vendor/multiAgentRoutes.ts
+  production-site/generated/vendor/payroll/crypto.ts
+  production-site/generated/vendor/payroll/preparation.ts
+  production-site/generated/vendor/payroll/reconciliation.ts
+  production-site/generated/vendor/payroll/routes.ts
+  production-site/generated/vendor/payroll/service.ts
+  production-site/generated/vendor/payroll/sources.ts
+  production-site/generated/vendor/payroll/store.ts
+  production-site/generated/vendor/payroll/sync.ts
+  production-site/generated/vendor/payroll/xero.ts
+  production-site/generated/vendor/presetTimeSlotPreview.ts
+  production-site/generated/vendor/presetTimeSlotReview.ts
+  production-site/generated/vendor/presetTimeSlotScript.ts
+  production-site/generated/vendor/prisma.ts
+  production-site/generated/vendor/rosterService.ts
+  production-site/generated/vendor/routes.ts
+  production-site/generated/vendor/safeLogging.ts
+  production-site/generated/vendor/schedulingIssue.ts
+  production-site/generated/vendor/server.ts
+  production-site/generated/vendor/types.ts
+  production-site/generated/vendor/validation.ts
+  production-site/generated/vendor/zonedCopy.ts
+  production-site/MIGRATION_STATUS.md
+  production-site/package-lock.json
+  production-site/package.json
+  production-site/PRODUCT.md
+  production-site/README.md
+  production-site/server/argon2.mjs
+  production-site/server/crypto.mjs
+  production-site/server/demo.mjs
+  production-site/server/evaluate-auth.mjs
+  production-site/server/evaluate-db.mjs
+  production-site/server/evaluate.mjs
+  production-site/server/password.mjs
+  production-site/server/path.mjs
+  production-site/server/prisma-shim.mjs
+  production-site/server/router.mjs
+  production-site/server/runtime-env.mjs
+  production-site/server/snapshot-db.mjs
+  production-site/server/unavailable-fs.mjs
+  production-site/server/worker.mjs
+  production-site/solver-service/app.py
+  production-site/solver-service/Dockerfile
+  production-site/solver-service/README.md
+  production-site/solver-service/run.py
+  production-site/tests/e2e.mjs
+  production-site/tests/evaluate-e2e.mjs
+  production-site/tests/smoke.mjs
+  production-site/tools/audit_sources.py
+  production-site/tools/backup.py
+  production-site/tools/benchmark_solver.py
+  production-site/tools/cloud-import.mjs
+  production-site/tools/cloud-smoke.mjs
+  production-site/tools/data.py
+  production-site/tools/export-workforce.mjs
+  production-site/tools/handover-local.mjs
+  production-site/tools/prepare_import.py
+  production-site/tools/schema.py
+  production-site/tools/test_migration.py
+  production-site/tools/test_postgres.py
+  production-site/tools/test_solver_container.py
+  production-site/tools/verify_backup.py
+  README.md
+  FILE_TREE.md
+  MANIFEST.json
+  SHA256SUMS.txt
 ```

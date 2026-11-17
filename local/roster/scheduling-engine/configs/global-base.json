@@ -1,0 +1,25 @@
+{
+  "version": "lab-global-base-v1",
+  "slot_minutes": 30,
+  "compliance": {
+    "minimum_shift_minutes": 180,
+    "maximum_shift_minutes": 720,
+    "maximum_daily_work_minutes": 720,
+    "maximum_weekly_work_minutes": 2280,
+    "minimum_rest_minutes": 600,
+    "maximum_shifts_per_day": 1,
+    "required_break_after_minutes": 360
+  },
+  "weights": {
+    "skill": 2,
+    "fairness": 1,
+    "excess_coverage": 8,
+    "regular_pattern": 15,
+    "early_late_start": 20,
+    "stability": 20,
+    "labor_cost": 0,
+    "unnecessary_work": 10
+  },
+  "solve_seconds": 15,
+  "random_seed": 17
+}

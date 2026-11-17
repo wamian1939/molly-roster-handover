@@ -1,0 +1,9 @@
+.exactStaffingGrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:12px}
+.exactStaffingDay{border:1px solid #d9e0e8;border-radius:12px;background:#fff;padding:14px;min-width:0}
+.exactStaffingDay>strong{display:block;font-size:17px;margin-bottom:10px}
+.exactStaffingDay label{display:flex;align-items:center;gap:8px;border-top:1px solid #edf0f4;padding:9px 0;min-width:0}
+.exactStaffingDay label span{display:flex;flex:1;flex-direction:column;min-width:0}
+.exactStaffingDay label b{font-size:13px}
+.exactStaffingDay label small{font-size:12px;color:#64748b}
+.exactStaffingDay input{width:64px;min-width:64px;text-align:center;padding:7px 4px;border:1px solid #cbd5e1;border-radius:8px;font:inherit;font-weight:700}
+.exactStaffingDay em{font-style:normal;font-size:13px;color:#64748b}

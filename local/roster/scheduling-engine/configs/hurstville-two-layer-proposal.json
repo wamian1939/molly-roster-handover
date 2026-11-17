@@ -1,0 +1,302 @@
+{
+  "store_id": "hurstville",
+  "timezone": "Australia/Sydney",
+  "timezone_source": "ROSTER",
+  "version": "hurstville:proposal-v16-UNSAVED",
+  "copied_from": "hurstville:v15",
+  "global_base_version": "lab-global-base-v1",
+  "slot_minutes": 30,
+  "base_day": {
+    "patterns": [
+      {
+        "name": "开早",
+        "role_code": "cmvhbqjln0001iv2k5ru6q1na",
+        "starts": [
+          "10:00"
+        ],
+        "ends": [
+          "16:00",
+          "17:00"
+        ],
+        "end_next_day": false,
+        "preferred": true,
+        "allow_early_late_start": false,
+        "break_rule": {
+          "count": 1,
+          "duration_minutes": 30,
+          "paid": false
+        }
+      },
+      {
+        "name": "Early",
+        "role_code": "cmvhbqjln0001iv2k5ru6q1na",
+        "starts": [
+          "11:00"
+        ],
+        "ends": [
+          "17:00"
+        ],
+        "end_next_day": false,
+        "preferred": true,
+        "allow_early_late_start": false,
+        "break_rule": {
+          "count": 1,
+          "duration_minutes": 30,
+          "paid": false
+        }
+      },
+      {
+        "name": "Full",
+        "role_code": "job_edea2cdc3c93dbfde34d3a228095cb24",
+        "starts": [
+          "10:00"
+        ],
+        "ends": [
+          "22:00"
+        ],
+        "end_next_day": false,
+        "preferred": true,
+        "allow_early_late_start": false,
+        "break_rule": {
+          "count": 1,
+          "duration_minutes": 60,
+          "paid": false
+        }
+      },
+      {
+        "name": "Late",
+        "role_code": "cmvhbqjln0001iv2k5ru6q1na",
+        "starts": [
+          "16:00",
+          "17:00"
+        ],
+        "ends": [
+          "22:00"
+        ],
+        "end_next_day": false,
+        "preferred": true,
+        "allow_early_late_start": true,
+        "break_rule": {
+          "count": 0,
+          "duration_minutes": 30,
+          "paid": false
+        }
+      }
+    ]
+  },
+  "weekly": {
+    "0": {
+      "pattern_minimums": {
+        "开早": 3,
+        "Early": 4,
+        "Full": 0,
+        "Late": 4
+      }
+    },
+    "1": {
+      "pattern_minimums": {
+        "开早": 3,
+        "Early": 4,
+        "Full": 0,
+        "Late": 4
+      }
+    },
+    "2": {
+      "pattern_minimums": {
+        "开早": 3,
+        "Early": 4,
+        "Full": 0,
+        "Late": 4
+      }
+    },
+    "3": {
+      "pattern_minimums": {
+        "开早": 3,
+        "Early": 5,
+        "Full": 0,
+        "Late": 5
+      }
+    },
+    "4": {
+      "pattern_minimums": {
+        "开早": 3,
+        "Early": 5,
+        "Full": 0,
+        "Late": 5
+      }
+    },
+    "5": {
+      "pattern_minimums": {
+        "开早": 3,
+        "Early": 7,
+        "Full": 0,
+        "Late": 6
+      }
+    },
+    "6": {
+      "pattern_minimums": {
+        "开早": 3,
+        "Early": 7,
+        "Full": 0,
+        "Late": 5
+      }
+    }
+  },
+  "pattern_only": true,
+  "employee_preferences": {},
+  "weights": {
+    "skill": 2,
+    "fairness": 1,
+    "regular_pattern": 15,
+    "early_late_start": 20,
+    "stability": 20,
+    "labor_cost": 0,
+    "unnecessary_work": 10
+  },
+  "solve_seconds": 30,
+  "random_seed": 17,
+  "requirement_mode": "PATTERN_AND_COVERAGE",
+  "weekly_coverage": {
+    "0": [
+      {
+        "start": "10:00",
+        "end": "11:00",
+        "min_staff": 3,
+        "target_staff": 3
+      },
+      {
+        "start": "11:00",
+        "end": "17:00",
+        "min_staff": 4,
+        "target_staff": 5
+      },
+      {
+        "start": "17:00",
+        "end": "22:00",
+        "min_staff": 4,
+        "target_staff": 4
+      }
+    ],
+    "1": [
+      {
+        "start": "10:00",
+        "end": "11:00",
+        "min_staff": 3,
+        "target_staff": 3
+      },
+      {
+        "start": "11:00",
+        "end": "17:00",
+        "min_staff": 4,
+        "target_staff": 5
+      },
+      {
+        "start": "17:00",
+        "end": "22:00",
+        "min_staff": 4,
+        "target_staff": 4
+      }
+    ],
+    "2": [
+      {
+        "start": "10:00",
+        "end": "11:00",
+        "min_staff": 3,
+        "target_staff": 3
+      },
+      {
+        "start": "11:00",
+        "end": "17:00",
+        "min_staff": 4,
+        "target_staff": 5
+      },
+      {
+        "start": "17:00",
+        "end": "22:00",
+        "min_staff": 4,
+        "target_staff": 4
+      }
+    ],
+    "3": [
+      {
+        "start": "10:00",
+        "end": "11:00",
+        "min_staff": 3,
+        "target_staff": 3
+      },
+      {
+        "start": "11:00",
+        "end": "17:00",
+        "min_staff": 5,
+        "target_staff": 5
+      },
+      {
+        "start": "17:00",
+        "end": "22:00",
+        "min_staff": 5,
+        "target_staff": 5
+      }
+    ],
+    "4": [
+      {
+        "start": "10:00",
+        "end": "11:00",
+        "min_staff": 3,
+        "target_staff": 3
+      },
+      {
+        "start": "11:00",
+        "end": "17:00",
+        "min_staff": 5,
+        "target_staff": 5
+      },
+      {
+        "start": "17:00",
+        "end": "22:00",
+        "min_staff": 5,
+        "target_staff": 5
+      }
+    ],
+    "5": [
+      {
+        "start": "10:00",
+        "end": "11:00",
+        "min_staff": 3,
+        "target_staff": 3
+      },
+      {
+        "start": "11:00",
+        "end": "17:00",
+        "min_staff": 7,
+        "target_staff": 7
+      },
+      {
+        "start": "17:00",
+        "end": "22:00",
+        "min_staff": 6,
+        "target_staff": 6
+      }
+    ],
+    "6": [
+      {
+        "start": "10:00",
+        "end": "11:00",
+        "min_staff": 3,
+        "target_staff": 3
+      },
+      {
+        "start": "11:00",
+        "end": "17:00",
+        "min_staff": 7,
+        "target_staff": 7
+      },
+      {
+        "start": "17:00",
+        "end": "22:00",
+        "min_staff": 5,
+        "target_staff": 5
+      }
+    ]
+  },
+  "minimum_complete_shift_minutes": 180
+}

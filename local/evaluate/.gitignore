@@ -1,0 +1,28 @@
+node_modules/
+dist/
+backend/node_modules/
+backend/dist/
+backend/src/generated/
+*.log
+.vite/
+.vite-dev*.log
+*.tsbuildinfo
+*.local
+.env
+.env.*
+!.env.example
+!backend/.env.example
+backend/.env
+backend/.env.*
+!backend/.env.example
+LOCAL_ACCOUNT_CREDENTIALS.md
+backend/src/generated/prisma/query_engine-windows.dll.node.tmp*
+
+# Local agent tooling and imported archive metadata are not application runtime files.
+.agents/
+.claude/
+.cursor/
+skills-lock.json
+Molly LOGO/__MACOSX/
+Molly LOGO/Molly LOGO/*
+.deployment-local/

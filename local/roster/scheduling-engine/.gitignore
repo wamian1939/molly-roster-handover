@@ -1,0 +1,8 @@
+.venv/
+.venv-isolated/
+.data/
+.env
+__pycache__/
+.pytest_cache/
+lab-ui/node_modules/
+lab-ui/dist/

@@ -1,0 +1,21 @@
+node_modules/
+dist/
+backend/node_modules/
+backend/dist/
+backend/src/generated/
+.vite/
+coverage/
+.dev-logs/
+backend/.data/employee-demo-reports.json*
+playwright-report/
+test-results/
+.private-reference/
+*.log
+*.tsbuildinfo
+.env
+.env.*
+!.env.example
+!backend/.env.example
+
+# Local API specifications, disposable verification output and private backups.
+/.local/

@@ -1,0 +1,45 @@
+{
+  "reason": "Add only observed BHS Hurstville AA/BB/CC time-and-break Shift presets to local Roster",
+  "templates": [
+    {
+      "id": "cmtq00lt7000iivg0tc4rr8ql",
+      "storeId": "hurstville",
+      "name": "验收早班",
+      "startTime": "09:00",
+      "endTime": "17:00",
+      "breakMinutes": 30,
+      "shiftRoleId": null,
+      "isActive": false,
+      "displayOrder": 0,
+      "version": 2,
+      "createdAt": "2026-09-06T16:00:46.699Z",
+      "updatedAt": "2026-10-20T06:50:51.476Z"
+    }
+  ],
+  "shortcuts": {
+    "storeId": "hurstville",
+    "shortcuts": [
+      {
+        "code": "AA",
+        "endTime": "22:00",
+        "startTime": "10:00"
+      },
+      {
+        "code": "BB",
+        "endTime": "17:00",
+        "startTime": "10:00"
+      },
+      {
+        "code": "CC",
+        "endTime": "22:00",
+        "startTime": "16:00"
+      }
+    ],
+    "version": 1,
+    "updatedByAccountId": "HandoverAccount3c9a65af",
+    "createdAt": "2026-10-20T11:46:29.482Z",
+    "updatedAt": "2026-10-20T11:46:29.482Z"
+  },
+  "shiftCountBefore": 13,
+  "publicationCountBefore": 2
+}

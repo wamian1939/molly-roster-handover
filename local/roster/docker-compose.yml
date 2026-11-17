@@ -1,0 +1,22 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: molly-roster-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: molly_roster
+      POSTGRES_USER: molly_roster
+      POSTGRES_PASSWORD: ${HANDOVER_DB_PASSWORD:?Set a local-only password}
+    ports:
+      - "5433:5432"
+    volumes:
+      - molly_roster_pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U molly_roster -d molly_roster"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+volumes:
+  molly_roster_pgdata:
+

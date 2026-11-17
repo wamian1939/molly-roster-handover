@@ -1,0 +1,34 @@
+{
+  "reason": "Align Hurstville Day selection with observed BHS 30-minute grid and frontend staging",
+  "limitation": "BHS server Submit acceptance of a 30-minute Shift was not tested",
+  "settings": {
+    "id": "cmtq01ipt000mivg0jhvjiy51",
+    "storeId": "hurstville",
+    "timezone": "Australia/Sydney",
+    "openingTime": "09:00",
+    "closingTime": "22:00",
+    "slotIntervalMinutes": 30,
+    "minimumShiftMinutes": 60,
+    "defaultBreakMinutes": 0,
+    "weekStartsOn": 1,
+    "cycleType": "WEEK",
+    "fortnightAnchorDate": null,
+    "weeklyHourWarning": 38,
+    "dailyHourWarning": 10,
+    "version": 2,
+    "createdAt": "2026-09-06T16:01:29.345Z",
+    "updatedAt": "2026-10-20T18:39:55.711Z"
+  },
+  "shiftCount": 13,
+  "assignmentCount": 23,
+  "publications": [
+    {
+      "id": "cmtpzl3s7000wivi0r2bqzqm7",
+      "periodVersion": 6
+    },
+    {
+      "id": "cmtq0c06t0001ivi0mcy5vrm9",
+      "periodVersion": 11
+    }
+  ]
+}

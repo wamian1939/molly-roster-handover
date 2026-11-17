@@ -1,0 +1,24 @@
+{
+  "reason": "Align only Hurstville's new-Shift default break with read-only BHS Day Add evidence",
+  "observedReference": "BHS 2026-10-21 Day Add 08:00-08:30 and unsaved 08:00-10:00 both showed Break Time 0",
+  "settings": {
+    "id": "cmtq01ipt000mivg0jhvjiy51",
+    "storeId": "hurstville",
+    "timezone": "Australia/Sydney",
+    "openingTime": "09:00",
+    "closingTime": "22:00",
+    "slotIntervalMinutes": 30,
+    "minimumShiftMinutes": 60,
+    "defaultBreakMinutes": 30,
+    "weekStartsOn": 1,
+    "cycleType": "WEEK",
+    "fortnightAnchorDate": null,
+    "weeklyHourWarning": 38,
+    "dailyHourWarning": 10,
+    "version": 1,
+    "createdAt": "2026-09-06T16:01:29.345Z",
+    "updatedAt": "2026-09-06T16:01:29.345Z"
+  },
+  "shiftCountBefore": 13,
+  "publicationCountBefore": 2
+}

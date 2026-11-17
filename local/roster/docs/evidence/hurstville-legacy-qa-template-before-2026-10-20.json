@@ -1,0 +1,17 @@
+{
+  "reason": "Reversible deactivation of an old QA-named time-only preset",
+  "before": {
+    "id": "cmtq00lt7000iivg0tc4rr8ql",
+    "storeId": "hurstville",
+    "name": "验收早班",
+    "startTime": "09:00",
+    "endTime": "17:00",
+    "breakMinutes": 30,
+    "shiftRoleId": null,
+    "isActive": true,
+    "displayOrder": 0,
+    "version": 1,
+    "createdAt": "2026-09-06T16:00:46.699Z",
+    "updatedAt": "2026-09-06T16:00:46.699Z"
+  }
+}

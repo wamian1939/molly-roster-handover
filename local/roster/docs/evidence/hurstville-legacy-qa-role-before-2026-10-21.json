@@ -1,0 +1,23 @@
+{
+  "reason": "Reversibly deactivate the unsupported local historical QA role, preserving all shifts",
+  "before": {
+    "id": "cmtq01x14000nivg0inbcx8yq",
+    "storeId": "hurstville",
+    "code": "qa-role",
+    "nameZh": "验收岗",
+    "colorToken": "#2563EB",
+    "requiredSkillCodes": [],
+    "isActive": true,
+    "displayOrder": 0,
+    "version": 1,
+    "createdAt": "2026-09-06T16:01:47.895Z",
+    "updatedAt": "2026-09-06T16:01:47.895Z",
+    "_count": {
+      "shifts": 8,
+      "templates": 0
+    }
+  },
+  "shiftCountBefore": 13,
+  "publicationCountBefore": 2,
+  "assignmentCountBefore": 15
+}

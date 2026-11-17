@@ -1,0 +1,54 @@
+name: Validate Evaluate Molly
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:16
+        env:
+          POSTGRES_DB: evaluate_molly
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: postgres
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U postgres -d evaluate_molly"
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+    env:
+      DATABASE_URL: postgresql://postgres:postgres@localhost:5432/evaluate_molly?schema=public
+      RUN_DATABASE_TESTS: "1"
+      NODE_ENV: test
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: "22"
+      - name: Install frontend
+        run: npm ci
+      - name: Install backend
+        run: npm ci --prefix backend
+      - name: Validate frontend
+        run: |
+          npm run lint
+          npm test
+          npm run build
+      - name: Apply migrations to clean PostgreSQL
+        run: |
+          npm --prefix backend run prisma:migrate:deploy
+          npm --prefix backend run prisma:migrate:status
+      - name: Validate backend with real PostgreSQL
+        run: |
+          npm --prefix backend run prisma:validate
+          npm --prefix backend run build
+          npm --prefix backend test

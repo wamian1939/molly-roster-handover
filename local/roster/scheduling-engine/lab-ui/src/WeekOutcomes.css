@@ -1,0 +1,11 @@
+.weekOutcomeGrid { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 8px; margin: 16px 0; }
+.weekOutcomeGrid button { display: grid; gap: 5px; min-width: 0; padding: 12px; text-align: left; background: #f8fafc; border: 1px solid #dce3ea; border-radius: 10px; cursor: pointer; }
+.weekOutcomeGrid button.selected { border-color: #9e405e; background: #fff4f7; }
+.weekOutcomeGrid strong { font-size: 12px; }
+.weekOutcomeGrid span { font-size: 12px; font-weight: 700; }
+.weekOutcomeGrid small { color: #667384; }
+.weekOutcomeDiagnostic { padding: 10px 12px; margin-top: 8px; border: 1px solid #ebd8c8; border-radius: 9px; background: #fffaf4; }
+.weekOutcomeDiagnostic strong { font-size: 12px; }
+.weekOutcomeDiagnostic p { margin: 6px 0 0; font-size: 12px; color: #744f35; overflow-wrap: anywhere; }
+@media (max-width: 1100px) { .weekOutcomeGrid { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+@media (max-width: 640px) { .weekOutcomeGrid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }

@@ -1,0 +1,30 @@
+{
+  "version": "hurstville:multi-agent-business-v1",
+  "store_id": "hurstville",
+  "base_rule_version": "hurstville:v20",
+  "rating_hours": {
+    "highest_score_fraction": 0.8,
+    "target_weight": 1,
+    "bands": [
+      {"minimum_score": 90, "fraction": 0.8},
+      {"minimum_score": 85, "fraction": 0.75},
+      {"minimum_score": 80, "fraction": 0.7},
+      {"minimum_score": 75, "fraction": 0.65},
+      {"minimum_score": 70, "fraction": 0.6},
+      {"minimum_score": 65, "fraction": 0.55},
+      {"minimum_score": 60, "fraction": 0.5},
+      {"minimum_score": 55, "fraction": 0.45},
+      {"minimum_score": 50, "fraction": 0.4},
+      {"minimum_score": 0, "fraction": 0.35}
+    ]
+  },
+  "mandatory_coverage": [
+    {
+      "employee_id": "synthetic-employee-018",
+      "weekdays": [1, 3],
+      "start": "17:00",
+      "end": "22:00",
+      "label": "HandoverEmployee018 周二、周四必须覆盖完整晚班，具备资格的 Full 也可满足"
+    }
+  ]
+}

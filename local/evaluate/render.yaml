@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: evaluate-molly
+    runtime: node
+    plan: free
+    buildCommand: npm ci --include=dev && npm --prefix backend ci --include=dev && npm --prefix backend run prisma:migrate:status && npm run render:build
+    startCommand: npm run render:start
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_VERSION
+        value: 20.19.0
+      - key: NODE_ENV
+        value: production
+      - key: DATABASE_URL
+        sync: false
+      - key: AUTH_SESSION_DAYS
+        value: 7
