@@ -1,0 +1,2378 @@
+{
+  "sourceFiles": [
+    {
+      "path": "production-site/.gitignore",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:.gitignore",
+      "original_sha256": "8665766a79fb7953b49a4f61be578179e3fa1623bbd51e18f334acb68c6d95d5",
+      "handover_sha256": "8665766a79fb7953b49a4f61be578179e3fa1623bbd51e18f334acb68c6d95d5",
+      "transformed": false
+    },
+    {
+      "path": "production-site/MIGRATION_STATUS.md",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:MIGRATION_STATUS.md",
+      "original_sha256": "09df9afa1a771b8c1ff09d7f5a1e8997c36e9273f2930bbe26a65cd981a7b27a",
+      "handover_sha256": "09df9afa1a771b8c1ff09d7f5a1e8997c36e9273f2930bbe26a65cd981a7b27a",
+      "transformed": false
+    },
+    {
+      "path": "production-site/PRODUCT.md",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:PRODUCT.md",
+      "original_sha256": "ddfea3d375151e466300ab25b3cd03e51064a39bed5bd876496c258a62054ca9",
+      "handover_sha256": "ddfea3d375151e466300ab25b3cd03e51064a39bed5bd876496c258a62054ca9",
+      "transformed": false
+    },
+    {
+      "path": "production-site/README.md",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:README.md",
+      "original_sha256": "a0a7d930f76568a8c344b295bf4f63a3564b2433708779f7179b225bd922d7d7",
+      "handover_sha256": "9929bc1d484402c23eac27fb6e4b5b52c959cf34be0e1513a74af8b8d8f857fc",
+      "transformed": true
+    },
+    {
+      "path": "production-site/build/build.mjs",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:build/build.mjs",
+      "original_sha256": "fd3f9b48555451e8c77e7b5e7a32c1f08ff571c9ba14051be0392bcaf55ad6a9",
+      "handover_sha256": "fd3f9b48555451e8c77e7b5e7a32c1f08ff571c9ba14051be0392bcaf55ad6a9",
+      "transformed": false
+    },
+    {
+      "path": "production-site/build/evaluate-migration.mjs",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:build/evaluate-migration.mjs",
+      "original_sha256": "c4c94db4d39436dbfe3cc1d683af7197852e676542e461d3097bc34aa9505b92",
+      "handover_sha256": "c4c94db4d39436dbfe3cc1d683af7197852e676542e461d3097bc34aa9505b92",
+      "transformed": false
+    },
+    {
+      "path": "production-site/build/evaluate-prepare.mjs",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:build/evaluate-prepare.mjs",
+      "original_sha256": "8745c36b5bf64511514b297dd403e646e704bc0c8aca12e57122f07fce5cce5b",
+      "handover_sha256": "285bcbbcebb236d4925626fcebd87973dcd9597eb509553b7f5f5f3ea55d2a61",
+      "transformed": true
+    },
+    {
+      "path": "production-site/build/prepare.mjs",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:build/prepare.mjs",
+      "original_sha256": "5f233b7549814eed3c970873667663f879bb562cc1ae6a2db1212d707f877f26",
+      "handover_sha256": "15548141465336ba542634da40e93c55eea3af4e21599fa60139e993180d3177",
+      "transformed": true
+    },
+    {
+      "path": "production-site/docs/XERO_PAYROLL_INTEGRATION.md",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:docs/XERO_PAYROLL_INTEGRATION.md",
+      "original_sha256": "32f193acb4ef0d15f01e1e3cc9cb8db2b40f05fcab5c06c5f3e6e92ddabefbe9",
+      "handover_sha256": "32f193acb4ef0d15f01e1e3cc9cb8db2b40f05fcab5c06c5f3e6e92ddabefbe9",
+      "transformed": false
+    },
+    {
+      "path": "production-site/drizzle/0000_roster.sql",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:drizzle/0000_roster.sql",
+      "original_sha256": "af1d6a553f2042f35962ed8b55041c8da2ba32bc0f74c85f75fa3c19a94081d1",
+      "handover_sha256": "af1d6a553f2042f35962ed8b55041c8da2ba32bc0f74c85f75fa3c19a94081d1",
+      "transformed": false
+    },
+    {
+      "path": "production-site/drizzle/0001_sites.sql",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:drizzle/0001_sites.sql",
+      "original_sha256": "296c4f04fa2bd118582e2316e876dc9a5ce7d8f64de167d073ed01a8f44ec3c0",
+      "handover_sha256": "296c4f04fa2bd118582e2316e876dc9a5ce7d8f64de167d073ed01a8f44ec3c0",
+      "transformed": false
+    },
+    {
+      "path": "production-site/drizzle/0002_evaluate_guards.sql",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:drizzle/0002_evaluate_guards.sql",
+      "original_sha256": "0c40fd8e6a0f6530eaef4c6664f096352400d12c02d10ebcd56a4f81cbe2e98c",
+      "handover_sha256": "0c40fd8e6a0f6530eaef4c6664f096352400d12c02d10ebcd56a4f81cbe2e98c",
+      "transformed": false
+    },
+    {
+      "path": "production-site/drizzle/0003_xero_payroll.sql",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:drizzle/0003_xero_payroll.sql",
+      "original_sha256": "592dd6578d84285fe368e774097b9238566aacb479bb0326cd67512c025c1bc0",
+      "handover_sha256": "592dd6578d84285fe368e774097b9238566aacb479bb0326cd67512c025c1bc0",
+      "transformed": false
+    },
+    {
+      "path": "production-site/drizzle/meta/_journal.json",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:drizzle/meta/_journal.json",
+      "original_sha256": "0bfee2e9d53ff866cd2d61ada69b9022ddccc8f5e70165b63aa70f8660834bf0",
+      "handover_sha256": "0bfee2e9d53ff866cd2d61ada69b9022ddccc8f5e70165b63aa70f8660834bf0",
+      "transformed": false
+    },
+    {
+      "path": "production-site/evaluate-frontend/Molly LOGO/Molly LOGO/logo+slogan组合.png",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:evaluate-frontend/Molly LOGO/Molly LOGO/logo+slogan组合.png",
+      "original_sha256": "07e90c1b8e4afaa539aab4789dab4debcad850ee5b37656376f1d86adc32cb3e",
+      "handover_sha256": "07e90c1b8e4afaa539aab4789dab4debcad850ee5b37656376f1d86adc32cb3e",
+      "transformed": false
+    },
+    {
+      "path": "production-site/evaluate-frontend/Molly LOGO/Molly LOGO/logo中文-白字透明底.png",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:evaluate-frontend/Molly LOGO/Molly LOGO/logo中文-白字透明底.png",
+      "original_sha256": "014b371efaad5cb95b594793975045e5282a140d1cc848aa949716a063dae5db",
+      "handover_sha256": "014b371efaad5cb95b594793975045e5282a140d1cc848aa949716a063dae5db",
+      "transformed": false
+    },
+    {
+      "path": "production-site/evaluate-frontend/Molly LOGO/Molly LOGO/logo中文-黑字透明底.png",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:evaluate-frontend/Molly LOGO/Molly LOGO/logo中文-黑字透明底.png",
+      "original_sha256": "605dc17460c1928b77f652e9ae18cfee8a296d4da02b3e0fe1ed1c8aaa8fca95",
+      "handover_sha256": "605dc17460c1928b77f652e9ae18cfee8a296d4da02b3e0fe1ed1c8aaa8fca95",
+      "transformed": false
+    },
+    {
+      "path": "production-site/evaluate-frontend/Molly LOGO/Molly LOGO/logo中英文-白字透明底.png",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:evaluate-frontend/Molly LOGO/Molly LOGO/logo中英文-白字透明底.png",
+      "original_sha256": "acc9a6d4951a9deab726b3cd9d28415d68fd47d285f28e9014f59e7782781801",
+      "handover_sha256": "acc9a6d4951a9deab726b3cd9d28415d68fd47d285f28e9014f59e7782781801",
+      "transformed": false
+    },
+    {
+      "path": "production-site/evaluate-frontend/Molly LOGO/Molly LOGO/logo中英文-黑字透明底.png",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:evaluate-frontend/Molly LOGO/Molly LOGO/logo中英文-黑字透明底.png",
+      "original_sha256": "c361172f8baedefcd339609a8c7982d7e5912d5c091ca28a0f2c8bdf42a0c7f8",
+      "handover_sha256": "c361172f8baedefcd339609a8c7982d7e5912d5c091ca28a0f2c8bdf42a0c7f8",
+      "transformed": false
+    },
+    {
+      "path": "production-site/evaluate-frontend/Molly LOGO/Molly LOGO/logo横-黑字.png",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:evaluate-frontend/Molly LOGO/Molly LOGO/logo横-黑字.png",
+      "original_sha256": "4f60a589e4dda52827839ea663f798ad0fbb460e1e261e859a49afd03ba3cfed",
+      "handover_sha256": "4f60a589e4dda52827839ea663f798ad0fbb460e1e261e859a49afd03ba3cfed",
+      "transformed": false
+    },
+    {
+      "path": "production-site/evaluate-frontend/Molly LOGO/Molly LOGO/logo组合-白字透明底.png",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:evaluate-frontend/Molly LOGO/Molly LOGO/logo组合-白字透明底.png",
+      "original_sha256": "29cb07e66d742c7d4506d5a8b2eb881490989fad4a5f981950bfa1653bf90517",
+      "handover_sha256": "29cb07e66d742c7d4506d5a8b2eb881490989fad4a5f981950bfa1653bf90517",
+      "transformed": false
+    },
+    {
+      "path": "production-site/evaluate-frontend/Molly LOGO/Molly LOGO/logo组合-黑字透明底.png",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:evaluate-frontend/Molly LOGO/Molly LOGO/logo组合-黑字透明底.png",
+      "original_sha256": "5ecea2a7a0767a9b1e30f1b169f1c239645826d2caec9979ea7f91b5ec62f47e",
+      "handover_sha256": "5ecea2a7a0767a9b1e30f1b169f1c239645826d2caec9979ea7f91b5ec62f47e",
+      "transformed": false
+    },
+    {
+      "path": "production-site/evaluate-frontend/Molly LOGO/Molly LOGO/logo组合横-黑字透明底.png",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:evaluate-frontend/Molly LOGO/Molly LOGO/logo组合横-黑字透明底.png",
+      "original_sha256": "528cc80738b0421019fc3dbcabf592542db9f89fabddec2537dad54639ba5586",
+      "handover_sha256": "528cc80738b0421019fc3dbcabf592542db9f89fabddec2537dad54639ba5586",
+      "transformed": false
+    },
+    {
+      "path": "production-site/evaluate-frontend/Molly LOGO/Molly LOGO/logo英文-黑字透明底.png",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:evaluate-frontend/Molly LOGO/Molly LOGO/logo英文-黑字透明底.png",
+      "original_sha256": "cb8d5e58a75d32e83f80615230a0111eb621e08ea8632b7828e52dfff638fc81",
+      "handover_sha256": "cb8d5e58a75d32e83f80615230a0111eb621e08ea8632b7828e52dfff638fc81",
+      "transformed": false
+    },
+    {
+      "path": "production-site/evaluate-frontend/Molly LOGO/Molly LOGO/四叶星-白.png",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:evaluate-frontend/Molly LOGO/Molly LOGO/四叶星-白.png",
+      "original_sha256": "0461ba6f3a9f233c3966e877f74df526f50aa46a6d11bed2511fc16941ee6179",
+      "handover_sha256": "0461ba6f3a9f233c3966e877f74df526f50aa46a6d11bed2511fc16941ee6179",
+      "transformed": false
+    },
+    {
+      "path": "production-site/evaluate-frontend/Molly LOGO/Molly LOGO/四叶星-黑.png",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:evaluate-frontend/Molly LOGO/Molly LOGO/四叶星-黑.png",
+      "original_sha256": "bed90d1fa067489b81b7df1541d8711c1427a4b938dc5c6eacaac814cb430bef",
+      "handover_sha256": "bed90d1fa067489b81b7df1541d8711c1427a4b938dc5c6eacaac814cb430bef",
+      "transformed": false
+    },
+    {
+      "path": "production-site/evaluate-frontend/Molly LOGO/__MACOSX/Molly LOGO/._logo+slogan组合.png",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:evaluate-frontend/Molly LOGO/__MACOSX/Molly LOGO/._logo+slogan组合.png",
+      "original_sha256": "0ed9ddb9e80c23c6f4eb16813f79c842c30098be8c40c61715524179796d6497",
+      "handover_sha256": "0ed9ddb9e80c23c6f4eb16813f79c842c30098be8c40c61715524179796d6497",
+      "transformed": false
+    },
+    {
+      "path": "production-site/evaluate-frontend/Molly LOGO/__MACOSX/Molly LOGO/._logo中文-白字透明底.png",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:evaluate-frontend/Molly LOGO/__MACOSX/Molly LOGO/._logo中文-白字透明底.png",
+      "original_sha256": "a92d51ccf9cd3e5dd3fe530ca1d3ba85b5e5e74bcc8589c5df90915184509aa0",
+      "handover_sha256": "a92d51ccf9cd3e5dd3fe530ca1d3ba85b5e5e74bcc8589c5df90915184509aa0",
+      "transformed": false
+    },
+    {
+      "path": "production-site/evaluate-frontend/Molly LOGO/__MACOSX/Molly LOGO/._logo中文-黑字透明底.png",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:evaluate-frontend/Molly LOGO/__MACOSX/Molly LOGO/._logo中文-黑字透明底.png",
+      "original_sha256": "ddbc62f66e9ebe3ccced49a2af8e2e068eb2c76b36c7f5e2744d078477bc7e01",
+      "handover_sha256": "ddbc62f66e9ebe3ccced49a2af8e2e068eb2c76b36c7f5e2744d078477bc7e01",
+      "transformed": false
+    },
+    {
+      "path": "production-site/evaluate-frontend/Molly LOGO/__MACOSX/Molly LOGO/._logo中英文-白字透明底.png",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:evaluate-frontend/Molly LOGO/__MACOSX/Molly LOGO/._logo中英文-白字透明底.png",
+      "original_sha256": "aef09301045d8c057dd135f2d70b9820a038cae486ce462d73241a203d9e3358",
+      "handover_sha256": "aef09301045d8c057dd135f2d70b9820a038cae486ce462d73241a203d9e3358",
+      "transformed": false
+    },
+    {
+      "path": "production-site/evaluate-frontend/Molly LOGO/__MACOSX/Molly LOGO/._logo中英文-黑字透明底.png",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:evaluate-frontend/Molly LOGO/__MACOSX/Molly LOGO/._logo中英文-黑字透明底.png",
+      "original_sha256": "5402c97eea7709bc86dba0ec6a26f9cd52a9e862d5702688d699fe6cc99a0ce0",
+      "handover_sha256": "5402c97eea7709bc86dba0ec6a26f9cd52a9e862d5702688d699fe6cc99a0ce0",
+      "transformed": false
+    },
+    {
+      "path": "production-site/evaluate-frontend/Molly LOGO/__MACOSX/Molly LOGO/._logo横-黑字.png",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:evaluate-frontend/Molly LOGO/__MACOSX/Molly LOGO/._logo横-黑字.png",
+      "original_sha256": "c92dff4432986c405218987d8e1bd9e391e778b7c499b3b5af8dc298295c3e02",
+      "handover_sha256": "c92dff4432986c405218987d8e1bd9e391e778b7c499b3b5af8dc298295c3e02",
+      "transformed": false
+    },
+    {
+      "path": "production-site/evaluate-frontend/Molly LOGO/__MACOSX/Molly LOGO/._logo组合-白字透明底.png",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:evaluate-frontend/Molly LOGO/__MACOSX/Molly LOGO/._logo组合-白字透明底.png",
+      "original_sha256": "45344335c34388ff349fe231e5d0257e88ff797247bec3b2e67242e575582e9a",
+      "handover_sha256": "45344335c34388ff349fe231e5d0257e88ff797247bec3b2e67242e575582e9a",
+      "transformed": false
+    },
+    {
+      "path": "production-site/evaluate-frontend/Molly LOGO/__MACOSX/Molly LOGO/._logo组合-黑字透明底.png",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:evaluate-frontend/Molly LOGO/__MACOSX/Molly LOGO/._logo组合-黑字透明底.png",
+      "original_sha256": "313763847ea26dd093684ed6f3272d00028b9584a5cd8dc049b785d7e9bc6a3b",
+      "handover_sha256": "313763847ea26dd093684ed6f3272d00028b9584a5cd8dc049b785d7e9bc6a3b",
+      "transformed": false
+    },
+    {
+      "path": "production-site/evaluate-frontend/Molly LOGO/__MACOSX/Molly LOGO/._logo组合横-黑字透明底.png",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:evaluate-frontend/Molly LOGO/__MACOSX/Molly LOGO/._logo组合横-黑字透明底.png",
+      "original_sha256": "e632c90ff1d3590369ad5af96c1085fdcf429fd19d8cef23311821fab38208dc",
+      "handover_sha256": "e632c90ff1d3590369ad5af96c1085fdcf429fd19d8cef23311821fab38208dc",
+      "transformed": false
+    },
+    {
+      "path": "production-site/evaluate-frontend/Molly LOGO/__MACOSX/Molly LOGO/._logo英文-黑字透明底.png",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:evaluate-frontend/Molly LOGO/__MACOSX/Molly LOGO/._logo英文-黑字透明底.png",
+      "original_sha256": "be80aa8b269d0f1fb870e2d0667d0fcbba51a5f2a7fa96472d681e0e498e100a",
+      "handover_sha256": "be80aa8b269d0f1fb870e2d0667d0fcbba51a5f2a7fa96472d681e0e498e100a",
+      "transformed": false
+    },
+    {
+      "path": "production-site/evaluate-frontend/Molly LOGO/__MACOSX/Molly LOGO/._四叶星-白.png",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:evaluate-frontend/Molly LOGO/__MACOSX/Molly LOGO/._四叶星-白.png",
+      "original_sha256": "470ef2e2562546490414202ed848741d1e3d6c0163c4d7672622e90c7fd8c960",
+      "handover_sha256": "470ef2e2562546490414202ed848741d1e3d6c0163c4d7672622e90c7fd8c960",
+      "transformed": false
+    },
+    {
+      "path": "production-site/evaluate-frontend/Molly LOGO/__MACOSX/Molly LOGO/._四叶星-黑.png",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:evaluate-frontend/Molly LOGO/__MACOSX/Molly LOGO/._四叶星-黑.png",
+      "original_sha256": "3274edbde760dc34d6c7867283583f92ff5247956756d750217166a7b1f95f35",
+      "handover_sha256": "3274edbde760dc34d6c7867283583f92ff5247956756d750217166a7b1f95f35",
+      "transformed": false
+    },
+    {
+      "path": "production-site/evaluate-frontend/index.html",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:evaluate-frontend/index.html",
+      "original_sha256": "dcccc322e06a9875983660677a27d2fb8d088dcc01c3d3cb97223e8e4dfc5720",
+      "handover_sha256": "dcccc322e06a9875983660677a27d2fb8d088dcc01c3d3cb97223e8e4dfc5720",
+      "transformed": false
+    },
+    {
+      "path": "production-site/evaluate-frontend/postcss.config.js",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:evaluate-frontend/postcss.config.js",
+      "original_sha256": "98e8d8a143f16216f4b50a2520024f6254987049b2e199026742a96e16ba411e",
+      "handover_sha256": "98e8d8a143f16216f4b50a2520024f6254987049b2e199026742a96e16ba411e",
+      "transformed": false
+    },
+    {
+      "path": "production-site/evaluate-frontend/src/App.tsx",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:evaluate-frontend/src/App.tsx",
+      "original_sha256": "83f00586dbc4ade64f17b92560ed7aab35f708564057d364f0de380a29acae22",
+      "handover_sha256": "83f00586dbc4ade64f17b92560ed7aab35f708564057d364f0de380a29acae22",
+      "transformed": false
+    },
+    {
+      "path": "production-site/evaluate-frontend/src/auth/AuthContext.tsx",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:evaluate-frontend/src/auth/AuthContext.tsx",
+      "original_sha256": "e48349fa8b7dbbb142309dec06c75880f28e75fb940068d3d175ec9e5771b485",
+      "handover_sha256": "e48349fa8b7dbbb142309dec06c75880f28e75fb940068d3d175ec9e5771b485",
+      "transformed": false
+    },
+    {
+      "path": "production-site/evaluate-frontend/src/components/badges/EmployeeStatusBadge.tsx",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:evaluate-frontend/src/components/badges/EmployeeStatusBadge.tsx",
+      "original_sha256": "65de0cd9865d9d94a71b6d1c369f0fdffa0b25548b4c300b95169dcc4e129c91",
+      "handover_sha256": "65de0cd9865d9d94a71b6d1c369f0fdffa0b25548b4c300b95169dcc4e129c91",
+      "transformed": false
+    },
+    {
+      "path": "production-site/evaluate-frontend/src/components/badges/EmployeeTypeBadge.tsx",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:evaluate-frontend/src/components/badges/EmployeeTypeBadge.tsx",
+      "original_sha256": "d2429875202e36e9d29869850a12ecbeb69c698d86fce894a8052bed6122a1b5",
+      "handover_sha256": "d2429875202e36e9d29869850a12ecbeb69c698d86fce894a8052bed6122a1b5",
+      "transformed": false
+    },
+    {
+      "path": "production-site/evaluate-frontend/src/components/badges/HistoricalIdentityNote.tsx",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:evaluate-frontend/src/components/badges/HistoricalIdentityNote.tsx",
+      "original_sha256": "86a8795e46b4c006ca17d8d18d6ca2774f8290e5e51820fad43882529f9bebde",
+      "handover_sha256": "86a8795e46b4c006ca17d8d18d6ca2774f8290e5e51820fad43882529f9bebde",
+      "transformed": false
+    },
+    {
+      "path": "production-site/evaluate-frontend/src/components/badges/StoreJobTag.tsx",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:evaluate-frontend/src/components/badges/StoreJobTag.tsx",
+      "original_sha256": "088744292e036cad62c45c4dc01cffb82ef5e3bf4f48208513d70d492ee84ecf",
+      "handover_sha256": "088744292e036cad62c45c4dc01cffb82ef5e3bf4f48208513d70d492ee84ecf",
+      "transformed": false
+    },
+    {
+      "path": "production-site/evaluate-frontend/src/components/brand/BrandLoader.tsx",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:evaluate-frontend/src/components/brand/BrandLoader.tsx",
+      "original_sha256": "3db1b722aef2b279a75aef5d0b3beab9950a4b060325b35b817050db11dd7b67",
+      "handover_sha256": "3db1b722aef2b279a75aef5d0b3beab9950a4b060325b35b817050db11dd7b67",
+      "transformed": false
+    },
+    {
+      "path": "production-site/evaluate-frontend/src/components/brand/BrandTransitionLayer.tsx",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:evaluate-frontend/src/components/brand/BrandTransitionLayer.tsx",
+      "original_sha256": "3592b0271afaddad7acda4c6be8428c655a702ad3532aa4fcebc80d9864e86da",
+      "handover_sha256": "3592b0271afaddad7acda4c6be8428c655a702ad3532aa4fcebc80d9864e86da",
+      "transformed": false
+    },
+    {
+      "path": "production-site/evaluate-frontend/src/components/brand/MollyClover.tsx",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:evaluate-frontend/src/components/brand/MollyClover.tsx",
+      "original_sha256": "d5969e4c7cdea3dd4c23929dcda2195e4adc88a27c0254ce1fa33a6e668aedc3",
+      "handover_sha256": "d5969e4c7cdea3dd4c23929dcda2195e4adc88a27c0254ce1fa33a6e668aedc3",
+      "transformed": false
+    },
+    {
+      "path": "production-site/evaluate-frontend/src/components/brand/brandAssets.ts",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:evaluate-frontend/src/components/brand/brandAssets.ts",
+      "original_sha256": "2c40b879c6e0db51a14285c3dc4e7b729e829a48274eadabb5dcc2f66774aa2c",
+      "handover_sha256": "2c40b879c6e0db51a14285c3dc4e7b729e829a48274eadabb5dcc2f66774aa2c",
+      "transformed": false
+    },
+    {
+      "path": "production-site/evaluate-frontend/src/components/employee-detail/CurrentSkillEditor.tsx",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:evaluate-frontend/src/components/employee-detail/CurrentSkillEditor.tsx",
+      "original_sha256": "ddd8c70f54efe5cd5b73129486944b2962df433d5f86df6740832ae2b68ccce0",
+      "handover_sha256": "ddd8c70f54efe5cd5b73129486944b2962df433d5f86df6740832ae2b68ccce0",
+      "transformed": false
+    },
+    {
+      "path": "production-site/evaluate-frontend/src/components/employee-detail/EvaluationHistorySection.tsx",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:evaluate-frontend/src/components/employee-detail/EvaluationHistorySection.tsx",
+      "original_sha256": "7178a1317a5433cb4d4040f38587baaaeab6fe78d4b4391ab269621627a46e4b",
+      "handover_sha256": "7178a1317a5433cb4d4040f38587baaaeab6fe78d4b4391ab269621627a46e4b",
+      "transformed": false
+    },
+    {
+      "path": "production-site/evaluate-frontend/src/components/employee-detail/ReadOnlySkillMatrix.tsx",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:evaluate-frontend/src/components/employee-detail/ReadOnlySkillMatrix.tsx",
+      "original_sha256": "381b39e66986d27adc032891cf6450f6774b1a31cab57308f535ad3a0a8548f9",
+      "handover_sha256": "381b39e66986d27adc032891cf6450f6774b1a31cab57308f535ad3a0a8548f9",
+      "transformed": false
+    },
+    {
+      "path": "production-site/evaluate-frontend/src/components/employee-detail/V1EvaluationDetail.tsx",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:evaluate-frontend/src/components/employee-detail/V1EvaluationDetail.tsx",
+      "original_sha256": "3e0543d84bcfcabea1275eec6355d5dacee50efcddca33370ae57991850316ab",
+      "handover_sha256": "3e0543d84bcfcabea1275eec6355d5dacee50efcddca33370ae57991850316ab",
+      "transformed": false
+    },
+    {
+      "path": "production-site/evaluate-frontend/src/components/employee-detail/V1ScoreTrend.tsx",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:evaluate-frontend/src/components/employee-detail/V1ScoreTrend.tsx",
+      "original_sha256": "b54aa6d1309877f6ac2bb48cfd4f7c9bf9a1ec058dea36e4a6c8d98cc753f1ba",
+      "handover_sha256": "b54aa6d1309877f6ac2bb48cfd4f7c9bf9a1ec058dea36e4a6c8d98cc753f1ba",
+      "transformed": false
+    },
+    {
+      "path": "production-site/evaluate-frontend/src/components/evaluation-v1/EvaluationV1Form.tsx",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:evaluate-frontend/src/components/evaluation-v1/EvaluationV1Form.tsx",
+      "original_sha256": "46132357ab32503c468c0774f0592e8a0d31b39816be4c569fb12392a70e921d",
+      "handover_sha256": "46132357ab32503c468c0774f0592e8a0d31b39816be4c569fb12392a70e921d",
+      "transformed": false
+    },
+    {
+      "path": "production-site/evaluate-frontend/src/components/evaluation-v1/OverallRatings.tsx",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:evaluate-frontend/src/components/evaluation-v1/OverallRatings.tsx",
+      "original_sha256": "0d2411907b0b7798f963b8f34eca57e07a1ba105693103051911c60db94c6a9b",
+      "handover_sha256": "0d2411907b0b7798f963b8f34eca57e07a1ba105693103051911c60db94c6a9b",
+      "transformed": false
+    },
+    {
+      "path": "production-site/evaluate-frontend/src/components/evaluation-v1/RatingControl.tsx",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:evaluate-frontend/src/components/evaluation-v1/RatingControl.tsx",
+      "original_sha256": "e2862ea4870ada6888e88637223c1fcd3d2af3c16157d8fa57d51f86e71589f4",
+      "handover_sha256": "e2862ea4870ada6888e88637223c1fcd3d2af3c16157d8fa57d51f86e71589f4",
+      "transformed": false
+    },
+    {
+      "path": "production-site/evaluate-frontend/src/components/evaluation-v1/ScorePreviewCard.tsx",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:evaluate-frontend/src/components/evaluation-v1/ScorePreviewCard.tsx",
+      "original_sha256": "a69b6e0aff06df629ffafacbb72259c485cd1261e86672c38eea5a56d3b985cd",
+      "handover_sha256": "a69b6e0aff06df629ffafacbb72259c485cd1261e86672c38eea5a56d3b985cd",
+      "transformed": false
+    },
+    {
+      "path": "production-site/evaluate-frontend/src/components/evaluation-v1/SkillMatrix.tsx",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:evaluate-frontend/src/components/evaluation-v1/SkillMatrix.tsx",
+      "original_sha256": "4b1103b1f384e9a7efe90a2d5a42caed3eab067fb3494d5555ed836b7601e1f6",
+      "handover_sha256": "4b1103b1f384e9a7efe90a2d5a42caed3eab067fb3494d5555ed836b7601e1f6",
+      "transformed": false
+    },
+    {
+      "path": "production-site/evaluate-frontend/src/components/evaluation-v1/SkillStatusControl.tsx",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:evaluate-frontend/src/components/evaluation-v1/SkillStatusControl.tsx",
+      "original_sha256": "86c4562cd25f1616ca7bff77b23ff3edc40ac4c9ca6701345d7e1a30fd10bb7b",
+      "handover_sha256": "86c4562cd25f1616ca7bff77b23ff3edc40ac4c9ca6701345d7e1a30fd10bb7b",
+      "transformed": false
+    },
+    {
+      "path": "production-site/evaluate-frontend/src/components/evaluation-v1/TextFeedbackPanel.tsx",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:evaluate-frontend/src/components/evaluation-v1/TextFeedbackPanel.tsx",
+      "original_sha256": "358387723f0e3df733629fe961929b2648c9733a534d55646bb4a3b1eb5f2182",
+      "handover_sha256": "358387723f0e3df733629fe961929b2648c9733a534d55646bb4a3b1eb5f2182",
+      "transformed": false
+    },
+    {
+      "path": "production-site/evaluate-frontend/src/components/evaluation-v1/evaluationV1FormModel.ts",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:evaluate-frontend/src/components/evaluation-v1/evaluationV1FormModel.ts",
+      "original_sha256": "6c69e434828177e1989c43ca67c07b867f7d102cf987a4f66257fc3e7a417c35",
+      "handover_sha256": "6c69e434828177e1989c43ca67c07b867f7d102cf987a4f66257fc3e7a417c35",
+      "transformed": false
+    },
+    {
+      "path": "production-site/evaluate-frontend/src/components/evaluation-v1/skillPresentation.ts",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:evaluate-frontend/src/components/evaluation-v1/skillPresentation.ts",
+      "original_sha256": "b7c5fe9e7a49375fb7d533dca1a59965c101c35d803151023e53171d04e5eb78",
+      "handover_sha256": "b7c5fe9e7a49375fb7d533dca1a59965c101c35d803151023e53171d04e5eb78",
+      "transformed": false
+    },
+    {
+      "path": "production-site/evaluate-frontend/src/components/evaluation/EmployeeEvaluationTable.tsx",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:evaluate-frontend/src/components/evaluation/EmployeeEvaluationTable.tsx",
+      "original_sha256": "36c317ba8f3c3d4f36451a1fcd16cbd2618efe0eb70102e00caad0375f173356",
+      "handover_sha256": "36c317ba8f3c3d4f36451a1fcd16cbd2618efe0eb70102e00caad0375f173356",
+      "transformed": false
+    },
+    {
+      "path": "production-site/evaluate-frontend/src/components/evaluation/ScoreCard.tsx",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:evaluate-frontend/src/components/evaluation/ScoreCard.tsx",
+      "original_sha256": "472d141f7bd2b8814eac457fbc8cccc3889bdcfa8a41ef12585ed09d503b6b23",
+      "handover_sha256": "472d141f7bd2b8814eac457fbc8cccc3889bdcfa8a41ef12585ed09d503b6b23",
+      "transformed": false
+    },
+    {
+      "path": "production-site/evaluate-frontend/src/components/layout/AppShell.tsx",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:evaluate-frontend/src/components/layout/AppShell.tsx",
+      "original_sha256": "6c47b148560e938e663e830aaeb54d34e202c199bb6589622a81c6efc5c9d895",
+      "handover_sha256": "6c47b148560e938e663e830aaeb54d34e202c199bb6589622a81c6efc5c9d895",
+      "transformed": false
+    },
+    {
+      "path": "production-site/evaluate-frontend/src/components/layout/PageContainer.tsx",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:evaluate-frontend/src/components/layout/PageContainer.tsx",
+      "original_sha256": "ee1a5cccdd2bde15d083a7061e1093f5d382979150cd49202f7632f204ea45d4",
+      "handover_sha256": "ee1a5cccdd2bde15d083a7061e1093f5d382979150cd49202f7632f204ea45d4",
+      "transformed": false
+    },
+    {
+      "path": "production-site/evaluate-frontend/src/components/motion/GsapScore.tsx",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:evaluate-frontend/src/components/motion/GsapScore.tsx",
+      "original_sha256": "c840d233f46a6f14c4db4da8795f6ddcf854c70fe53f45188f0c8f6b99ed762a",
+      "handover_sha256": "c840d233f46a6f14c4db4da8795f6ddcf854c70fe53f45188f0c8f6b99ed762a",
+      "transformed": false
+    },
+    {
+      "path": "production-site/evaluate-frontend/src/components/motion/MotionCard.tsx",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:evaluate-frontend/src/components/motion/MotionCard.tsx",
+      "original_sha256": "b75698c789bdc37c9da64b1520e83156f03266b1b420a0e7b6e74ef849bf6657",
+      "handover_sha256": "b75698c789bdc37c9da64b1520e83156f03266b1b420a0e7b6e74ef849bf6657",
+      "transformed": false
+    },
+    {
+      "path": "production-site/evaluate-frontend/src/components/motion/MotionList.tsx",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:evaluate-frontend/src/components/motion/MotionList.tsx",
+      "original_sha256": "e5a43782d4ccbbdc9534352a4e9fbacbff932a67d976cb3fb2220f8885838693",
+      "handover_sha256": "e5a43782d4ccbbdc9534352a4e9fbacbff932a67d976cb3fb2220f8885838693",
+      "transformed": false
+    },
+    {
+      "path": "production-site/evaluate-frontend/src/components/motion/MotionPage.tsx",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:evaluate-frontend/src/components/motion/MotionPage.tsx",
+      "original_sha256": "c5be8fdbe218de965a6e71026ca57acd9baa3e25df73a6ed91f601b2b801d8f8",
+      "handover_sha256": "c5be8fdbe218de965a6e71026ca57acd9baa3e25df73a6ed91f601b2b801d8f8",
+      "transformed": false
+    },
+    {
+      "path": "production-site/evaluate-frontend/src/components/motion/ScoreOrb.tsx",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:evaluate-frontend/src/components/motion/ScoreOrb.tsx",
+      "original_sha256": "91f03f477d3309a0a12c3cf1d4d36780a30066085083a65e7bdc686b72534552",
+      "handover_sha256": "91f03f477d3309a0a12c3cf1d4d36780a30066085083a65e7bdc686b72534552",
+      "transformed": false
+    },
+    {
+      "path": "production-site/evaluate-frontend/src/components/motion/motionConfig.ts",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:evaluate-frontend/src/components/motion/motionConfig.ts",
+      "original_sha256": "c89077324cb58606914e4a2c07cc06247f87f24dc85ecaf05b57274908591bbe",
+      "handover_sha256": "c89077324cb58606914e4a2c07cc06247f87f24dc85ecaf05b57274908591bbe",
+      "transformed": false
+    },
+    {
+      "path": "production-site/evaluate-frontend/src/components/states/EmptyState.tsx",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:evaluate-frontend/src/components/states/EmptyState.tsx",
+      "original_sha256": "64a9cf5278555fe0118e6e6212873361cd83eb4b775fdb5f6e4fa02979c79537",
+      "handover_sha256": "64a9cf5278555fe0118e6e6212873361cd83eb4b775fdb5f6e4fa02979c79537",
+      "transformed": false
+    },
+    {
+      "path": "production-site/evaluate-frontend/src/components/states/ErrorState.tsx",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:evaluate-frontend/src/components/states/ErrorState.tsx",
+      "original_sha256": "66ce96eed0931c773af6f1604db5f4c44c88b88e7ebfb82fdc55be22c1d6261c",
+      "handover_sha256": "66ce96eed0931c773af6f1604db5f4c44c88b88e7ebfb82fdc55be22c1d6261c",
+      "transformed": false
+    },
+    {
+      "path": "production-site/evaluate-frontend/src/components/states/LoadingState.tsx",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:evaluate-frontend/src/components/states/LoadingState.tsx",
+      "original_sha256": "ace519ebc3415496d639dcf65a35197269e3bf6d29d73b9876742b00df0d227d",
+      "handover_sha256": "ace519ebc3415496d639dcf65a35197269e3bf6d29d73b9876742b00df0d227d",
+      "transformed": false
+    },
+    {
+      "path": "production-site/evaluate-frontend/src/components/ui/AppSelect.tsx",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:evaluate-frontend/src/components/ui/AppSelect.tsx",
+      "original_sha256": "a29e7565f6a18896be63a21642042a311ead7d68067d1a5f8805ba036f74c950",
+      "handover_sha256": "a29e7565f6a18896be63a21642042a311ead7d68067d1a5f8805ba036f74c950",
+      "transformed": false
+    },
+    {
+      "path": "production-site/evaluate-frontend/src/components/ui/Dialog.tsx",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:evaluate-frontend/src/components/ui/Dialog.tsx",
+      "original_sha256": "4541d2aff38ed94904fdda14f108ec63bc2ba35664f35ef91cf316ecc602b84f",
+      "handover_sha256": "4541d2aff38ed94904fdda14f108ec63bc2ba35664f35ef91cf316ecc602b84f",
+      "transformed": false
+    },
+    {
+      "path": "production-site/evaluate-frontend/src/components/ui/SectionHeader.tsx",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:evaluate-frontend/src/components/ui/SectionHeader.tsx",
+      "original_sha256": "0123eeece8c82a8efc589da49a6bca271415f6cee7e56e6d5e8d8a2756f320a4",
+      "handover_sha256": "0123eeece8c82a8efc589da49a6bca271415f6cee7e56e6d5e8d8a2756f320a4",
+      "transformed": false
+    },
+    {
+      "path": "production-site/evaluate-frontend/src/components/ui/StoreMultiSelect.tsx",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:evaluate-frontend/src/components/ui/StoreMultiSelect.tsx",
+      "original_sha256": "40b17265bd258c7f7666330e8d96ffdbc8fed3a8a4959ddd358a0dea67c4c14b",
+      "handover_sha256": "40b17265bd258c7f7666330e8d96ffdbc8fed3a8a4959ddd358a0dea67c4c14b",
+      "transformed": false
+    },
+    {
+      "path": "production-site/evaluate-frontend/src/components/ui/ToastProvider.tsx",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:evaluate-frontend/src/components/ui/ToastProvider.tsx",
+      "original_sha256": "d313beb993419fce9d5df29f0ca3ea653f3dcb93f172ec72c8c61d75aace64ae",
+      "handover_sha256": "d313beb993419fce9d5df29f0ca3ea653f3dcb93f172ec72c8c61d75aace64ae",
+      "transformed": false
+    },
+    {
+      "path": "production-site/evaluate-frontend/src/lib/evaluationNavigation.ts",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:evaluate-frontend/src/lib/evaluationNavigation.ts",
+      "original_sha256": "7408b2c6f0373fec60bc9c1c501b0fbdfe098eff4d1263145e9abdfff099dd5f",
+      "handover_sha256": "7408b2c6f0373fec60bc9c1c501b0fbdfe098eff4d1263145e9abdfff099dd5f",
+      "transformed": false
+    },
+    {
+      "path": "production-site/evaluate-frontend/src/lib/format.ts",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:evaluate-frontend/src/lib/format.ts",
+      "original_sha256": "fc96b56df9f7d8291e363fcbfc889964e4e0ea6c698da07a2f7ad420acfe4323",
+      "handover_sha256": "fc96b56df9f7d8291e363fcbfc889964e4e0ea6c698da07a2f7ad420acfe4323",
+      "transformed": false
+    },
+    {
+      "path": "production-site/evaluate-frontend/src/lib/mutationFeedback.ts",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:evaluate-frontend/src/lib/mutationFeedback.ts",
+      "original_sha256": "e822046d6742c23a0b1313a8fdf06d4f514d6a6140a6f5fa3307de841b0d4828",
+      "handover_sha256": "e822046d6742c23a0b1313a8fdf06d4f514d6a6140a6f5fa3307de841b0d4828",
+      "transformed": false
+    },
+    {
+      "path": "production-site/evaluate-frontend/src/lib/presentation.ts",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:evaluate-frontend/src/lib/presentation.ts",
+      "original_sha256": "7eceb813f109288c43b44b75d3807cae5ee60f45e3b892ddb3a5cc7cba85d0b8",
+      "handover_sha256": "7eceb813f109288c43b44b75d3807cae5ee60f45e3b892ddb3a5cc7cba85d0b8",
+      "transformed": false
+    },
+    {
+      "path": "production-site/evaluate-frontend/src/main.tsx",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:evaluate-frontend/src/main.tsx",
+      "original_sha256": "d11aa7d2229a41c873c3aa126099502be4d78e0c579dd20539da4fd40848ed4f",
+      "handover_sha256": "d11aa7d2229a41c873c3aa126099502be4d78e0c579dd20539da4fd40848ed4f",
+      "transformed": false
+    },
+    {
+      "path": "production-site/evaluate-frontend/src/pages/AccountManagementPage.tsx",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:evaluate-frontend/src/pages/AccountManagementPage.tsx",
+      "original_sha256": "5a0b82b778d52b284ba4c4e853d370f4814886d53af74096ea2eeb25f8ed3aec",
+      "handover_sha256": "5a0b82b778d52b284ba4c4e853d370f4814886d53af74096ea2eeb25f8ed3aec",
+      "transformed": false
+    },
+    {
+      "path": "production-site/evaluate-frontend/src/pages/DashboardPage.tsx",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:evaluate-frontend/src/pages/DashboardPage.tsx",
+      "original_sha256": "3858241376e98311904d08516df29b408c80ab0514f431bcffd9b922e5299095",
+      "handover_sha256": "3858241376e98311904d08516df29b408c80ab0514f431bcffd9b922e5299095",
+      "transformed": false
+    },
+    {
+      "path": "production-site/evaluate-frontend/src/pages/EmployeeDetailPage.tsx",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:evaluate-frontend/src/pages/EmployeeDetailPage.tsx",
+      "original_sha256": "a4c90de094e4ac1bf55b109cd22422715e74fa380f11259eb9a4808bbcd93875",
+      "handover_sha256": "7a8ab02091f144305015b0aa7d639fade58145e3c5dc48c45e6ad0e6cb283552",
+      "transformed": true
+    },
+    {
+      "path": "production-site/evaluate-frontend/src/pages/EmployeeManagementPage.tsx",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:evaluate-frontend/src/pages/EmployeeManagementPage.tsx",
+      "original_sha256": "4107caa0a0e07baf7c3d61dc16282c5219c028682df27f9ca4c7e45d35a5855f",
+      "handover_sha256": "4107caa0a0e07baf7c3d61dc16282c5219c028682df27f9ca4c7e45d35a5855f",
+      "transformed": false
+    },
+    {
+      "path": "production-site/evaluate-frontend/src/pages/EvaluationAnalyticsPage.tsx",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:evaluate-frontend/src/pages/EvaluationAnalyticsPage.tsx",
+      "original_sha256": "13b66e8c27ce317220c28635276ab4c60af2b916d18e618ea8b6b0dca43b26c1",
+      "handover_sha256": "13b66e8c27ce317220c28635276ab4c60af2b916d18e618ea8b6b0dca43b26c1",
+      "transformed": false
+    },
+    {
+      "path": "production-site/evaluate-frontend/src/pages/EvaluationEntryPage.tsx",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:evaluate-frontend/src/pages/EvaluationEntryPage.tsx",
+      "original_sha256": "90161590f047f02a9d42a7c9adcb9a3ec502212fe98ba6b44937041a997f5a43",
+      "handover_sha256": "90161590f047f02a9d42a7c9adcb9a3ec502212fe98ba6b44937041a997f5a43",
+      "transformed": false
+    },
+    {
+      "path": "production-site/evaluate-frontend/src/pages/EvaluationHistoryIndexPage.tsx",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:evaluate-frontend/src/pages/EvaluationHistoryIndexPage.tsx",
+      "original_sha256": "bdddff09f83816969f62bedd0c49009a784f23a80efdcf7a7b1f41ef0d4a4764",
+      "handover_sha256": "bdddff09f83816969f62bedd0c49009a784f23a80efdcf7a7b1f41ef0d4a4764",
+      "transformed": false
+    },
+    {
+      "path": "production-site/evaluate-frontend/src/pages/EvaluationRoundDetailPage.tsx",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:evaluate-frontend/src/pages/EvaluationRoundDetailPage.tsx",
+      "original_sha256": "1d0f288437b8c90b5f74d8d891d52da9eb47acffe39377d88add23a4586f81ee",
+      "handover_sha256": "1d0f288437b8c90b5f74d8d891d52da9eb47acffe39377d88add23a4586f81ee",
+      "transformed": false
+    },
+    {
+      "path": "production-site/evaluate-frontend/src/pages/EvaluationV1Page.tsx",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:evaluate-frontend/src/pages/EvaluationV1Page.tsx",
+      "original_sha256": "2e179ac2f93d438b7b37f5f7285df8ebc2e5c4c581a6c45ce268aeccb20d8163",
+      "handover_sha256": "2e179ac2f93d438b7b37f5f7285df8ebc2e5c4c581a6c45ce268aeccb20d8163",
+      "transformed": false
+    },
+    {
+      "path": "production-site/evaluate-frontend/src/pages/LiveEvaluationPage.tsx",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:evaluate-frontend/src/pages/LiveEvaluationPage.tsx",
+      "original_sha256": "1b2bcd40decc66f601c9283a77c1f98d419cd8f8ce9e60be2681b4a8f84d3db4",
+      "handover_sha256": "1b2bcd40decc66f601c9283a77c1f98d419cd8f8ce9e60be2681b4a8f84d3db4",
+      "transformed": false
+    },
+    {
+      "path": "production-site/evaluate-frontend/src/pages/LoginPage.tsx",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:evaluate-frontend/src/pages/LoginPage.tsx",
+      "original_sha256": "aa475c8e9cee3739afd1c12ad7b38de40027f0821f84adbf5073e5ea7447bcf6",
+      "handover_sha256": "aa475c8e9cee3739afd1c12ad7b38de40027f0821f84adbf5073e5ea7447bcf6",
+      "transformed": false
+    },
+    {
+      "path": "production-site/evaluate-frontend/src/pages/RosterSkillBoardPage.tsx",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:evaluate-frontend/src/pages/RosterSkillBoardPage.tsx",
+      "original_sha256": "eaea57099c1d6a81b09b6ac68edeb02c7de29471e354a333ba2ceb04076e39cf",
+      "handover_sha256": "eaea57099c1d6a81b09b6ac68edeb02c7de29471e354a333ba2ceb04076e39cf",
+      "transformed": false
+    },
+    {
+      "path": "production-site/evaluate-frontend/src/pages/StoreEmployeeTypeSelectionPage.tsx",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:evaluate-frontend/src/pages/StoreEmployeeTypeSelectionPage.tsx",
+      "original_sha256": "8ea47f39d3f471071d597e5f1dd1be58001cc66e7e51e554ce1013bf6b3d1458",
+      "handover_sha256": "8ea47f39d3f471071d597e5f1dd1be58001cc66e7e51e554ce1013bf6b3d1458",
+      "transformed": false
+    },
+    {
+      "path": "production-site/evaluate-frontend/src/pages/StoreEvaluationPage.tsx",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:evaluate-frontend/src/pages/StoreEvaluationPage.tsx",
+      "original_sha256": "8dd9e054ae9b328fe879cf5cea6780e51aaf95d75ff53bd04966fd04619e5bce",
+      "handover_sha256": "8dd9e054ae9b328fe879cf5cea6780e51aaf95d75ff53bd04966fd04619e5bce",
+      "transformed": false
+    },
+    {
+      "path": "production-site/evaluate-frontend/src/pages/StoreManagementPage.tsx",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:evaluate-frontend/src/pages/StoreManagementPage.tsx",
+      "original_sha256": "faea8d1194e89a41168d2cda8f3f668382e98251ca38d83a95016b8d1a083d5a",
+      "handover_sha256": "faea8d1194e89a41168d2cda8f3f668382e98251ca38d83a95016b8d1a083d5a",
+      "transformed": false
+    },
+    {
+      "path": "production-site/evaluate-frontend/src/services/apiClient.ts",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:evaluate-frontend/src/services/apiClient.ts",
+      "original_sha256": "84d63f2e7ba4055030994eb9935fc7208007ec83366f748096ca5f0f1f2d8ba9",
+      "handover_sha256": "84d63f2e7ba4055030994eb9935fc7208007ec83366f748096ca5f0f1f2d8ba9",
+      "transformed": false
+    },
+    {
+      "path": "production-site/evaluate-frontend/src/services/authRepository.ts",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:evaluate-frontend/src/services/authRepository.ts",
+      "original_sha256": "ca1a722a3499baadd371ef0b9151963f03acd4a29b31f8119a8fe46e593eb7fa",
+      "handover_sha256": "ca1a722a3499baadd371ef0b9151963f03acd4a29b31f8119a8fe46e593eb7fa",
+      "transformed": false
+    },
+    {
+      "path": "production-site/evaluate-frontend/src/services/employeeRepository.ts",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:evaluate-frontend/src/services/employeeRepository.ts",
+      "original_sha256": "f78d4151e8c22cdfecc6b6e29a9dde9f287d95cdc51844f1423891b95028b9e5",
+      "handover_sha256": "f78d4151e8c22cdfecc6b6e29a9dde9f287d95cdc51844f1423891b95028b9e5",
+      "transformed": false
+    },
+    {
+      "path": "production-site/evaluate-frontend/src/services/evaluationRepository.ts",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:evaluate-frontend/src/services/evaluationRepository.ts",
+      "original_sha256": "41a05a415f2d6c5ee3212fd1073d7712645adf3bc235a196c188133c82bbdc95",
+      "handover_sha256": "41a05a415f2d6c5ee3212fd1073d7712645adf3bc235a196c188133c82bbdc95",
+      "transformed": false
+    },
+    {
+      "path": "production-site/evaluate-frontend/src/services/performanceNoteRepository.ts",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:evaluate-frontend/src/services/performanceNoteRepository.ts",
+      "original_sha256": "bfa8e6baffeb47d89343524fd26bc94a3251ab46e8d79bc6adc60c0b9374ee7b",
+      "handover_sha256": "bfa8e6baffeb47d89343524fd26bc94a3251ab46e8d79bc6adc60c0b9374ee7b",
+      "transformed": false
+    },
+    {
+      "path": "production-site/evaluate-frontend/src/services/storeRepository.ts",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:evaluate-frontend/src/services/storeRepository.ts",
+      "original_sha256": "a35669b200e1a3872ead10eece6018ff8e7f0c3156fa3d29a72428636e6577b1",
+      "handover_sha256": "a35669b200e1a3872ead10eece6018ff8e7f0c3156fa3d29a72428636e6577b1",
+      "transformed": false
+    },
+    {
+      "path": "production-site/evaluate-frontend/src/styles.css",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:evaluate-frontend/src/styles.css",
+      "original_sha256": "82be472e8aa363e3c74ee7c1ca4b490c36bed8e642137578ef5d3823c7b75aa7",
+      "handover_sha256": "82be472e8aa363e3c74ee7c1ca4b490c36bed8e642137578ef5d3823c7b75aa7",
+      "transformed": false
+    },
+    {
+      "path": "production-site/evaluate-frontend/src/types/analyticsV1.ts",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:evaluate-frontend/src/types/analyticsV1.ts",
+      "original_sha256": "43137d94d3951ca48079321221982a6c9b61e80deedb54804d8a38ec26eda828",
+      "handover_sha256": "43137d94d3951ca48079321221982a6c9b61e80deedb54804d8a38ec26eda828",
+      "transformed": false
+    },
+    {
+      "path": "production-site/evaluate-frontend/src/types/evaluation.ts",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:evaluate-frontend/src/types/evaluation.ts",
+      "original_sha256": "0c2177e2110f032ba1d75da78736cfe5b5d5427d86e0ed830d9988c69688c5da",
+      "handover_sha256": "0c2177e2110f032ba1d75da78736cfe5b5d5427d86e0ed830d9988c69688c5da",
+      "transformed": false
+    },
+    {
+      "path": "production-site/evaluate-frontend/src/utils/rosterSkillUtils.ts",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:evaluate-frontend/src/utils/rosterSkillUtils.ts",
+      "original_sha256": "37ad3b67ab0bfd8cfea3fe6fd17698d76353dc4cefe7314d7b167f3e0a536ebf",
+      "handover_sha256": "37ad3b67ab0bfd8cfea3fe6fd17698d76353dc4cefe7314d7b167f3e0a536ebf",
+      "transformed": false
+    },
+    {
+      "path": "production-site/evaluate-frontend/src/vite-env.d.ts",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:evaluate-frontend/src/vite-env.d.ts",
+      "original_sha256": "424faf9241dd699dda995b367ed36665732da1e6ec1f33b2fd40394488ecac92",
+      "handover_sha256": "424faf9241dd699dda995b367ed36665732da1e6ec1f33b2fd40394488ecac92",
+      "transformed": false
+    },
+    {
+      "path": "production-site/evaluate-frontend/tailwind.config.js",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:evaluate-frontend/tailwind.config.js",
+      "original_sha256": "6042a4305da073086c0570faaf1848aa0fc6ba9bc4d79a201e8a59a34657229a",
+      "handover_sha256": "6042a4305da073086c0570faaf1848aa0fc6ba9bc4d79a201e8a59a34657229a",
+      "transformed": false
+    },
+    {
+      "path": "production-site/evaluate-frontend/vite.config.mjs",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:evaluate-frontend/vite.config.mjs",
+      "original_sha256": "0d9826e85d8e683d0db98025c146ee8e885f3c5779a25c6dbe1b585b46a4dc3d",
+      "handover_sha256": "0d9826e85d8e683d0db98025c146ee8e885f3c5779a25c6dbe1b585b46a4dc3d",
+      "transformed": false
+    },
+    {
+      "path": "production-site/evidence/backend-postgres-tests.json",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:evidence/backend-postgres-tests.json",
+      "original_sha256": "d0c582e5accdab0b1ebe14281620e2181dbf08b7be0a5a3d2b24b423ffc025a8",
+      "handover_sha256": "d0c582e5accdab0b1ebe14281620e2181dbf08b7be0a5a3d2b24b423ffc025a8",
+      "transformed": false
+    },
+    {
+      "path": "production-site/evidence/cloud-data-verification.json",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:evidence/cloud-data-verification.json",
+      "original_sha256": "89ded51cd889ea3636da963b7f4ebc48b38c2812907e324de7ef7ec5048a30cb",
+      "handover_sha256": "89ded51cd889ea3636da963b7f4ebc48b38c2812907e324de7ef7ec5048a30cb",
+      "transformed": false
+    },
+    {
+      "path": "production-site/evidence/cloud-smoke.json",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:evidence/cloud-smoke.json",
+      "original_sha256": "3be79ac106bb75905254f3f54be9353a64584574744ffc04cf2188b78f11ede0",
+      "handover_sha256": "3be79ac106bb75905254f3f54be9353a64584574744ffc04cf2188b78f11ede0",
+      "transformed": false
+    },
+    {
+      "path": "production-site/evidence/data-audit.json",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:evidence/data-audit.json",
+      "original_sha256": "2352dfa0485cdf472c754a13a999bea7c1ba326877b07ae23cb8f04ae3f7caf2",
+      "handover_sha256": "2352dfa0485cdf472c754a13a999bea7c1ba326877b07ae23cb8f04ae3f7caf2",
+      "transformed": false
+    },
+    {
+      "path": "production-site/evidence/evaluate-e2e.json",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:evidence/evaluate-e2e.json",
+      "original_sha256": "a7663fdb5f64cd76d75f2adf98524744ad1b02fd2b8689beba93b80f98b0d979",
+      "handover_sha256": "a7663fdb5f64cd76d75f2adf98524744ad1b02fd2b8689beba93b80f98b0d979",
+      "transformed": false
+    },
+    {
+      "path": "production-site/evidence/frontend-template-tests.json",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:evidence/frontend-template-tests.json",
+      "original_sha256": "a98424ac96114a08e9a60fd74d32e957b2dd73347bd4a9043444510b8436d671",
+      "handover_sha256": "a98424ac96114a08e9a60fd74d32e957b2dd73347bd4a9043444510b8436d671",
+      "transformed": false
+    },
+    {
+      "path": "production-site/evidence/import-manifest.json",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:evidence/import-manifest.json",
+      "original_sha256": "8f44a3438fa347c094f6d2979828a337921ac987e05778aff7689d57b15ef375",
+      "handover_sha256": "8f44a3438fa347c094f6d2979828a337921ac987e05778aff7689d57b15ef375",
+      "transformed": false
+    },
+    {
+      "path": "production-site/evidence/initial-migration-status.md",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:evidence/initial-migration-status.md",
+      "original_sha256": "7b0bd392435c27c2e5ed5993595aa981e47568bbfb737c4b40ebca7e117ba28d",
+      "handover_sha256": "7b0bd392435c27c2e5ed5993595aa981e47568bbfb737c4b40ebca7e117ba28d",
+      "transformed": false
+    },
+    {
+      "path": "production-site/evidence/solver-benchmark.json",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:evidence/solver-benchmark.json",
+      "original_sha256": "e665d6ab5af73ba1edac2df1360cc1c4d98b02a7b8ec2635b7a7c9646f790cc7",
+      "handover_sha256": "e665d6ab5af73ba1edac2df1360cc1c4d98b02a7b8ec2635b7a7c9646f790cc7",
+      "transformed": false
+    },
+    {
+      "path": "production-site/evidence/solver-container.json",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:evidence/solver-container.json",
+      "original_sha256": "d878c19272feb31b44919068aa2484dfcf0898b75446028b7632dacdd380dd22",
+      "handover_sha256": "d878c19272feb31b44919068aa2484dfcf0898b75446028b7632dacdd380dd22",
+      "transformed": false
+    },
+    {
+      "path": "production-site/evidence/source-snapshot.json",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:evidence/source-snapshot.json",
+      "original_sha256": "1cf3d467079d1976da20d260a54bad968acd2fd02a8899b51b5fb36d303428b4",
+      "handover_sha256": "1cf3d467079d1976da20d260a54bad968acd2fd02a8899b51b5fb36d303428b4",
+      "transformed": false
+    },
+    {
+      "path": "production-site/evidence/worker-e2e.json",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:evidence/worker-e2e.json",
+      "original_sha256": "b07225af173b90e78b508b9e4dfee090307c9b8575f8e2add760cee6fc017b8c",
+      "handover_sha256": "b07225af173b90e78b508b9e4dfee090307c9b8575f8e2add760cee6fc017b8c",
+      "transformed": false
+    },
+    {
+      "path": "production-site/evidence/xero-postgres-preservation.json",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:evidence/xero-postgres-preservation.json",
+      "original_sha256": "6d98b1ecf2bc4e6093b52caa8bb5bbb69983cf456dd018d76c30d6b55cc4d1c3",
+      "handover_sha256": "6d98b1ecf2bc4e6093b52caa8bb5bbb69983cf456dd018d76c30d6b55cc4d1c3",
+      "transformed": false
+    },
+    {
+      "path": "production-site/evidence/xero-verification.json",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:evidence/xero-verification.json",
+      "original_sha256": "adc7f50e66638f3c9195273a81f3a239245787e29fc4fb41f4f40c666e4a8363",
+      "handover_sha256": "adc7f50e66638f3c9195273a81f3a239245787e29fc4fb41f4f40c666e4a8363",
+      "transformed": false
+    },
+    {
+      "path": "production-site/frontend/index.html",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:frontend/index.html",
+      "original_sha256": "20b325d05daf986403eab8bce3b17f65301ffb195761e27eb3bfcfb01069b0d2",
+      "handover_sha256": "20b325d05daf986403eab8bce3b17f65301ffb195761e27eb3bfcfb01069b0d2",
+      "transformed": false
+    },
+    {
+      "path": "production-site/frontend/postcss.config.js",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:frontend/postcss.config.js",
+      "original_sha256": "f28f8aa532c7254b0b389d3d3bd6486ea61e83d8d50a17c01ba72d7454baafdb",
+      "handover_sha256": "f28f8aa532c7254b0b389d3d3bd6486ea61e83d8d50a17c01ba72d7454baafdb",
+      "transformed": false
+    },
+    {
+      "path": "production-site/frontend/src/App.tsx",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:frontend/src/App.tsx",
+      "original_sha256": "b3373588fc4f7a6880b43b7cd07f058472e62025caa24c5eff4947e62f30f669",
+      "handover_sha256": "b3373588fc4f7a6880b43b7cd07f058472e62025caa24c5eff4947e62f30f669",
+      "transformed": false
+    },
+    {
+      "path": "production-site/frontend/src/assets/molly-clover.png",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:frontend/src/assets/molly-clover.png",
+      "original_sha256": "bed90d1fa067489b81b7df1541d8711c1427a4b938dc5c6eacaac814cb430bef",
+      "handover_sha256": "bed90d1fa067489b81b7df1541d8711c1427a4b938dc5c6eacaac814cb430bef",
+      "transformed": false
+    },
+    {
+      "path": "production-site/frontend/src/auth/AuthContext.tsx",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:frontend/src/auth/AuthContext.tsx",
+      "original_sha256": "e594acd4e66e6522a237532c20027b7aa280263d0cfcad6a33215859949c512f",
+      "handover_sha256": "e594acd4e66e6522a237532c20027b7aa280263d0cfcad6a33215859949c512f",
+      "transformed": false
+    },
+    {
+      "path": "production-site/frontend/src/auth/authRepository.ts",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:frontend/src/auth/authRepository.ts",
+      "original_sha256": "93de2298ed3279be32a668eb9589d7952484a5f6c250554f841a65e64d3f5cfb",
+      "handover_sha256": "93de2298ed3279be32a668eb9589d7952484a5f6c250554f841a65e64d3f5cfb",
+      "transformed": false
+    },
+    {
+      "path": "production-site/frontend/src/components/brand/MollyBrand.tsx",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:frontend/src/components/brand/MollyBrand.tsx",
+      "original_sha256": "a9f32a7179e1916c512c660aaeb5a6c8c846dc56ca4ade99a9fca55903e0f542",
+      "handover_sha256": "a9f32a7179e1916c512c660aaeb5a6c8c846dc56ca4ade99a9fca55903e0f542",
+      "transformed": false
+    },
+    {
+      "path": "production-site/frontend/src/components/calendar/AgentRunProgress.tsx",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:frontend/src/components/calendar/AgentRunProgress.tsx",
+      "original_sha256": "7d5ed69a44e0bf56748c7ba82c8bbc016869beb89e9347e5b235246a57ec70bd",
+      "handover_sha256": "7d5ed69a44e0bf56748c7ba82c8bbc016869beb89e9347e5b235246a57ec70bd",
+      "transformed": false
+    },
+    {
+      "path": "production-site/frontend/src/components/calendar/CalendarAgentPanel.tsx",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:frontend/src/components/calendar/CalendarAgentPanel.tsx",
+      "original_sha256": "045fc16d0dbd1d841f48f2765dd7f0388ccc8f8a7a79ce3a48b86df8486db67f",
+      "handover_sha256": "045fc16d0dbd1d841f48f2765dd7f0388ccc8f8a7a79ce3a48b86df8486db67f",
+      "transformed": false
+    },
+    {
+      "path": "production-site/frontend/src/components/calendar/CalendarDraftBar.tsx",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:frontend/src/components/calendar/CalendarDraftBar.tsx",
+      "original_sha256": "b66a201c18bf685102e01d2fe8fd9f40c7fc0f795a0e907673312e469c8e82e8",
+      "handover_sha256": "b66a201c18bf685102e01d2fe8fd9f40c7fc0f795a0e907673312e469c8e82e8",
+      "transformed": false
+    },
+    {
+      "path": "production-site/frontend/src/components/calendar/CalendarEventContent.tsx",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:frontend/src/components/calendar/CalendarEventContent.tsx",
+      "original_sha256": "f01c369936517d5c480f7ef1444ba3fdf8d2fc5a3a39844016af5bfa88d98945",
+      "handover_sha256": "f01c369936517d5c480f7ef1444ba3fdf8d2fc5a3a39844016af5bfa88d98945",
+      "transformed": false
+    },
+    {
+      "path": "production-site/frontend/src/components/calendar/CalendarScheduledSidebar.tsx",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:frontend/src/components/calendar/CalendarScheduledSidebar.tsx",
+      "original_sha256": "4ee451a5209967b34ab75b7d96a76393ca3c25c328c076b0c953245a50bc9b4f",
+      "handover_sha256": "4ee451a5209967b34ab75b7d96a76393ca3c25c328c076b0c953245a50bc9b4f",
+      "transformed": false
+    },
+    {
+      "path": "production-site/frontend/src/components/calendar/CalendarViewSwitch.tsx",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:frontend/src/components/calendar/CalendarViewSwitch.tsx",
+      "original_sha256": "5e3b468caf6b801b28961625772ee6e7efdbc2d788384aa0a92d5911a3374433",
+      "handover_sha256": "5e3b468caf6b801b28961625772ee6e7efdbc2d788384aa0a92d5911a3374433",
+      "transformed": false
+    },
+    {
+      "path": "production-site/frontend/src/components/calendar/EmployeeLaneBoard.tsx",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:frontend/src/components/calendar/EmployeeLaneBoard.tsx",
+      "original_sha256": "7ef0d67356252207c801383c10420e1c24270fe54d9e4a387f3a30e7e998e468",
+      "handover_sha256": "7ef0d67356252207c801383c10420e1c24270fe54d9e4a387f3a30e7e998e468",
+      "transformed": false
+    },
+    {
+      "path": "production-site/frontend/src/components/calendar/GroupedShiftDialog.tsx",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:frontend/src/components/calendar/GroupedShiftDialog.tsx",
+      "original_sha256": "4b07ed0da4790b2a69240394ec8486833c3f0f35ffa02e88bc2915fd8fcc0b3f",
+      "handover_sha256": "4b07ed0da4790b2a69240394ec8486833c3f0f35ffa02e88bc2915fd8fcc0b3f",
+      "transformed": false
+    },
+    {
+      "path": "production-site/frontend/src/components/calendar/PublishedShiftDetail.tsx",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:frontend/src/components/calendar/PublishedShiftDetail.tsx",
+      "original_sha256": "e35ec4b9eecc747663ac9c739b14ee9017546714cfdaad9f5091d9beb92e374c",
+      "handover_sha256": "e35ec4b9eecc747663ac9c739b14ee9017546714cfdaad9f5091d9beb92e374c",
+      "transformed": false
+    },
+    {
+      "path": "production-site/frontend/src/components/calendar/RepeatShiftDialog.tsx",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:frontend/src/components/calendar/RepeatShiftDialog.tsx",
+      "original_sha256": "1d0659b24562b94bae6860a8c3521685751f46511caa0983dddd28c56e6c29e2",
+      "handover_sha256": "1d0659b24562b94bae6860a8c3521685751f46511caa0983dddd28c56e6c29e2",
+      "transformed": false
+    },
+    {
+      "path": "production-site/frontend/src/components/calendar/RoleChipSelector.tsx",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:frontend/src/components/calendar/RoleChipSelector.tsx",
+      "original_sha256": "64b2e832cdf7e3c805b4243fad42de333e25fd8ce988170b30c9df5f79e51956",
+      "handover_sha256": "64b2e832cdf7e3c805b4243fad42de333e25fd8ce988170b30c9df5f79e51956",
+      "transformed": false
+    },
+    {
+      "path": "production-site/frontend/src/components/calendar/RoleLegend.tsx",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:frontend/src/components/calendar/RoleLegend.tsx",
+      "original_sha256": "3f96796e6dfab852798d38c9095f980c01b4636546e321818757c4343fb51c42",
+      "handover_sha256": "3f96796e6dfab852798d38c9095f980c01b4636546e321818757c4343fb51c42",
+      "transformed": false
+    },
+    {
+      "path": "production-site/frontend/src/components/calendar/ShiftDialog.tsx",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:frontend/src/components/calendar/ShiftDialog.tsx",
+      "original_sha256": "add041887171d5e7ecbbe7cd2ef79f38666d04663f551df49bd4331c1a306bba",
+      "handover_sha256": "add041887171d5e7ecbbe7cd2ef79f38666d04663f551df49bd4331c1a306bba",
+      "transformed": false
+    },
+    {
+      "path": "production-site/frontend/src/components/calendar/ShiftEventCard.tsx",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:frontend/src/components/calendar/ShiftEventCard.tsx",
+      "original_sha256": "4fd96d2b26a91e083bd52a363265a34673696e7037e3c3d59d1b957f4d5d8bd7",
+      "handover_sha256": "4fd96d2b26a91e083bd52a363265a34673696e7037e3c3d59d1b957f4d5d8bd7",
+      "transformed": false
+    },
+    {
+      "path": "production-site/frontend/src/components/calendar/StaffRoleFilter.tsx",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:frontend/src/components/calendar/StaffRoleFilter.tsx",
+      "original_sha256": "c652a23148664f4452eb4fef16d9979530a378b3442cb757dab4f64c48a70c05",
+      "handover_sha256": "c652a23148664f4452eb4fef16d9979530a378b3442cb757dab4f64c48a70c05",
+      "transformed": false
+    },
+    {
+      "path": "production-site/frontend/src/components/employee/EmployeeWeekForm.tsx",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:frontend/src/components/employee/EmployeeWeekForm.tsx",
+      "original_sha256": "6c86e4e270e0c22435330621f1d1b2bbfa8e5b7334e0d745311e768678e42d22",
+      "handover_sha256": "6c86e4e270e0c22435330621f1d1b2bbfa8e5b7334e0d745311e768678e42d22",
+      "transformed": false
+    },
+    {
+      "path": "production-site/frontend/src/components/layout/AppShell.tsx",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:frontend/src/components/layout/AppShell.tsx",
+      "original_sha256": "98ca7656e86b6e165e8cb0a5f115742b968d8d79c2143cabaec741ffe944fff1",
+      "handover_sha256": "98ca7656e86b6e165e8cb0a5f115742b968d8d79c2143cabaec741ffe944fff1",
+      "transformed": false
+    },
+    {
+      "path": "production-site/frontend/src/components/payroll/PayrollPanel.tsx",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:frontend/src/components/payroll/PayrollPanel.tsx",
+      "original_sha256": "71ba89e24f81d8f6c54454d21f1bcda661b11abcb21efa8272b405653fe0f4a7",
+      "handover_sha256": "71ba89e24f81d8f6c54454d21f1bcda661b11abcb21efa8272b405653fe0f4a7",
+      "transformed": false
+    },
+    {
+      "path": "production-site/frontend/src/components/settings/DraftRoleReconciliation.tsx",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:frontend/src/components/settings/DraftRoleReconciliation.tsx",
+      "original_sha256": "bbf6030f91d99eb7e847bba26b61d4e80caebc2a8df4a81082a4ee7b826e0d83",
+      "handover_sha256": "bbf6030f91d99eb7e847bba26b61d4e80caebc2a8df4a81082a4ee7b826e0d83",
+      "transformed": false
+    },
+    {
+      "path": "production-site/frontend/src/components/settings/FormalJobCatalog.tsx",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:frontend/src/components/settings/FormalJobCatalog.tsx",
+      "original_sha256": "a1d6a450f291a27aac07a9e920fc6214d0ef6970073f44c6db166afb40cc61c6",
+      "handover_sha256": "a1d6a450f291a27aac07a9e920fc6214d0ef6970073f44c6db166afb40cc61c6",
+      "transformed": false
+    },
+    {
+      "path": "production-site/frontend/src/components/settings/PresetShortcutSettings.tsx",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:frontend/src/components/settings/PresetShortcutSettings.tsx",
+      "original_sha256": "2c80a05c03023c48a8537a8c70816ce94f486840632902ad6724902d0cfde88c",
+      "handover_sha256": "2c80a05c03023c48a8537a8c70816ce94f486840632902ad6724902d0cfde88c",
+      "transformed": false
+    },
+    {
+      "path": "production-site/frontend/src/components/settings/SkillRequirementPicker.tsx",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:frontend/src/components/settings/SkillRequirementPicker.tsx",
+      "original_sha256": "b3c97b78175a6d57a9ee0bc2b556039522e7d5e84fcd30f4e6392eaf1a1b2dd9",
+      "handover_sha256": "b3c97b78175a6d57a9ee0bc2b556039522e7d5e84fcd30f4e6392eaf1a1b2dd9",
+      "transformed": false
+    },
+    {
+      "path": "production-site/frontend/src/components/staff/AvailabilityEditor.tsx",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:frontend/src/components/staff/AvailabilityEditor.tsx",
+      "original_sha256": "c12e2024636745c9c757de4164df4425ae65b3c6d2da806a4f0e9749d6bc3e63",
+      "handover_sha256": "c12e2024636745c9c757de4164df4425ae65b3c6d2da806a4f0e9749d6bc3e63",
+      "transformed": false
+    },
+    {
+      "path": "production-site/frontend/src/components/staff/ManualAvailabilityBatchDialog.tsx",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:frontend/src/components/staff/ManualAvailabilityBatchDialog.tsx",
+      "original_sha256": "92e2df9b9006e3850949ae04c931ef81a064b58468596a7e6ebf04a4e7ae6ed7",
+      "handover_sha256": "92e2df9b9006e3850949ae04c931ef81a064b58468596a7e6ebf04a4e7ae6ed7",
+      "transformed": false
+    },
+    {
+      "path": "production-site/frontend/src/components/staff/PresetScriptPreviewGroups.tsx",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:frontend/src/components/staff/PresetScriptPreviewGroups.tsx",
+      "original_sha256": "2b0774119c823a762ab41944afb4c2bb0ca3b878d819eab482137c928d01e5de",
+      "handover_sha256": "2b0774119c823a762ab41944afb4c2bb0ca3b878d819eab482137c928d01e5de",
+      "transformed": false
+    },
+    {
+      "path": "production-site/frontend/src/components/staff/PresetTimeSlotScriptDialog.tsx",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:frontend/src/components/staff/PresetTimeSlotScriptDialog.tsx",
+      "original_sha256": "efabefc3b40fe6dddf4eb3945225afd1061841d43dfa90d388b7d973891c393b",
+      "handover_sha256": "2dbbd4cb336b7747a1ce8ae0caa1b550ba9eecbc5023ac4fc475f00679926d6d",
+      "transformed": true
+    },
+    {
+      "path": "production-site/frontend/src/components/states/LoadingState.tsx",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:frontend/src/components/states/LoadingState.tsx",
+      "original_sha256": "06565cde49cb20a2731138db3c8d07015368806f497359475c3f311fa6f648d2",
+      "handover_sha256": "06565cde49cb20a2731138db3c8d07015368806f497359475c3f311fa6f648d2",
+      "transformed": false
+    },
+    {
+      "path": "production-site/frontend/src/components/ui/AppErrorBoundary.tsx",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:frontend/src/components/ui/AppErrorBoundary.tsx",
+      "original_sha256": "b6c2bed5fa907f291724e67fd8f16fe1428813629a7e166b10a9156d174b77b7",
+      "handover_sha256": "b6c2bed5fa907f291724e67fd8f16fe1428813629a7e166b10a9156d174b77b7",
+      "transformed": false
+    },
+    {
+      "path": "production-site/frontend/src/components/ui/AppSelect.tsx",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:frontend/src/components/ui/AppSelect.tsx",
+      "original_sha256": "c6a24b26478e1069ae3b3cab376da8366e3d6ebff7b1fb2bf1670498687c2ef8",
+      "handover_sha256": "c6a24b26478e1069ae3b3cab376da8366e3d6ebff7b1fb2bf1670498687c2ef8",
+      "transformed": false
+    },
+    {
+      "path": "production-site/frontend/src/components/ui/Dialog.tsx",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:frontend/src/components/ui/Dialog.tsx",
+      "original_sha256": "7a118dd073418bf84eab6376a24cfc708271a7f6d285f8d39bc4afa9b14e3489",
+      "handover_sha256": "7a118dd073418bf84eab6376a24cfc708271a7f6d285f8d39bc4afa9b14e3489",
+      "transformed": false
+    },
+    {
+      "path": "production-site/frontend/src/components/ui/ToastProvider.tsx",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:frontend/src/components/ui/ToastProvider.tsx",
+      "original_sha256": "efed60a4a50f01a169dfcfc52b89504f5e7237f80cb927599db81474dc46039d",
+      "handover_sha256": "efed60a4a50f01a169dfcfc52b89504f5e7237f80cb927599db81474dc46039d",
+      "transformed": false
+    },
+    {
+      "path": "production-site/frontend/src/lib/agentCalendarPreview.ts",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:frontend/src/lib/agentCalendarPreview.ts",
+      "original_sha256": "4ff7034f78bf2ea6515ec449c2f1a8de5d5a85f0f9895c3d87a7b8166fa16248",
+      "handover_sha256": "4ff7034f78bf2ea6515ec449c2f1a8de5d5a85f0f9895c3d87a7b8166fa16248",
+      "transformed": false
+    },
+    {
+      "path": "production-site/frontend/src/lib/agentProgress.ts",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:frontend/src/lib/agentProgress.ts",
+      "original_sha256": "d2d4177861be42c8486782b8b340dd9cc849ed00b877a0b81695c5921fb18521",
+      "handover_sha256": "d2d4177861be42c8486782b8b340dd9cc849ed00b877a0b81695c5921fb18521",
+      "transformed": false
+    },
+    {
+      "path": "production-site/frontend/src/lib/agentShift.ts",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:frontend/src/lib/agentShift.ts",
+      "original_sha256": "5e6da210e6a9b59ca8c784c747b1f29eb7f7328f791d4dfcd2db2ddaadd07616",
+      "handover_sha256": "5e6da210e6a9b59ca8c784c747b1f29eb7f7328f791d4dfcd2db2ddaadd07616",
+      "transformed": false
+    },
+    {
+      "path": "production-site/frontend/src/lib/apiClient.ts",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:frontend/src/lib/apiClient.ts",
+      "original_sha256": "1c647dfcc15efd656c17b686368a5993f7939a365d58d823de19320bec829e82",
+      "handover_sha256": "1c647dfcc15efd656c17b686368a5993f7939a365d58d823de19320bec829e82",
+      "transformed": false
+    },
+    {
+      "path": "production-site/frontend/src/lib/availability.ts",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:frontend/src/lib/availability.ts",
+      "original_sha256": "df7a36a9cc736712b12a4bc100192b2a470f531df66f4088139ac7855fd1141b",
+      "handover_sha256": "df7a36a9cc736712b12a4bc100192b2a470f531df66f4088139ac7855fd1141b",
+      "transformed": false
+    },
+    {
+      "path": "production-site/frontend/src/lib/availabilityResponse.ts",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:frontend/src/lib/availabilityResponse.ts",
+      "original_sha256": "08f54c4c61acab96271d3e5c08981cee1d49f8ba81fcc51fd90d119f0eaa68e7",
+      "handover_sha256": "08f54c4c61acab96271d3e5c08981cee1d49f8ba81fcc51fd90d119f0eaa68e7",
+      "transformed": false
+    },
+    {
+      "path": "production-site/frontend/src/lib/breakMinuteOptions.ts",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:frontend/src/lib/breakMinuteOptions.ts",
+      "original_sha256": "54ce40bc942b4439112556e594f8f29261512a02fa4784ee6a2a6f7a5f7c5a4a",
+      "handover_sha256": "54ce40bc942b4439112556e594f8f29261512a02fa4784ee6a2a6f7a5f7c5a4a",
+      "transformed": false
+    },
+    {
+      "path": "production-site/frontend/src/lib/calendarAvailability.ts",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:frontend/src/lib/calendarAvailability.ts",
+      "original_sha256": "17b2fc2827e66f7f9c575b0887978889b2bdf2c87c59f9cc3336dca1da6b7c6b",
+      "handover_sha256": "17b2fc2827e66f7f9c575b0887978889b2bdf2c87c59f9cc3336dca1da6b7c6b",
+      "transformed": false
+    },
+    {
+      "path": "production-site/frontend/src/lib/calendarDomPlacement.ts",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:frontend/src/lib/calendarDomPlacement.ts",
+      "original_sha256": "54249647f2b83a6c2ac0187fa19101eb5044549f909408552e0309a0e5cb2577",
+      "handover_sha256": "54249647f2b83a6c2ac0187fa19101eb5044549f909408552e0309a0e5cb2577",
+      "transformed": false
+    },
+    {
+      "path": "production-site/frontend/src/lib/calendarDraftQueue.ts",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:frontend/src/lib/calendarDraftQueue.ts",
+      "original_sha256": "00904ea2f383a586616513cedcf3204cb1c5a91404f7a235f099a4fea912a775",
+      "handover_sha256": "00904ea2f383a586616513cedcf3204cb1c5a91404f7a235f099a4fea912a775",
+      "transformed": false
+    },
+    {
+      "path": "production-site/frontend/src/lib/calendarEmployeeWindow.ts",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:frontend/src/lib/calendarEmployeeWindow.ts",
+      "original_sha256": "e417c3edb1b364502d0171bcb850c881b3a94ae0fbcb54a222db963ff4b6a712",
+      "handover_sha256": "e417c3edb1b364502d0171bcb850c881b3a94ae0fbcb54a222db963ff4b6a712",
+      "transformed": false
+    },
+    {
+      "path": "production-site/frontend/src/lib/calendarGrouping.ts",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:frontend/src/lib/calendarGrouping.ts",
+      "original_sha256": "02ed68b49ce82991b4ece88a9162569f93b934b56bc82cda95ed1dddf26a38e3",
+      "handover_sha256": "02ed68b49ce82991b4ece88a9162569f93b934b56bc82cda95ed1dddf26a38e3",
+      "transformed": false
+    },
+    {
+      "path": "production-site/frontend/src/lib/calendarLoad.ts",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:frontend/src/lib/calendarLoad.ts",
+      "original_sha256": "eb090796615e7f6690068c672fdce95bb6de9884a681aac630fbc6a23936007f",
+      "handover_sha256": "eb090796615e7f6690068c672fdce95bb6de9884a681aac630fbc6a23936007f",
+      "transformed": false
+    },
+    {
+      "path": "production-site/frontend/src/lib/calendarLocation.ts",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:frontend/src/lib/calendarLocation.ts",
+      "original_sha256": "ebc782b1f2f51f4495bc90e666166436ee41a16edf93b9bccb85da1f88fbdff3",
+      "handover_sha256": "ebc782b1f2f51f4495bc90e666166436ee41a16edf93b9bccb85da1f88fbdff3",
+      "transformed": false
+    },
+    {
+      "path": "production-site/frontend/src/lib/calendarOverlap.ts",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:frontend/src/lib/calendarOverlap.ts",
+      "original_sha256": "82fb1c7cf3f37f087abf3fda9c94359e430b453b07ad5ef6093e30affee3fd62",
+      "handover_sha256": "82fb1c7cf3f37f087abf3fda9c94359e430b453b07ad5ef6093e30affee3fd62",
+      "transformed": false
+    },
+    {
+      "path": "production-site/frontend/src/lib/calendarPeriod.ts",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:frontend/src/lib/calendarPeriod.ts",
+      "original_sha256": "bf885143179cff32fb91e6777964c7dcded383c45cdba8aa495386949585909c",
+      "handover_sha256": "bf885143179cff32fb91e6777964c7dcded383c45cdba8aa495386949585909c",
+      "transformed": false
+    },
+    {
+      "path": "production-site/frontend/src/lib/calendarPublish.ts",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:frontend/src/lib/calendarPublish.ts",
+      "original_sha256": "8ea6940851ce979f75f92f8316a390cfcb1bea9b5ce6d73e21e0e53a6292c4e2",
+      "handover_sha256": "8ea6940851ce979f75f92f8316a390cfcb1bea9b5ce6d73e21e0e53a6292c4e2",
+      "transformed": false
+    },
+    {
+      "path": "production-site/frontend/src/lib/calendarResize.ts",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:frontend/src/lib/calendarResize.ts",
+      "original_sha256": "b8fed38aefd6a0e928652a959b21b29447d311781087b61fc3fe23787d28de9b",
+      "handover_sha256": "b8fed38aefd6a0e928652a959b21b29447d311781087b61fc3fe23787d28de9b",
+      "transformed": false
+    },
+    {
+      "path": "production-site/frontend/src/lib/calendarResponse.ts",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:frontend/src/lib/calendarResponse.ts",
+      "original_sha256": "140a5671ef4b6a7978e51b6c7884b98b02a91d7c6ea3a103fc3d5e229187d27c",
+      "handover_sha256": "140a5671ef4b6a7978e51b6c7884b98b02a91d7c6ea3a103fc3d5e229187d27c",
+      "transformed": false
+    },
+    {
+      "path": "production-site/frontend/src/lib/calendarSelection.ts",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:frontend/src/lib/calendarSelection.ts",
+      "original_sha256": "eb7a331454eca49b99c9cc663b10cfab588cc145ab74e1ee170e8aeec32c653a",
+      "handover_sha256": "eb7a331454eca49b99c9cc663b10cfab588cc145ab74e1ee170e8aeec32c653a",
+      "transformed": false
+    },
+    {
+      "path": "production-site/frontend/src/lib/confirmedBatchDelete.ts",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:frontend/src/lib/confirmedBatchDelete.ts",
+      "original_sha256": "7b2c713f90d742d8f0a7468002c86b2a5368db57441568063ea5c4a267535bdb",
+      "handover_sha256": "7b2c713f90d742d8f0a7468002c86b2a5368db57441568063ea5c4a267535bdb",
+      "transformed": false
+    },
+    {
+      "path": "production-site/frontend/src/lib/copyDayResponse.ts",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:frontend/src/lib/copyDayResponse.ts",
+      "original_sha256": "a3a9a3e31fc09192dd0e1ef5b6424a985352959b83bb6848bbee8e8c46f40afe",
+      "handover_sha256": "a3a9a3e31fc09192dd0e1ef5b6424a985352959b83bb6848bbee8e8c46f40afe",
+      "transformed": false
+    },
+    {
+      "path": "production-site/frontend/src/lib/copyPeriodResponse.ts",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:frontend/src/lib/copyPeriodResponse.ts",
+      "original_sha256": "bf3306ab0f282d55bc4db22f3e362c28fc37ed73a3291de851201c1d70df97f2",
+      "handover_sha256": "bf3306ab0f282d55bc4db22f3e362c28fc37ed73a3291de851201c1d70df97f2",
+      "transformed": false
+    },
+    {
+      "path": "production-site/frontend/src/lib/dateTime.ts",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:frontend/src/lib/dateTime.ts",
+      "original_sha256": "4b659643762dab0df78d652b27d507f79a9c1645b3b11eb093bc195557869f20",
+      "handover_sha256": "4b659643762dab0df78d652b27d507f79a9c1645b3b11eb093bc195557869f20",
+      "transformed": false
+    },
+    {
+      "path": "production-site/frontend/src/lib/draftCommitReconciliation.ts",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:frontend/src/lib/draftCommitReconciliation.ts",
+      "original_sha256": "673d5b1153ac732b444d3952cd7fed0915e74168fb5640cff299c3b3b403bd42",
+      "handover_sha256": "673d5b1153ac732b444d3952cd7fed0915e74168fb5640cff299c3b3b403bd42",
+      "transformed": false
+    },
+    {
+      "path": "production-site/frontend/src/lib/draftCommitResponse.ts",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:frontend/src/lib/draftCommitResponse.ts",
+      "original_sha256": "51a8b8793abe338e45f41b5db386e93d88606ca378a1a067a233c1a102cf7f51",
+      "handover_sha256": "51a8b8793abe338e45f41b5db386e93d88606ca378a1a067a233c1a102cf7f51",
+      "transformed": false
+    },
+    {
+      "path": "production-site/frontend/src/lib/draftRoleUsageResponse.ts",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:frontend/src/lib/draftRoleUsageResponse.ts",
+      "original_sha256": "0784ac2abbe97262eebd3cb275c95439385108cb0e6ea3efec66c73c9580dd77",
+      "handover_sha256": "0784ac2abbe97262eebd3cb275c95439385108cb0e6ea3efec66c73c9580dd77",
+      "transformed": false
+    },
+    {
+      "path": "production-site/frontend/src/lib/evaluateJobColor.ts",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:frontend/src/lib/evaluateJobColor.ts",
+      "original_sha256": "e151ae08a8ebc06593bfc4702de28f08d5801c9aae0b148b1ddbbefbfc0f5a3a",
+      "handover_sha256": "e151ae08a8ebc06593bfc4702de28f08d5801c9aae0b148b1ddbbefbfc0f5a3a",
+      "transformed": false
+    },
+    {
+      "path": "production-site/frontend/src/lib/manualAvailabilityBatch.ts",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:frontend/src/lib/manualAvailabilityBatch.ts",
+      "original_sha256": "1c09ed9247030367ce7c2cd51faa032003f27751e99e609071f28e29e2c1e354",
+      "handover_sha256": "1c09ed9247030367ce7c2cd51faa032003f27751e99e609071f28e29e2c1e354",
+      "transformed": false
+    },
+    {
+      "path": "production-site/frontend/src/lib/mutationReconciliation.ts",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:frontend/src/lib/mutationReconciliation.ts",
+      "original_sha256": "5ff848132c960fe2bc06ce3b7d4d6f4e21e6f51ce925a06f65183679318771fa",
+      "handover_sha256": "5ff848132c960fe2bc06ce3b7d4d6f4e21e6f51ce925a06f65183679318771fa",
+      "transformed": false
+    },
+    {
+      "path": "production-site/frontend/src/lib/presetScriptInput.ts",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:frontend/src/lib/presetScriptInput.ts",
+      "original_sha256": "12c4afc4125a23145d2ad55c82aaf9f39bc32f1f2f6c597b68df8436ce3d46ca",
+      "handover_sha256": "12c4afc4125a23145d2ad55c82aaf9f39bc32f1f2f6c597b68df8436ce3d46ca",
+      "transformed": false
+    },
+    {
+      "path": "production-site/frontend/src/lib/presetScriptResponse.ts",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:frontend/src/lib/presetScriptResponse.ts",
+      "original_sha256": "cfab0cd359abace38b6414ec91f5da419d7284de4476d4df6aa5a190d1d0b89c",
+      "handover_sha256": "cfab0cd359abace38b6414ec91f5da419d7284de4476d4df6aa5a190d1d0b89c",
+      "transformed": false
+    },
+    {
+      "path": "production-site/frontend/src/lib/publicationMutationResponse.ts",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:frontend/src/lib/publicationMutationResponse.ts",
+      "original_sha256": "34a7ee016d6cce2db4722dfe03ec5436c7dac5a3910afb903f1b8de93f8d2271",
+      "handover_sha256": "34a7ee016d6cce2db4722dfe03ec5436c7dac5a3910afb903f1b8de93f8d2271",
+      "transformed": false
+    },
+    {
+      "path": "production-site/frontend/src/lib/repeatDates.ts",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:frontend/src/lib/repeatDates.ts",
+      "original_sha256": "9533b7e587a4085454f46a2640cd12be29a2a464d57c2748da304c58cf7d5b73",
+      "handover_sha256": "9533b7e587a4085454f46a2640cd12be29a2a464d57c2748da304c58cf7d5b73",
+      "transformed": false
+    },
+    {
+      "path": "production-site/frontend/src/lib/roleColor.ts",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:frontend/src/lib/roleColor.ts",
+      "original_sha256": "9bd01f6a775e7f0d2a4b15c4ff8aeb1a74f254978e2caf23797cd247ae854462",
+      "handover_sha256": "9bd01f6a775e7f0d2a4b15c4ff8aeb1a74f254978e2caf23797cd247ae854462",
+      "transformed": false
+    },
+    {
+      "path": "production-site/frontend/src/lib/roleMutationResponse.ts",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:frontend/src/lib/roleMutationResponse.ts",
+      "original_sha256": "f44d5378785c33db746f1e0fe91d75f8a219c1518ea7669a2218045a813db3d1",
+      "handover_sha256": "f44d5378785c33db746f1e0fe91d75f8a219c1518ea7669a2218045a813db3d1",
+      "transformed": false
+    },
+    {
+      "path": "production-site/frontend/src/lib/rosterBatchResponse.ts",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:frontend/src/lib/rosterBatchResponse.ts",
+      "original_sha256": "f15c40720300f881389d8fa271b8b3da2609a011952ae8e56435e04c1abb7bee",
+      "handover_sha256": "f15c40720300f881389d8fa271b8b3da2609a011952ae8e56435e04c1abb7bee",
+      "transformed": false
+    },
+    {
+      "path": "production-site/frontend/src/lib/rosterSettingsResponse.ts",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:frontend/src/lib/rosterSettingsResponse.ts",
+      "original_sha256": "bd5c299a6bc3a4bf81aba2fb7858c9da8cbb33f8425bc3849257fa9e946d174d",
+      "handover_sha256": "bd5c299a6bc3a4bf81aba2fb7858c9da8cbb33f8425bc3849257fa9e946d174d",
+      "transformed": false
+    },
+    {
+      "path": "production-site/frontend/src/lib/scheduledShiftSummary.ts",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:frontend/src/lib/scheduledShiftSummary.ts",
+      "original_sha256": "92477a5d79988d6b562ce50f6fe03a8d94b2df06aebfb14b565c192240f911ea",
+      "handover_sha256": "92477a5d79988d6b562ce50f6fe03a8d94b2df06aebfb14b565c192240f911ea",
+      "transformed": false
+    },
+    {
+      "path": "production-site/frontend/src/lib/scheduling.ts",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:frontend/src/lib/scheduling.ts",
+      "original_sha256": "dc7b0182807095654aa469d4806016f145d5cc43ad2d8d0b84ed4d306ee6adbd",
+      "handover_sha256": "dc7b0182807095654aa469d4806016f145d5cc43ad2d8d0b84ed4d306ee6adbd",
+      "transformed": false
+    },
+    {
+      "path": "production-site/frontend/src/lib/schedulingFeedback.ts",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:frontend/src/lib/schedulingFeedback.ts",
+      "original_sha256": "06428b04bdea78e03bf75fe3fd649a31d872a55599b275875e8301aa4d476bf9",
+      "handover_sha256": "06428b04bdea78e03bf75fe3fd649a31d872a55599b275875e8301aa4d476bf9",
+      "transformed": false
+    },
+    {
+      "path": "production-site/frontend/src/lib/shiftMutationResponse.ts",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:frontend/src/lib/shiftMutationResponse.ts",
+      "original_sha256": "06b7eb96afbd8a3273b4608d09345bbc426c26e183a00bc0c1308bb5a648cf91",
+      "handover_sha256": "06b7eb96afbd8a3273b4608d09345bbc426c26e183a00bc0c1308bb5a648cf91",
+      "transformed": false
+    },
+    {
+      "path": "production-site/frontend/src/lib/storeTime.ts",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:frontend/src/lib/storeTime.ts",
+      "original_sha256": "4eb5474a686207b18cfbc3856e27f5caadef64a1e7393159dadf99d9c298f0ce",
+      "handover_sha256": "4eb5474a686207b18cfbc3856e27f5caadef64a1e7393159dadf99d9c298f0ce",
+      "transformed": false
+    },
+    {
+      "path": "production-site/frontend/src/lib/templateResponses.ts",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:frontend/src/lib/templateResponses.ts",
+      "original_sha256": "0c03b99ed98e093e373c8808207868f0818ce8a66dce4f773b945ea6010142f7",
+      "handover_sha256": "0c03b99ed98e093e373c8808207868f0818ce8a66dce4f773b945ea6010142f7",
+      "transformed": false
+    },
+    {
+      "path": "production-site/frontend/src/lib/timeGridPointer.ts",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:frontend/src/lib/timeGridPointer.ts",
+      "original_sha256": "41b2370fdae800b6e5c3c113f106c3461fa614810291971f0f213372deb630fa",
+      "handover_sha256": "41b2370fdae800b6e5c3c113f106c3461fa614810291971f0f213372deb630fa",
+      "transformed": false
+    },
+    {
+      "path": "production-site/frontend/src/lib/uncertainDelete.ts",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:frontend/src/lib/uncertainDelete.ts",
+      "original_sha256": "5ea304a3d89ef76e276081df563923804f32af76f18c1666f248cc9284a9e18c",
+      "handover_sha256": "5ea304a3d89ef76e276081df563923804f32af76f18c1666f248cc9284a9e18c",
+      "transformed": false
+    },
+    {
+      "path": "production-site/frontend/src/lib/verifiedShiftRoles.ts",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:frontend/src/lib/verifiedShiftRoles.ts",
+      "original_sha256": "37b9d69287887e045f35d16fa9e655e3c687b1b9768fd0afcefb1e542ecff0e0",
+      "handover_sha256": "37b9d69287887e045f35d16fa9e655e3c687b1b9768fd0afcefb1e542ecff0e0",
+      "transformed": false
+    },
+    {
+      "path": "production-site/frontend/src/main.tsx",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:frontend/src/main.tsx",
+      "original_sha256": "6bb5805468b68cd446fe9c9867064cd1f37c69d66e992ba9dd780233605e4e13",
+      "handover_sha256": "6bb5805468b68cd446fe9c9867064cd1f37c69d66e992ba9dd780233605e4e13",
+      "transformed": false
+    },
+    {
+      "path": "production-site/frontend/src/pages/AgentRulesPage.tsx",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:frontend/src/pages/AgentRulesPage.tsx",
+      "original_sha256": "e54bfdb433f1d07fbdd5c8ede96fa11c3c37b8d6664196442e85417f04e66fc2",
+      "handover_sha256": "e54bfdb433f1d07fbdd5c8ede96fa11c3c37b8d6664196442e85417f04e66fc2",
+      "transformed": false
+    },
+    {
+      "path": "production-site/frontend/src/pages/CalendarPage.tsx",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:frontend/src/pages/CalendarPage.tsx",
+      "original_sha256": "d3a1f2c851d59cbeefa67d7a060232270b943d2859de09cc0777017376da3f1f",
+      "handover_sha256": "d3a1f2c851d59cbeefa67d7a060232270b943d2859de09cc0777017376da3f1f",
+      "transformed": false
+    },
+    {
+      "path": "production-site/frontend/src/pages/EmployeeAvailabilityPage.tsx",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:frontend/src/pages/EmployeeAvailabilityPage.tsx",
+      "original_sha256": "24982e72ddf352adc43ffa85984d8e7dd0f598bf7d0d9f8a99483812416cd589",
+      "handover_sha256": "24982e72ddf352adc43ffa85984d8e7dd0f598bf7d0d9f8a99483812416cd589",
+      "transformed": false
+    },
+    {
+      "path": "production-site/frontend/src/pages/ExportPage.tsx",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:frontend/src/pages/ExportPage.tsx",
+      "original_sha256": "2bb3127bbbde8c7f8a37bed299b6bd62822d4aa0209ca3e92c5848203dc54f26",
+      "handover_sha256": "2bb3127bbbde8c7f8a37bed299b6bd62822d4aa0209ca3e92c5848203dc54f26",
+      "transformed": false
+    },
+    {
+      "path": "production-site/frontend/src/pages/FoundationPage.tsx",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:frontend/src/pages/FoundationPage.tsx",
+      "original_sha256": "e9dd97c2fa75f700ebe766408b46031038fd2408e29b3880703688a6dd4fd372",
+      "handover_sha256": "e9dd97c2fa75f700ebe766408b46031038fd2408e29b3880703688a6dd4fd372",
+      "transformed": false
+    },
+    {
+      "path": "production-site/frontend/src/pages/HelpPage.tsx",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:frontend/src/pages/HelpPage.tsx",
+      "original_sha256": "2e5b74739df015c4d18793db9990eb93c9bbb3c318d36ea774c8d9d022dd1a0e",
+      "handover_sha256": "2e5b74739df015c4d18793db9990eb93c9bbb3c318d36ea774c8d9d022dd1a0e",
+      "transformed": false
+    },
+    {
+      "path": "production-site/frontend/src/pages/LoginPage.tsx",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:frontend/src/pages/LoginPage.tsx",
+      "original_sha256": "3e0b244c940d44af42b78e510b4bd67bd8148483c0cd184c2abd533daaa68646",
+      "handover_sha256": "3e0b244c940d44af42b78e510b4bd67bd8148483c0cd184c2abd533daaa68646",
+      "transformed": false
+    },
+    {
+      "path": "production-site/frontend/src/pages/MultiAgentPage.tsx",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:frontend/src/pages/MultiAgentPage.tsx",
+      "original_sha256": "b1ddeeaf142aeef984b07b589fb1458e71fdde2c7fdab4618ac8b3ed6507a972",
+      "handover_sha256": "b1ddeeaf142aeef984b07b589fb1458e71fdde2c7fdab4618ac8b3ed6507a972",
+      "transformed": false
+    },
+    {
+      "path": "production-site/frontend/src/pages/SettingsPage.tsx",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:frontend/src/pages/SettingsPage.tsx",
+      "original_sha256": "b0cb786bed80f16219adbb7dc3ba9b172b038d7ffde976a5478b52dbc1b55ea3",
+      "handover_sha256": "27fec3ed54d5aaa5eb45d17df19c857083a13ed8cbd1297165aa67e579b6aed1",
+      "transformed": true
+    },
+    {
+      "path": "production-site/frontend/src/pages/StaffPage.tsx",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:frontend/src/pages/StaffPage.tsx",
+      "original_sha256": "e2fccbdc79cfad493312b69cad3606658f87cb852a5512ddca48e40ddda27e8c",
+      "handover_sha256": "e2fccbdc79cfad493312b69cad3606658f87cb852a5512ddca48e40ddda27e8c",
+      "transformed": false
+    },
+    {
+      "path": "production-site/frontend/src/pages/TemplatesPage.tsx",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:frontend/src/pages/TemplatesPage.tsx",
+      "original_sha256": "1c0488866a4ccaa0c197a94f0614c695dfbc0eea68cf4d33015933dd6ad518fc",
+      "handover_sha256": "1c0488866a4ccaa0c197a94f0614c695dfbc0eea68cf4d33015933dd6ad518fc",
+      "transformed": false
+    },
+    {
+      "path": "production-site/frontend/src/pages/agentRules.css",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:frontend/src/pages/agentRules.css",
+      "original_sha256": "b17184a04fa65718cdea261438a20f3eef1f80667cb5d737a3351967991736b7",
+      "handover_sha256": "b17184a04fa65718cdea261438a20f3eef1f80667cb5d737a3351967991736b7",
+      "transformed": false
+    },
+    {
+      "path": "production-site/frontend/src/pages/employeeAvailability.css",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:frontend/src/pages/employeeAvailability.css",
+      "original_sha256": "be0de74bc664db6485a186a6234d277ea0a57ae0b151cb66a88c2162af3cf53a",
+      "handover_sha256": "be0de74bc664db6485a186a6234d277ea0a57ae0b151cb66a88c2162af3cf53a",
+      "transformed": false
+    },
+    {
+      "path": "production-site/frontend/src/pages/multiAgent.css",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:frontend/src/pages/multiAgent.css",
+      "original_sha256": "ff2d4103601bb512794273d04b85f44bbbc66af825a772dd5d427189da5a6e2c",
+      "handover_sha256": "ff2d4103601bb512794273d04b85f44bbbc66af825a772dd5d427189da5a6e2c",
+      "transformed": false
+    },
+    {
+      "path": "production-site/frontend/src/services/employeePortalRepository.ts",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:frontend/src/services/employeePortalRepository.ts",
+      "original_sha256": "509569554c00ce7e44db603878c761cce7fd0775762dc7a1eebbadb4b08149fb",
+      "handover_sha256": "509569554c00ce7e44db603878c761cce7fd0775762dc7a1eebbadb4b08149fb",
+      "transformed": false
+    },
+    {
+      "path": "production-site/frontend/src/services/multiAgentRepository.ts",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:frontend/src/services/multiAgentRepository.ts",
+      "original_sha256": "1bc52d8746b96c6b2b8302da2cbff63c80eb15a12a17b7ef28ec7030ebe249c6",
+      "handover_sha256": "1bc52d8746b96c6b2b8302da2cbff63c80eb15a12a17b7ef28ec7030ebe249c6",
+      "transformed": false
+    },
+    {
+      "path": "production-site/frontend/src/services/rosterRepository.ts",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:frontend/src/services/rosterRepository.ts",
+      "original_sha256": "79a827972224ab164386b65d30774034ba5a0ec97a1148533315f2f7eb8eb92d",
+      "handover_sha256": "79a827972224ab164386b65d30774034ba5a0ec97a1148533315f2f7eb8eb92d",
+      "transformed": false
+    },
+    {
+      "path": "production-site/frontend/src/services/workforceRepository.ts",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:frontend/src/services/workforceRepository.ts",
+      "original_sha256": "13c910e79c542d939950d22df4ff095b08c86993ba7e54661ea365a862fb9e09",
+      "handover_sha256": "13c910e79c542d939950d22df4ff095b08c86993ba7e54661ea365a862fb9e09",
+      "transformed": false
+    },
+    {
+      "path": "production-site/frontend/src/store/StoreContext.tsx",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:frontend/src/store/StoreContext.tsx",
+      "original_sha256": "c030622ba9abb962dfc1b5b866c060a38b7fc898583881702a30467785f50443",
+      "handover_sha256": "c030622ba9abb962dfc1b5b866c060a38b7fc898583881702a30467785f50443",
+      "transformed": false
+    },
+    {
+      "path": "production-site/frontend/src/styles.css",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:frontend/src/styles.css",
+      "original_sha256": "7e1829922b3545fe5743f9261c5d5a146f2c50cd9bf0b30c799e84e04707b7ab",
+      "handover_sha256": "7e1829922b3545fe5743f9261c5d5a146f2c50cd9bf0b30c799e84e04707b7ab",
+      "transformed": false
+    },
+    {
+      "path": "production-site/frontend/src/test/setup.ts",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:frontend/src/test/setup.ts",
+      "original_sha256": "ceb43354d92bd9a5035ac1b7cfc008e271287aee34460e0ce6ccdd488a93e127",
+      "handover_sha256": "ceb43354d92bd9a5035ac1b7cfc008e271287aee34460e0ce6ccdd488a93e127",
+      "transformed": false
+    },
+    {
+      "path": "production-site/frontend/src/types/roster.ts",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:frontend/src/types/roster.ts",
+      "original_sha256": "c908968931f9150d75fc382371a14dd81f88b77813542b37ca5557eb329cbf7b",
+      "handover_sha256": "c908968931f9150d75fc382371a14dd81f88b77813542b37ca5557eb329cbf7b",
+      "transformed": false
+    },
+    {
+      "path": "production-site/frontend/src/types/workforce.ts",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:frontend/src/types/workforce.ts",
+      "original_sha256": "05e76cefd6b67280f3faebd4591d769a81b2485523ce8da633857f7ed4fa0b65",
+      "handover_sha256": "05e76cefd6b67280f3faebd4591d769a81b2485523ce8da633857f7ed4fa0b65",
+      "transformed": false
+    },
+    {
+      "path": "production-site/frontend/src/vite-env.d.ts",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:frontend/src/vite-env.d.ts",
+      "original_sha256": "f143733555ee727c891ccfa675fe94bd1a49c64aff112ec93e0b5121e9bc15e7",
+      "handover_sha256": "f143733555ee727c891ccfa675fe94bd1a49c64aff112ec93e0b5121e9bc15e7",
+      "transformed": false
+    },
+    {
+      "path": "production-site/frontend/tailwind.config.js",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:frontend/tailwind.config.js",
+      "original_sha256": "7a29f6f2e636581bc147bb33480fe8257579bcdf6d157633a91156bea744a4ee",
+      "handover_sha256": "7a29f6f2e636581bc147bb33480fe8257579bcdf6d157633a91156bea744a4ee",
+      "transformed": false
+    },
+    {
+      "path": "production-site/frontend/vite.config.mjs",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:frontend/vite.config.mjs",
+      "original_sha256": "605a605d57f75a8515087dbb2fcca4526aef387ef0e7c075cdc8de36e52205e6",
+      "handover_sha256": "605a605d57f75a8515087dbb2fcca4526aef387ef0e7c075cdc8de36e52205e6",
+      "transformed": false
+    },
+    {
+      "path": "production-site/generated/evaluate-models.json",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:generated/evaluate-models.json",
+      "original_sha256": "e46edfe4af75a9da01ebfc30e2c516afa2bc1b86ad914d380fe71b014fd031c0",
+      "handover_sha256": "e46edfe4af75a9da01ebfc30e2c516afa2bc1b86ad914d380fe71b014fd031c0",
+      "transformed": false
+    },
+    {
+      "path": "production-site/generated/evaluate.prisma",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:generated/evaluate.prisma",
+      "original_sha256": "9b55ce68c6e83ea702689db2993072157c420bb9301d638b84764d364689c0ee",
+      "handover_sha256": "9b55ce68c6e83ea702689db2993072157c420bb9301d638b84764d364689c0ee",
+      "transformed": false
+    },
+    {
+      "path": "production-site/generated/evaluate/accountService.ts",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:generated/evaluate/accountService.ts",
+      "original_sha256": "becc18ceacfa247e17568b026c2f6e70db40fa773f2b02d041f13ce0970f34d2",
+      "handover_sha256": "becc18ceacfa247e17568b026c2f6e70db40fa773f2b02d041f13ce0970f34d2",
+      "transformed": false
+    },
+    {
+      "path": "production-site/generated/evaluate/aiTextEvaluationV1.ts",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:generated/evaluate/aiTextEvaluationV1.ts",
+      "original_sha256": "5c632f071aa3a38cc7d638c078bbc2858198d8cac12ac5b42f0901be06632e40",
+      "handover_sha256": "5c632f071aa3a38cc7d638c078bbc2858198d8cac12ac5b42f0901be06632e40",
+      "transformed": false
+    },
+    {
+      "path": "production-site/generated/evaluate/analyticsV1Service.ts",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:generated/evaluate/analyticsV1Service.ts",
+      "original_sha256": "6cac0a9ef980c58fd88c6b1324f118d689671d41ab66e0fb132cca7734965a50",
+      "handover_sha256": "6cac0a9ef980c58fd88c6b1324f118d689671d41ab66e0fb132cca7734965a50",
+      "transformed": false
+    },
+    {
+      "path": "production-site/generated/evaluate/app.ts",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:generated/evaluate/app.ts",
+      "original_sha256": "1e254427cb58b1021934427433c31b5c3e0be9de801f564b7b3caa6b32f74db4",
+      "handover_sha256": "1e254427cb58b1021934427433c31b5c3e0be9de801f564b7b3caa6b32f74db4",
+      "transformed": false
+    },
+    {
+      "path": "production-site/generated/evaluate/auth.ts",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:generated/evaluate/auth.ts",
+      "original_sha256": "2dde1f883015dfd5ab1ee41b834bcbe4caae9279d4160b3dcd009464c03a82a3",
+      "handover_sha256": "2dde1f883015dfd5ab1ee41b834bcbe4caae9279d4160b3dcd009464c03a82a3",
+      "transformed": false
+    },
+    {
+      "path": "production-site/generated/evaluate/currentSkillService.ts",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:generated/evaluate/currentSkillService.ts",
+      "original_sha256": "88b3133c673dc635e3c60ae1a8982dc0fa511eba43f9ca0da9933538db9bb517",
+      "handover_sha256": "88b3133c673dc635e3c60ae1a8982dc0fa511eba43f9ca0da9933538db9bb517",
+      "transformed": false
+    },
+    {
+      "path": "production-site/generated/evaluate/domain.ts",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:generated/evaluate/domain.ts",
+      "original_sha256": "585e3de456de6695241ef22a7385719ce68e3f0462493dae1fa4f703bede3067",
+      "handover_sha256": "585e3de456de6695241ef22a7385719ce68e3f0462493dae1fa4f703bede3067",
+      "transformed": false
+    },
+    {
+      "path": "production-site/generated/evaluate/employeeEvaluationSummaryService.ts",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:generated/evaluate/employeeEvaluationSummaryService.ts",
+      "original_sha256": "fe5f303985b65a17b09b6aaa438423e248bdd6db820fdc45a231f7d7855492ff",
+      "handover_sha256": "fe5f303985b65a17b09b6aaa438423e248bdd6db820fdc45a231f7d7855492ff",
+      "transformed": false
+    },
+    {
+      "path": "production-site/generated/evaluate/employeeService.ts",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:generated/evaluate/employeeService.ts",
+      "original_sha256": "ed607505d19892df0e3eb0b346f6e231c1663ed21863f5a7cc2c1271dd8c9595",
+      "handover_sha256": "ed607505d19892df0e3eb0b346f6e231c1663ed21863f5a7cc2c1271dd8c9595",
+      "transformed": false
+    },
+    {
+      "path": "production-site/generated/evaluate/evaluationCatalogService.ts",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:generated/evaluate/evaluationCatalogService.ts",
+      "original_sha256": "29e246a269a5eeffaab68591e4c0ee64c2ac27f6cd8cb8518294381383a73aed",
+      "handover_sha256": "29e246a269a5eeffaab68591e4c0ee64c2ac27f6cd8cb8518294381383a73aed",
+      "transformed": false
+    },
+    {
+      "path": "production-site/generated/evaluate/evaluationReadService.ts",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:generated/evaluate/evaluationReadService.ts",
+      "original_sha256": "731cab99c9b7ea8b1bcb6202a51ffd93d382d75e4dc10cc525ec065a3b3b8727",
+      "handover_sha256": "731cab99c9b7ea8b1bcb6202a51ffd93d382d75e4dc10cc525ec065a3b3b8727",
+      "transformed": false
+    },
+    {
+      "path": "production-site/generated/evaluate/evaluationRoundService.ts",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:generated/evaluate/evaluationRoundService.ts",
+      "original_sha256": "05934e9120565ba9bdfc491e149f52b62831f7046c1c3939a211811cc1861fb7",
+      "handover_sha256": "05934e9120565ba9bdfc491e149f52b62831f7046c1c3939a211811cc1861fb7",
+      "transformed": false
+    },
+    {
+      "path": "production-site/generated/evaluate/evaluationV1Service.ts",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:generated/evaluate/evaluationV1Service.ts",
+      "original_sha256": "c5499f85f1458dfb7d593fd2db8fe8a811029e4760d12f6a74a979aa4dd90cc4",
+      "handover_sha256": "c5499f85f1458dfb7d593fd2db8fe8a811029e4760d12f6a74a979aa4dd90cc4",
+      "transformed": false
+    },
+    {
+      "path": "production-site/generated/evaluate/historicalIdentity.ts",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:generated/evaluate/historicalIdentity.ts",
+      "original_sha256": "daaa6087eff7ac7aca2b2aa25fabf5a96c7167f7a52aa6765ba9370b6abd2c8a",
+      "handover_sha256": "daaa6087eff7ac7aca2b2aa25fabf5a96c7167f7a52aa6765ba9370b6abd2c8a",
+      "transformed": false
+    },
+    {
+      "path": "production-site/generated/evaluate/httpError.ts",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:generated/evaluate/httpError.ts",
+      "original_sha256": "ec353c021f40ac9349924af2afe10f59e9966da5173fa267abc4266303482436",
+      "handover_sha256": "ec353c021f40ac9349924af2afe10f59e9966da5173fa267abc4266303482436",
+      "transformed": false
+    },
+    {
+      "path": "production-site/generated/evaluate/loginRateLimitService.ts",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:generated/evaluate/loginRateLimitService.ts",
+      "original_sha256": "4d51a6050ba99ec22b6f4aed7f98ddd9e30335e446b159aa63e83eda7e93236c",
+      "handover_sha256": "4d51a6050ba99ec22b6f4aed7f98ddd9e30335e446b159aa63e83eda7e93236c",
+      "transformed": false
+    },
+    {
+      "path": "production-site/generated/evaluate/performanceNoteService.ts",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:generated/evaluate/performanceNoteService.ts",
+      "original_sha256": "3ce9e83150fda7db1d59cdcb4fe9f74011b8ed445f3c1b39ad6e9cd54164f872",
+      "handover_sha256": "3ce9e83150fda7db1d59cdcb4fe9f74011b8ed445f3c1b39ad6e9cd54164f872",
+      "transformed": false
+    },
+    {
+      "path": "production-site/generated/evaluate/prisma.ts",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:generated/evaluate/prisma.ts",
+      "original_sha256": "1d3166866ac7f174395b1341ec5c42553be864ac51f27899df2dea7d1101f65b",
+      "handover_sha256": "c52640efa2c6e4cd3d893f25d4c8ab31ccd3a83ce2ed5b6de128cdfc7f2661b3",
+      "transformed": true
+    },
+    {
+      "path": "production-site/generated/evaluate/rosterIntegrationService.ts",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:generated/evaluate/rosterIntegrationService.ts",
+      "original_sha256": "61d8f6e5f99a6cc28837e2583942c27de548435d0f164f26cda3c36c1442f172",
+      "handover_sha256": "61d8f6e5f99a6cc28837e2583942c27de548435d0f164f26cda3c36c1442f172",
+      "transformed": false
+    },
+    {
+      "path": "production-site/generated/evaluate/rosterSkillBoardService.ts",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:generated/evaluate/rosterSkillBoardService.ts",
+      "original_sha256": "5dc31dcbb1d5d50ec90bd1feab84b3e82f5271149c6b28cc3c3aa697a6ea4355",
+      "handover_sha256": "5dc31dcbb1d5d50ec90bd1feab84b3e82f5271149c6b28cc3c3aa697a6ea4355",
+      "transformed": false
+    },
+    {
+      "path": "production-site/generated/evaluate/roundAggregateRead.ts",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:generated/evaluate/roundAggregateRead.ts",
+      "original_sha256": "4af1c35a32cecb448f961771505858b6d7785279d9067d11fcf1e446ebd17da9",
+      "handover_sha256": "4af1c35a32cecb448f961771505858b6d7785279d9067d11fcf1e446ebd17da9",
+      "transformed": false
+    },
+    {
+      "path": "production-site/generated/evaluate/routes.ts",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:generated/evaluate/routes.ts",
+      "original_sha256": "3b6cda5ff81f5990b3ece2cffbd5ca7dbeba8da3d606e56f1da197a08b237918",
+      "handover_sha256": "3b6cda5ff81f5990b3ece2cffbd5ca7dbeba8da3d606e56f1da197a08b237918",
+      "transformed": false
+    },
+    {
+      "path": "production-site/generated/evaluate/safeLogging.ts",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:generated/evaluate/safeLogging.ts",
+      "original_sha256": "cee70851acf89c80a05fc0f95c49f3010b226055273f0809056d1f9c0158b94c",
+      "handover_sha256": "cee70851acf89c80a05fc0f95c49f3010b226055273f0809056d1f9c0158b94c",
+      "transformed": false
+    },
+    {
+      "path": "production-site/generated/evaluate/scoringPolicyV1.ts",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:generated/evaluate/scoringPolicyV1.ts",
+      "original_sha256": "2cf71f9efdd5f5cae49bb7d52c22b9b90f3ed67eee6a34204b560461f5bf8587",
+      "handover_sha256": "2cf71f9efdd5f5cae49bb7d52c22b9b90f3ed67eee6a34204b560461f5bf8587",
+      "transformed": false
+    },
+    {
+      "path": "production-site/generated/evaluate/server.ts",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:generated/evaluate/server.ts",
+      "original_sha256": "7ccd4f056bb51b7b4ddac31ca73aa85060167f4c95ac3a840a4d30ee81852292",
+      "handover_sha256": "7ccd4f056bb51b7b4ddac31ca73aa85060167f4c95ac3a840a4d30ee81852292",
+      "transformed": false
+    },
+    {
+      "path": "production-site/generated/evaluate/storeJobService.ts",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:generated/evaluate/storeJobService.ts",
+      "original_sha256": "fd9f5d873064cd015e029b6f4bd9d4667c8beb49ca06dc199d7dcce4be550079",
+      "handover_sha256": "fd9f5d873064cd015e029b6f4bd9d4667c8beb49ca06dc199d7dcce4be550079",
+      "transformed": false
+    },
+    {
+      "path": "production-site/generated/evaluate/storeService.ts",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:generated/evaluate/storeService.ts",
+      "original_sha256": "5d031a0f39c01eba58e561ccea862e62d70b692d3a23a4c229603f2925055894",
+      "handover_sha256": "5d031a0f39c01eba58e561ccea862e62d70b692d3a23a4c229603f2925055894",
+      "transformed": false
+    },
+    {
+      "path": "production-site/generated/evaluate/validation.ts",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:generated/evaluate/validation.ts",
+      "original_sha256": "98802dbb56cca3fbec40ef1480023246c31af8b479598d24d5f32bd7d50ad6d1",
+      "handover_sha256": "98802dbb56cca3fbec40ef1480023246c31af8b479598d24d5f32bd7d50ad6d1",
+      "transformed": false
+    },
+    {
+      "path": "production-site/generated/models.json",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:generated/models.json",
+      "original_sha256": "bd79bf98e71ed99f7e325b9c034861dcdd0c6362c4538af2e8634177111cdbb4",
+      "handover_sha256": "bd79bf98e71ed99f7e325b9c034861dcdd0c6362c4538af2e8634177111cdbb4",
+      "transformed": false
+    },
+    {
+      "path": "production-site/generated/roster.prisma",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:generated/roster.prisma",
+      "original_sha256": "3cbb088dfc8c49aa625d08afddf4fbe436594b14393605cc275d44ac93199aa8",
+      "handover_sha256": "3cbb088dfc8c49aa625d08afddf4fbe436594b14393605cc275d44ac93199aa8",
+      "transformed": false
+    },
+    {
+      "path": "production-site/generated/vendor/app.ts",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:generated/vendor/app.ts",
+      "original_sha256": "bbcf51ab21b784519011fbbc02a0d9a62c4355cae17a1118950e86de822ddf70",
+      "handover_sha256": "bbcf51ab21b784519011fbbc02a0d9a62c4355cae17a1118950e86de822ddf70",
+      "transformed": false
+    },
+    {
+      "path": "production-site/generated/vendor/auth.ts",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:generated/vendor/auth.ts",
+      "original_sha256": "3e6b3a7baa89770c9b34cde74031eb27846648b4929a8765d80cc0da65ea1d40",
+      "handover_sha256": "3e6b3a7baa89770c9b34cde74031eb27846648b4929a8765d80cc0da65ea1d40",
+      "transformed": false
+    },
+    {
+      "path": "production-site/generated/vendor/employeeCapacity.ts",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:generated/vendor/employeeCapacity.ts",
+      "original_sha256": "82ec584437f0f451dbeca549dca4f3a07b580c9a2fc96e94dd5bcefc929a65f0",
+      "handover_sha256": "82ec584437f0f451dbeca549dca4f3a07b580c9a2fc96e94dd5bcefc929a65f0",
+      "transformed": false
+    },
+    {
+      "path": "production-site/generated/vendor/employeeDemoRoutes.ts",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:generated/vendor/employeeDemoRoutes.ts",
+      "original_sha256": "74e10718ea5cba73f9c46e000ff56e65c2ced526380ee12632d810ffc2e213b1",
+      "handover_sha256": "74e10718ea5cba73f9c46e000ff56e65c2ced526380ee12632d810ffc2e213b1",
+      "transformed": false
+    },
+    {
+      "path": "production-site/generated/vendor/evaluateClient.ts",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:generated/vendor/evaluateClient.ts",
+      "original_sha256": "11542494cb01e71a27200e5810b84020b348d3d0bea4e6e9a3e39577955e948d",
+      "handover_sha256": "3ab506891451ae553aaa3ec8c99bbfcb703400242f72fa7cc5d7c47ef12df8e5",
+      "transformed": true
+    },
+    {
+      "path": "production-site/generated/vendor/evaluateJobColor.ts",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:generated/vendor/evaluateJobColor.ts",
+      "original_sha256": "0154fb097bef12075c46d0450f30979ccadc99c2b38160badc61b834de77082f",
+      "handover_sha256": "0154fb097bef12075c46d0450f30979ccadc99c2b38160badc61b834de77082f",
+      "transformed": false
+    },
+    {
+      "path": "production-site/generated/vendor/formalRoleMatch.ts",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:generated/vendor/formalRoleMatch.ts",
+      "original_sha256": "b89368d89dd602dbd39319f68dd72d8ea61dc06c675a38385ce91607a8b3231a",
+      "handover_sha256": "b89368d89dd602dbd39319f68dd72d8ea61dc06c675a38385ce91607a8b3231a",
+      "transformed": false
+    },
+    {
+      "path": "production-site/generated/vendor/httpError.ts",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:generated/vendor/httpError.ts",
+      "original_sha256": "f306684d8828ed18bc320c67e3b4d7ec61eb4487752da2ae4cc8c5dd00bd831e",
+      "handover_sha256": "f306684d8828ed18bc320c67e3b4d7ec61eb4487752da2ae4cc8c5dd00bd831e",
+      "transformed": false
+    },
+    {
+      "path": "production-site/generated/vendor/multiAgentRoutes.ts",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:generated/vendor/multiAgentRoutes.ts",
+      "original_sha256": "ef1d593d4aef5ce196bcf5f329ea3a504302d4ec184fe843317a1e97190a2222",
+      "handover_sha256": "ef1d593d4aef5ce196bcf5f329ea3a504302d4ec184fe843317a1e97190a2222",
+      "transformed": false
+    },
+    {
+      "path": "production-site/generated/vendor/payroll/crypto.ts",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:generated/vendor/payroll/crypto.ts",
+      "original_sha256": "5977aab251626ca147710ead4a3a54e8167080a05dba84a2377035bb096c7984",
+      "handover_sha256": "5977aab251626ca147710ead4a3a54e8167080a05dba84a2377035bb096c7984",
+      "transformed": false
+    },
+    {
+      "path": "production-site/generated/vendor/payroll/preparation.ts",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:generated/vendor/payroll/preparation.ts",
+      "original_sha256": "6b090396600e9cf7a5b315c7ffbc5e2191fd36816367379b84fd0822cbaf8e55",
+      "handover_sha256": "6b090396600e9cf7a5b315c7ffbc5e2191fd36816367379b84fd0822cbaf8e55",
+      "transformed": false
+    },
+    {
+      "path": "production-site/generated/vendor/payroll/reconciliation.ts",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:generated/vendor/payroll/reconciliation.ts",
+      "original_sha256": "dc61b7932c0de0e6ca4dd4646a4ce84cb49f866343fa47baacd669ee07ef9bac",
+      "handover_sha256": "dc61b7932c0de0e6ca4dd4646a4ce84cb49f866343fa47baacd669ee07ef9bac",
+      "transformed": false
+    },
+    {
+      "path": "production-site/generated/vendor/payroll/routes.ts",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:generated/vendor/payroll/routes.ts",
+      "original_sha256": "773160dd17608f16f7efffde0ae28a6bce1a65711cd2e329e8bf3fe3db44d038",
+      "handover_sha256": "773160dd17608f16f7efffde0ae28a6bce1a65711cd2e329e8bf3fe3db44d038",
+      "transformed": false
+    },
+    {
+      "path": "production-site/generated/vendor/payroll/service.ts",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:generated/vendor/payroll/service.ts",
+      "original_sha256": "117406b099a056f30bdd07c3e7684e59ba48197b6dcfc123d3b3710fe9b20b83",
+      "handover_sha256": "117406b099a056f30bdd07c3e7684e59ba48197b6dcfc123d3b3710fe9b20b83",
+      "transformed": false
+    },
+    {
+      "path": "production-site/generated/vendor/payroll/sources.ts",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:generated/vendor/payroll/sources.ts",
+      "original_sha256": "112aec42c2b8b5f560e30df7e54d08f5e3acf67f32e06a14bc7fd76940451014",
+      "handover_sha256": "112aec42c2b8b5f560e30df7e54d08f5e3acf67f32e06a14bc7fd76940451014",
+      "transformed": false
+    },
+    {
+      "path": "production-site/generated/vendor/payroll/store.ts",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:generated/vendor/payroll/store.ts",
+      "original_sha256": "a7760bcd3043a9acfeb194e93b624e5fccbb1b82d67e6f903030ab790744e1b2",
+      "handover_sha256": "a7760bcd3043a9acfeb194e93b624e5fccbb1b82d67e6f903030ab790744e1b2",
+      "transformed": false
+    },
+    {
+      "path": "production-site/generated/vendor/payroll/sync.ts",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:generated/vendor/payroll/sync.ts",
+      "original_sha256": "9ac86ad62dd9946fb658795504651bb1193e50577c2a0791dbc0f2fdb3764cf5",
+      "handover_sha256": "9ac86ad62dd9946fb658795504651bb1193e50577c2a0791dbc0f2fdb3764cf5",
+      "transformed": false
+    },
+    {
+      "path": "production-site/generated/vendor/payroll/xero.ts",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:generated/vendor/payroll/xero.ts",
+      "original_sha256": "1925d3d8c107f3a6dc2527b6eedba01f5565a95e69b58e6280c887295f260199",
+      "handover_sha256": "1925d3d8c107f3a6dc2527b6eedba01f5565a95e69b58e6280c887295f260199",
+      "transformed": false
+    },
+    {
+      "path": "production-site/generated/vendor/presetTimeSlotPreview.ts",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:generated/vendor/presetTimeSlotPreview.ts",
+      "original_sha256": "3875221c2db04d1135138b2ea607c60622ad5765b396c93800568c6bbfe1b7e4",
+      "handover_sha256": "3875221c2db04d1135138b2ea607c60622ad5765b396c93800568c6bbfe1b7e4",
+      "transformed": false
+    },
+    {
+      "path": "production-site/generated/vendor/presetTimeSlotReview.ts",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:generated/vendor/presetTimeSlotReview.ts",
+      "original_sha256": "4f1aa058f3034d83780624bc593030165de0d2efb80bda00739ef68723e5b822",
+      "handover_sha256": "4f1aa058f3034d83780624bc593030165de0d2efb80bda00739ef68723e5b822",
+      "transformed": false
+    },
+    {
+      "path": "production-site/generated/vendor/presetTimeSlotScript.ts",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:generated/vendor/presetTimeSlotScript.ts",
+      "original_sha256": "cc09afd8eefd8cdb3bf8782e762c88677d78a3a56c0b3b0ae31543347f1b54b9",
+      "handover_sha256": "cc09afd8eefd8cdb3bf8782e762c88677d78a3a56c0b3b0ae31543347f1b54b9",
+      "transformed": false
+    },
+    {
+      "path": "production-site/generated/vendor/prisma.ts",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:generated/vendor/prisma.ts",
+      "original_sha256": "b3d0f54a954a44cb88d43e65708c79a11e8c6c0c00c4e92f53f992810386a185",
+      "handover_sha256": "4da1a1b41f9fa34a9bb29b16315a75ad0df939dea115e8b5bf887ffbb2afdde9",
+      "transformed": true
+    },
+    {
+      "path": "production-site/generated/vendor/rosterService.ts",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:generated/vendor/rosterService.ts",
+      "original_sha256": "94c88c50d15d5f61b02cd4aa076132e842c909d12631e4f4d66de89d25905d88",
+      "handover_sha256": "94c88c50d15d5f61b02cd4aa076132e842c909d12631e4f4d66de89d25905d88",
+      "transformed": false
+    },
+    {
+      "path": "production-site/generated/vendor/routes.ts",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:generated/vendor/routes.ts",
+      "original_sha256": "6cd49eaf849bdcd917fd143d8dc7ac7f2682f7b8a10f9e72ae46a413da1b6359",
+      "handover_sha256": "6cd49eaf849bdcd917fd143d8dc7ac7f2682f7b8a10f9e72ae46a413da1b6359",
+      "transformed": false
+    },
+    {
+      "path": "production-site/generated/vendor/safeLogging.ts",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:generated/vendor/safeLogging.ts",
+      "original_sha256": "cc1ae72532a7880a9deb39df0f65131aac81d776505b275384cb1d757eb2cc5c",
+      "handover_sha256": "cc1ae72532a7880a9deb39df0f65131aac81d776505b275384cb1d757eb2cc5c",
+      "transformed": false
+    },
+    {
+      "path": "production-site/generated/vendor/schedulingIssue.ts",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:generated/vendor/schedulingIssue.ts",
+      "original_sha256": "aa782c370db5f234e2a9eb683a08283855f7cf65771c5f088e93959ebdcac09b",
+      "handover_sha256": "aa782c370db5f234e2a9eb683a08283855f7cf65771c5f088e93959ebdcac09b",
+      "transformed": false
+    },
+    {
+      "path": "production-site/generated/vendor/server.ts",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:generated/vendor/server.ts",
+      "original_sha256": "30bd49a8b77c1b233a2e278e91f931587e92e8aa5a87a660685222b182e8e812",
+      "handover_sha256": "30bd49a8b77c1b233a2e278e91f931587e92e8aa5a87a660685222b182e8e812",
+      "transformed": false
+    },
+    {
+      "path": "production-site/generated/vendor/types.ts",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:generated/vendor/types.ts",
+      "original_sha256": "f1cb90d481d58b0b4dfd0a3fe63f836933af318130744a913980e10b3c416d61",
+      "handover_sha256": "f1cb90d481d58b0b4dfd0a3fe63f836933af318130744a913980e10b3c416d61",
+      "transformed": false
+    },
+    {
+      "path": "production-site/generated/vendor/validation.ts",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:generated/vendor/validation.ts",
+      "original_sha256": "c34bcf195c9d39064dbe619ef6b898f36ee19a32c4b7a0703f30fe1e4c31ec40",
+      "handover_sha256": "c34bcf195c9d39064dbe619ef6b898f36ee19a32c4b7a0703f30fe1e4c31ec40",
+      "transformed": false
+    },
+    {
+      "path": "production-site/generated/vendor/zonedCopy.ts",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:generated/vendor/zonedCopy.ts",
+      "original_sha256": "e89212c69d4e4e053f1ed3b293b6f50ef32d9f725e2876fa731215a80eda9cf4",
+      "handover_sha256": "e89212c69d4e4e053f1ed3b293b6f50ef32d9f725e2876fa731215a80eda9cf4",
+      "transformed": false
+    },
+    {
+      "path": "production-site/package-lock.json",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:package-lock.json",
+      "original_sha256": "adbc544e994362da62b924651e3b7c0f3d7fa7d2f6a818de98bf379a01f7ff68",
+      "handover_sha256": "adbc544e994362da62b924651e3b7c0f3d7fa7d2f6a818de98bf379a01f7ff68",
+      "transformed": false
+    },
+    {
+      "path": "production-site/package.json",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:package.json",
+      "original_sha256": "74d6cc600d9f6c19f1495f996e41cc263d3731efc6e04d363576ea9b68334900",
+      "handover_sha256": "74d6cc600d9f6c19f1495f996e41cc263d3731efc6e04d363576ea9b68334900",
+      "transformed": false
+    },
+    {
+      "path": "production-site/server/argon2.mjs",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:server/argon2.mjs",
+      "original_sha256": "a4abe4e47ddd89faa9a39edfbfbbc3ebaa1c38bcce786145d719d3ee67e5ce53",
+      "handover_sha256": "a4abe4e47ddd89faa9a39edfbfbbc3ebaa1c38bcce786145d719d3ee67e5ce53",
+      "transformed": false
+    },
+    {
+      "path": "production-site/server/crypto.mjs",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:server/crypto.mjs",
+      "original_sha256": "1e20f1118af5f3fed57b98896873ea499e29be04f597a305bb131a61f053ed3a",
+      "handover_sha256": "1e20f1118af5f3fed57b98896873ea499e29be04f597a305bb131a61f053ed3a",
+      "transformed": false
+    },
+    {
+      "path": "production-site/server/demo.mjs",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:server/demo.mjs",
+      "original_sha256": "4d48ba3d8d93dcb6dc9f264ba71f4a0666f3ccb08d8b09ce46fc02218fb75264",
+      "handover_sha256": "4d48ba3d8d93dcb6dc9f264ba71f4a0666f3ccb08d8b09ce46fc02218fb75264",
+      "transformed": false
+    },
+    {
+      "path": "production-site/server/evaluate-auth.mjs",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:server/evaluate-auth.mjs",
+      "original_sha256": "392ae58ed49eb772e4355f9c532b8cc912c21ea938f1b9553d38efbeed948ae2",
+      "handover_sha256": "392ae58ed49eb772e4355f9c532b8cc912c21ea938f1b9553d38efbeed948ae2",
+      "transformed": false
+    },
+    {
+      "path": "production-site/server/evaluate-db.mjs",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:server/evaluate-db.mjs",
+      "original_sha256": "c297c1879e0bce99a79f317ecb5a0cd43f3321cdb83c5584f1f3daa4ea393358",
+      "handover_sha256": "c297c1879e0bce99a79f317ecb5a0cd43f3321cdb83c5584f1f3daa4ea393358",
+      "transformed": false
+    },
+    {
+      "path": "production-site/server/evaluate.mjs",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:server/evaluate.mjs",
+      "original_sha256": "e29f7a51902f2acb8721b14c4bde13375d64e6c820d61c478c6badf23d376d62",
+      "handover_sha256": "e29f7a51902f2acb8721b14c4bde13375d64e6c820d61c478c6badf23d376d62",
+      "transformed": false
+    },
+    {
+      "path": "production-site/server/password.mjs",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:server/password.mjs",
+      "original_sha256": "b1cb37a3ab86984fd60f9fa47415e08f3b69b3a9c6fb2b257344b230c4d28b24",
+      "handover_sha256": "b1cb37a3ab86984fd60f9fa47415e08f3b69b3a9c6fb2b257344b230c4d28b24",
+      "transformed": false
+    },
+    {
+      "path": "production-site/server/path.mjs",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:server/path.mjs",
+      "original_sha256": "801593071403b8e4029964be1e3c61d10001e972ea7aac03ad361e8898b52075",
+      "handover_sha256": "801593071403b8e4029964be1e3c61d10001e972ea7aac03ad361e8898b52075",
+      "transformed": false
+    },
+    {
+      "path": "production-site/server/prisma-shim.mjs",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:server/prisma-shim.mjs",
+      "original_sha256": "9d2e78a4dec098f1ee23bc1e5391b2839b6f0a95f74e0bb4e254f89cf954405a",
+      "handover_sha256": "9d2e78a4dec098f1ee23bc1e5391b2839b6f0a95f74e0bb4e254f89cf954405a",
+      "transformed": false
+    },
+    {
+      "path": "production-site/server/router.mjs",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:server/router.mjs",
+      "original_sha256": "c3317927937057282c4d948b741d027933d490f294f928046651cd0c0a4d6753",
+      "handover_sha256": "c3317927937057282c4d948b741d027933d490f294f928046651cd0c0a4d6753",
+      "transformed": false
+    },
+    {
+      "path": "production-site/server/runtime-env.mjs",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:server/runtime-env.mjs",
+      "original_sha256": "4ffe6569fe723b49c0bb6520f26a78ee5ceaeddc59d623c42796f4991e2f0a73",
+      "handover_sha256": "4ffe6569fe723b49c0bb6520f26a78ee5ceaeddc59d623c42796f4991e2f0a73",
+      "transformed": false
+    },
+    {
+      "path": "production-site/server/snapshot-db.mjs",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:server/snapshot-db.mjs",
+      "original_sha256": "079f98d5e4e601bba397cef6b8b17d3be6797fdac1d9e188b301a11746d45eff",
+      "handover_sha256": "079f98d5e4e601bba397cef6b8b17d3be6797fdac1d9e188b301a11746d45eff",
+      "transformed": false
+    },
+    {
+      "path": "production-site/server/unavailable-fs.mjs",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:server/unavailable-fs.mjs",
+      "original_sha256": "4c2b5b9115a1ffcd76d048bc6a985491b556840f691762c5ed316a827024ac56",
+      "handover_sha256": "4c2b5b9115a1ffcd76d048bc6a985491b556840f691762c5ed316a827024ac56",
+      "transformed": false
+    },
+    {
+      "path": "production-site/server/worker.mjs",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:server/worker.mjs",
+      "original_sha256": "76d16a9180ad845ea8cc8143990397f2acd1399e23734caac4dbefaafa09f8a5",
+      "handover_sha256": "76d16a9180ad845ea8cc8143990397f2acd1399e23734caac4dbefaafa09f8a5",
+      "transformed": false
+    },
+    {
+      "path": "production-site/solver-service/Dockerfile",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:solver-service/Dockerfile",
+      "original_sha256": "35caff6ec3c5529c57497fe040e383ca0abb64c9c22cffaa123ccd92035fb04f",
+      "handover_sha256": "35caff6ec3c5529c57497fe040e383ca0abb64c9c22cffaa123ccd92035fb04f",
+      "transformed": false
+    },
+    {
+      "path": "production-site/solver-service/README.md",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:solver-service/README.md",
+      "original_sha256": "211e37c9ab357722123b5ba42550892a1ba5a1029f6f21e45f89998e1bba8bd8",
+      "handover_sha256": "211e37c9ab357722123b5ba42550892a1ba5a1029f6f21e45f89998e1bba8bd8",
+      "transformed": false
+    },
+    {
+      "path": "production-site/solver-service/app.py",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:solver-service/app.py",
+      "original_sha256": "c0d1d22773e9401dfd10d6df0dbe07341f7a4ecde1025a6534d68a60dc213dfd",
+      "handover_sha256": "c0d1d22773e9401dfd10d6df0dbe07341f7a4ecde1025a6534d68a60dc213dfd",
+      "transformed": false
+    },
+    {
+      "path": "production-site/solver-service/run.py",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:solver-service/run.py",
+      "original_sha256": "00d247c2a80d2d897192e16f18517cc56e23741556cfe45f1746cbef8c7edb3e",
+      "handover_sha256": "00d247c2a80d2d897192e16f18517cc56e23741556cfe45f1746cbef8c7edb3e",
+      "transformed": false
+    },
+    {
+      "path": "production-site/tests/e2e.mjs",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:tests/e2e.mjs",
+      "original_sha256": "ef20112545e02ebaa170bbab9f0888998a977a27846ffd4621fca6fd6f536633",
+      "handover_sha256": "ef20112545e02ebaa170bbab9f0888998a977a27846ffd4621fca6fd6f536633",
+      "transformed": false
+    },
+    {
+      "path": "production-site/tests/evaluate-e2e.mjs",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:tests/evaluate-e2e.mjs",
+      "original_sha256": "3fe20fbd89b98f9853ba459688d4742faf49bb29e221dcd72541d68928ebb7ae",
+      "handover_sha256": "3fe20fbd89b98f9853ba459688d4742faf49bb29e221dcd72541d68928ebb7ae",
+      "transformed": false
+    },
+    {
+      "path": "production-site/tests/smoke.mjs",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:tests/smoke.mjs",
+      "original_sha256": "597647e79e3842a352d3914b3a9db5fec68984411decc2628c254f124ed3dac5",
+      "handover_sha256": "597647e79e3842a352d3914b3a9db5fec68984411decc2628c254f124ed3dac5",
+      "transformed": false
+    },
+    {
+      "path": "production-site/tools/audit_sources.py",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:tools/audit_sources.py",
+      "original_sha256": "b71e369e3c6fe1b0f13739b4811c61ca0f80ccc40a5b2a937694ba0fee6634fd",
+      "handover_sha256": "b71e369e3c6fe1b0f13739b4811c61ca0f80ccc40a5b2a937694ba0fee6634fd",
+      "transformed": false
+    },
+    {
+      "path": "production-site/tools/backup.py",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:tools/backup.py",
+      "original_sha256": "9d159faebb6471b0e42b8e0d9ba41a8bbcadc676756521d934de09b9a28f7d3a",
+      "handover_sha256": "9d159faebb6471b0e42b8e0d9ba41a8bbcadc676756521d934de09b9a28f7d3a",
+      "transformed": false
+    },
+    {
+      "path": "production-site/tools/benchmark_solver.py",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:tools/benchmark_solver.py",
+      "original_sha256": "dd82715c9d255b383a8bfdfd9a3b6d44eb07fec93f3c2c25ed6e4376baf36986",
+      "handover_sha256": "dd82715c9d255b383a8bfdfd9a3b6d44eb07fec93f3c2c25ed6e4376baf36986",
+      "transformed": false
+    },
+    {
+      "path": "production-site/tools/cloud-import.mjs",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:tools/cloud-import.mjs",
+      "original_sha256": "cd3016ce6bdbee134a0b73d0585f81000cd7edfdd961bfc5738aec6b59b6dd33",
+      "handover_sha256": "cd3016ce6bdbee134a0b73d0585f81000cd7edfdd961bfc5738aec6b59b6dd33",
+      "transformed": false
+    },
+    {
+      "path": "production-site/tools/cloud-smoke.mjs",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:tools/cloud-smoke.mjs",
+      "original_sha256": "da4c0f7521e6077f4f291f864d9d5baab14dfca1bf9ad0ed3c59220abdffce17",
+      "handover_sha256": "6c3942147dff668b168683d7292d22152ffeb80c4e870d8ebcea434fc4e950ea",
+      "transformed": true
+    },
+    {
+      "path": "production-site/tools/data.py",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:tools/data.py",
+      "original_sha256": "2ae47623b89d0cd73f6a5a46d0a0b78a7329393272763077ef63195cbe0abf19",
+      "handover_sha256": "2ae47623b89d0cd73f6a5a46d0a0b78a7329393272763077ef63195cbe0abf19",
+      "transformed": false
+    },
+    {
+      "path": "production-site/tools/export-workforce.mjs",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:tools/export-workforce.mjs",
+      "original_sha256": "336f2c74cf50c2d0b9af6abba863eef714fc7acf0268ec166ed0b01a3830817d",
+      "handover_sha256": "336f2c74cf50c2d0b9af6abba863eef714fc7acf0268ec166ed0b01a3830817d",
+      "transformed": false
+    },
+    {
+      "path": "production-site/tools/prepare_import.py",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:tools/prepare_import.py",
+      "original_sha256": "72940d9f2786b80d92da1c34a35d0a096fbce1d75dcf1e21fa23fba5d4a48d78",
+      "handover_sha256": "72940d9f2786b80d92da1c34a35d0a096fbce1d75dcf1e21fa23fba5d4a48d78",
+      "transformed": false
+    },
+    {
+      "path": "production-site/tools/schema.py",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:tools/schema.py",
+      "original_sha256": "b0d5f8a77b9462925f2b021319419a8436ca9bffd8ca7eafaf88518cc8ba20f8",
+      "handover_sha256": "b0d5f8a77b9462925f2b021319419a8436ca9bffd8ca7eafaf88518cc8ba20f8",
+      "transformed": false
+    },
+    {
+      "path": "production-site/tools/test_migration.py",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:tools/test_migration.py",
+      "original_sha256": "23ce1c1025e68b1d7c68b87e1ee7fbe1ca9df3afd5a2ca1f2e71dc84989f2dd5",
+      "handover_sha256": "23ce1c1025e68b1d7c68b87e1ee7fbe1ca9df3afd5a2ca1f2e71dc84989f2dd5",
+      "transformed": false
+    },
+    {
+      "path": "production-site/tools/test_postgres.py",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:tools/test_postgres.py",
+      "original_sha256": "0e65d4df8a8e70b05aee633ee4756dbf08e7b4e0865d2f0100b19333b0fba8e1",
+      "handover_sha256": "0e65d4df8a8e70b05aee633ee4756dbf08e7b4e0865d2f0100b19333b0fba8e1",
+      "transformed": false
+    },
+    {
+      "path": "production-site/tools/test_solver_container.py",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:tools/test_solver_container.py",
+      "original_sha256": "0c41805934217ade4a4b9051bf94d19d6f5d55eedc8317160c1bdb5da2bfc6bf",
+      "handover_sha256": "0c41805934217ade4a4b9051bf94d19d6f5d55eedc8317160c1bdb5da2bfc6bf",
+      "transformed": false
+    },
+    {
+      "path": "production-site/tools/verify_backup.py",
+      "source": "production-git:1029bad20c64e48cc937b5acec12a6e33e650b89:tools/verify_backup.py",
+      "original_sha256": "b519e0ebebec3404ba43d14206b5c52ddb7caeb930659897423405f6e89217bb",
+      "handover_sha256": "b519e0ebebec3404ba43d14206b5c52ddb7caeb930659897423405f6e89217bb",
+      "transformed": false
+    }
+  ],
+  "note": "Original hashes from preparation; final hashes after documented privacy/inert-build transformations. Restored examples/MTS and handover-created docs/tools are listed in final manifest; no old Git history included. Production branch only; development adds local sources."
+}

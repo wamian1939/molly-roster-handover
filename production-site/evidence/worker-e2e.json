@@ -1,0 +1,23 @@
+{
+  "passed": true,
+  "checks": [
+    "real-data fixture and permanently retired migration surface",
+    "payroll admin-only API and unconfigured OAuth safely blocked",
+    "canonical employees and CLOSED scores match original Evaluate projection",
+    "unauthenticated and cross-store reads rejected",
+    "migrated historical roster and publication reads",
+    "availability saved with stale submission rejection",
+    "draft shift creation and idempotent retry",
+    "manual adjustment with stale-version protection",
+    "publication failure rolls back status, snapshot and guard; same request can recover",
+    "atomic publish and duplicate publish rejection",
+    "employee-safe history and CSV export",
+    "reopen retains immutable publication snapshot",
+    "concurrent stale writes serialize without lost updates",
+    "invalid multi-change draft commit writes nothing",
+    "mock employee code-based report, ownership and duplicate submit checks",
+    "no leaked transaction guards and all foreign keys valid"
+  ],
+  "runtime": "local workerd + D1",
+  "formalSourceDatabaseWrites": false
+}

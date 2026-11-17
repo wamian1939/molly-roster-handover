@@ -1,0 +1,33 @@
+# Python API 路由来源（开发工具，不是生产 Sites API）
+
+- `local/roster/scheduling-engine/api/app.py:119` — `@app.get("/api/health")`
+- `local/roster/scheduling-engine/api/app.py:125` — `@app.get("/api/stores")`
+- `local/roster/scheduling-engine/api/app.py:139` — `@app.get("/api/rules/{store_id}")`
+- `local/roster/scheduling-engine/api/app.py:176` — `@app.get("/api/rules/{store_id}/versions/{version}")`
+- `local/roster/scheduling-engine/api/app.py:187` — `@app.post("/api/rules/{store_id}")`
+- `local/roster/scheduling-engine/api/app.py:279` — `@app.get("/api/store-jobs/{store_id}")`
+- `local/roster/scheduling-engine/api/app.py:290` — `@app.get("/api/employee-rule-targets/{store_id}")`
+- `local/roster/scheduling-engine/api/app.py:304` — `@app.get("/api/source-preview/{store_id}")`
+- `local/roster/scheduling-engine/api/app.py:337` — `@app.post("/api/solve")`
+- `local/roster/scheduling-engine/api/app.py:450` — `@app.get("/api/runs/{store_id}")`
+- `local/roster/scheduling-engine/api/app.py:456` — `@app.get("/api/run/{run_id}")`
+- `local/roster/scheduling-engine/api/app.py:465` — `@app.get("/api/run/{run_id}/rules")`
+- `local/roster/scheduling-engine/api/app.py:484` — `@app.get("/")`
+- `local/roster/multi-agent-engine/multi_agent/api.py:69` — `@app.get("/multi-api/health")`
+- `local/roster/multi-agent-engine/multi_agent/api.py:76` — `@app.get("/multi-api/inputs")`
+- `local/roster/multi-agent-engine/multi_agent/api.py:91` — `@app.get('/multi-api/local-real/{token}')`
+- `local/roster/multi-agent-engine/multi_agent/api.py:147` — `@app.post("/multi-api/runs",status_code=202)`
+- `local/roster/multi-agent-engine/multi_agent/api.py:185` — `@app.get("/multi-api/runs/{run_id}")`
+- `local/roster/multi-agent-engine/multi_agent/api.py:190` — `@app.get("/multi-api/runs/{run_id}/export")`
+- `local/roster/multi-agent-engine/multi_agent/api.py:198` — `@app.post("/multi-api/examples/synthetic-week")`
+- `local/roster/multi-agent-engine/multi_agent/api.py:243` — `@app.get("/")`
+- `local/roster/multi-agent-engine/multi_agent/roster_integration.py:79` — `@app.get('/multi-api/roster/rules')`
+- `local/roster/multi-agent-engine/multi_agent/roster_integration.py:89` — `@app.post('/multi-api/roster/rules')`
+- `local/roster/multi-agent-engine/multi_agent/roster_integration.py:98` — `@app.get('/multi-api/roster/health')`
+- `local/roster/multi-agent-engine/multi_agent/roster_integration.py:109` — `@app.get('/multi-api/roster/inputs')`
+- `local/roster/multi-agent-engine/multi_agent/roster_integration.py:124` — `@app.post('/multi-api/roster/runs', status_code=202)`
+- `local/roster/multi-agent-engine/multi_agent/roster_integration.py:224` — `@app.get('/multi-api/roster/runs/{run_id}')`
+- `local/roster/multi-agent-engine/multi_agent/roster_integration.py:228` — `@app.get('/multi-api/roster/runs-recent')`
+- `local/roster/multi-agent-engine/multi_agent/roster_integration.py:247` — `@app.get('/multi-api/roster/runs/{run_id}/export')`
+- `local/roster/multi-agent-engine/multi_agent/roster_integration.py:262` — `@app.post('/multi-api/roster/runs/{run_id}/apply-payload')`
+- `local/roster/multi-agent-engine/multi_agent/roster_integration.py:315` — `@app.get('/multi-api/roster/latest')`

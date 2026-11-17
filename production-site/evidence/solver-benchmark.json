@@ -1,0 +1,92 @@
+{
+  "source": "historical-pseudonymized-real-size",
+  "currentLiveSnapshot": false,
+  "ruleVersion": "hurstville:v20",
+  "requirementMode": "EXACT_SCHEDULED",
+  "employees": 25,
+  "availabilityWindows": 75,
+  "from": "2026-10-26",
+  "to": "2026-11-01",
+  "seconds": 0.01600000000325963,
+  "status": "INFEASIBLE",
+  "assignments": 0,
+  "validationErrors": 0,
+  "diagnosticCodes": [
+    "V2_COVERAGE_ELIGIBILITY_SHORTAGE"
+  ],
+  "parameters": {
+    "model": "V2_COVERAGE_EXPERIMENT",
+    "acceptance_gate": "NOT_ELIGIBLE",
+    "formal_roster_write": 0,
+    "priority_proven": 0,
+    "coverage_semantics": "EXACT_SCHEDULED",
+    "pattern_only": 0,
+    "score_optimization": "NOT_REACHED",
+    "weekly_cap_configured": 0,
+    "rest_configured": 0
+  },
+  "publishable": false,
+  "days": [
+    {
+      "date": "2026-10-26",
+      "seconds": 5.01600000000326,
+      "status": "FEASIBLE",
+      "assignments": 7,
+      "validationErrors": 0,
+      "diagnosticCodes": []
+    },
+    {
+      "date": "2026-10-27",
+      "seconds": 5.0,
+      "status": "FEASIBLE",
+      "assignments": 7,
+      "validationErrors": 0,
+      "diagnosticCodes": []
+    },
+    {
+      "date": "2026-10-28",
+      "seconds": 0.0,
+      "status": "INFEASIBLE",
+      "assignments": 0,
+      "validationErrors": 0,
+      "diagnosticCodes": [
+        "V2_COVERAGE_ELIGIBILITY_SHORTAGE"
+      ]
+    },
+    {
+      "date": "2026-10-29",
+      "seconds": 5.01500000001397,
+      "status": "FEASIBLE",
+      "assignments": 9,
+      "validationErrors": 0,
+      "diagnosticCodes": []
+    },
+    {
+      "date": "2026-10-30",
+      "seconds": 5.015999999974156,
+      "status": "FEASIBLE",
+      "assignments": 9,
+      "validationErrors": 0,
+      "diagnosticCodes": []
+    },
+    {
+      "date": "2026-10-31",
+      "seconds": 0.1720000000204891,
+      "status": "INFEASIBLE",
+      "assignments": 0,
+      "validationErrors": 0,
+      "diagnosticCodes": [
+        "V2_EXACT_STAFFING_INFEASIBLE"
+      ]
+    },
+    {
+      "date": "2026-11-01",
+      "seconds": 5.0,
+      "status": "FEASIBLE",
+      "assignments": 11,
+      "validationErrors": 0,
+      "diagnosticCodes": []
+    }
+  ],
+  "processPeakBytes": 102854656
+}

@@ -1,0 +1,11 @@
+{
+  "total": 21,
+  "passed": 17,
+  "failed": 4,
+  "failingCases": [
+    "Templates store scope keeps a created shift template visible when the follow-up list refresh fails",
+    "Templates store scope keeps a created availability template visible when its list refresh fails",
+    "Templates returning-store refresh refreshes a completed shift-template save after A to B to A navigation",
+    "Templates returning-store refresh does not let an earlier returning-store read overwrite the committed template"
+  ]
+}

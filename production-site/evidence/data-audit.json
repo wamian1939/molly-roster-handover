@@ -1,0 +1,52 @@
+{
+  "rosterTableCounts": {
+    "roster_periods": 7,
+    "shift_roles": 9,
+    "shifts": 104,
+    "shift_assignments": 117,
+    "shift_create_requests": 105,
+    "employee_availability": 169,
+    "availability_script_imports": 5,
+    "availability_script_shortcuts": 1,
+    "shift_templates": 5,
+    "availability_templates": 2,
+    "roster_publications": 5,
+    "roster_store_settings": 1
+  },
+  "evaluateTableCounts": {
+    "_prisma_migrations": 44,
+    "ai_analysis_runs": 0,
+    "auth_audit_events": 195,
+    "auth_sessions": 30,
+    "current_skill_confirmations": 0,
+    "employee_job_assignments": 31,
+    "employee_skills": 331,
+    "employees": 30,
+    "evaluation_ai_evidence": 0,
+    "evaluation_ai_runs": 51,
+    "evaluation_round_evaluators": 43,
+    "evaluation_rounds": 51,
+    "evaluation_skill_snapshots": 528,
+    "evaluations": 51,
+    "login_rate_limits": 0,
+    "performance_notes": 0,
+    "skill_definitions": 13,
+    "store_job_definitions": 8,
+    "stores": 2,
+    "user_account_store_accesses": 2,
+    "user_accounts": 6
+  },
+  "accountPasswordAlgorithms": {
+    "argon2id": 6
+  },
+  "assignmentRowsWithUnknownCanonicalEmployee": 0,
+  "availabilityRowsWithUnknownCanonicalEmployee": 0,
+  "periodRowsWithUnknownCanonicalStore": 0,
+  "availabilityRowsWithUnknownCanonicalStore": 0,
+  "timezoneSettings": [
+    "Australia/Sydney"
+  ],
+  "dateStorage": "DATE strings preserved; TIMESTAMP(3) treated as Prisma UTC and exported with Z",
+  "crossDatabaseAtomicSnapshot": false,
+  "cloudDataImported": false
+}

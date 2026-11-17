@@ -1,0 +1,21 @@
+{
+  "image": "molly-roster-solver:sites",
+  "httpSolve": 200,
+  "pseudonymizedRealEmployees": 25,
+  "days": 7,
+  "seconds": 1.25,
+  "assignments": 0,
+  "status": "INFEASIBLE",
+  "validationErrors": 0,
+  "unauthenticatedRejected": true,
+  "identifyingNameRejected": true,
+  "retryRequestHashStable": true,
+  "publishable": false,
+  "cloudDeployment": false,
+  "feasibleDay": {
+    "status": "FEASIBLE",
+    "assignments": 7,
+    "validationErrors": 0
+  },
+  "containerStats": "97.22MiB / 512MiB | 0.13%"
+}

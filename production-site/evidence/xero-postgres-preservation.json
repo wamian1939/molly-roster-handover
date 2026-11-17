@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "coreTables": 12,
+  "rows": 530,
+  "allFieldsMatchRestoredBackup": true,
+  "newMigrationApplied": "20261117010000_xero_payroll"
+}

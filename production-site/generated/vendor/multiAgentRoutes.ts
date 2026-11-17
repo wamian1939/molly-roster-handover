@@ -1,0 +1,1 @@
+import {Router} from 'express';export function createMultiAgentRouter(){const router=Router();router.use((_req,res)=>res.status(503).json({message:'自动排班计算服务尚未连接。手动排班可以正常使用。'}));return router}

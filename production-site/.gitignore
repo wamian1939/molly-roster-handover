@@ -1,0 +1,12 @@
+node_modules/
+dist/
+.local/
+__pycache__/
+.env*
+!.env.example
+*.tar.gz
+generated/assets.json
+outputs/
+
+.codex/
+.cursor/

@@ -1,0 +1,36 @@
+import {z} from 'zod';
+import {createHash,randomBytes} from './crypto.mjs';
+import {parsePresetTimeSlotScript} from '../generated/vendor/presetTimeSlotScript.ts';
+import {zonedLocalParts} from '../generated/vendor/zonedCopy.ts';
+import {capacitySignal,clockMinutes,reportingHeadcount} from '../generated/vendor/employeeCapacity.ts';
+const accounts=['A','B','C'].map((name,i)=>({id:'demo-'+(i+1),name:'演示员工 '+name,storeId:'hurstville',storeName:'Hurstville'}));
+const fail=(status,message)=>{throw Object.assign(new Error(message),{status})};
+const sha=text=>createHash('sha256').update(text).digest('hex');
+const weekSchema=z.string().regex(/^\d{4}-\d{2}-\d{2}$/).refine(v=>new Date(v+'T00:00:00Z').getUTCDay()===1);
+const clock=z.string().regex(/^(?:[01]\d|2[0-3]):(?:00|30)$/);
+const day=z.object({date:z.string(),status:z.enum(['AVAILABLE','UNAVAILABLE','UNKNOWN']),shortcut:z.string().optional(),slots:z.array(z.object({start:clock,end:clock}).strict()).max(12)}).strict();
+const cookie=(token,maxAge=28800)=>`molly_employee_demo=${token}; HttpOnly; Secure; SameSite=Strict; Path=/api/employee-demo; Max-Age=${maxAge}`;
+const datesFor=week=>Array.from({length:7},(_,i)=>new Date(Date.parse(week+'T00:00:00Z')+i*86400000).toISOString().slice(0,10));
+export async function demo(request,db,body){
+ const url=new URL(request.url),path=url.pathname.replace('/api/employee-demo',''),method=request.method;let headers={'cache-control':'no-store, private'};
+ const response=value=>Response.json(value,{headers});
+ if(path==='/accounts'&&method==='GET')return response({accounts,demo:true});
+ if(path==='/login'&&method==='POST'){const {accountId}=z.object({accountId:z.enum(['demo-1','demo-2','demo-3'])}).strict().parse(body);const token=randomBytes(32).toString('hex');await db.batch([db.prepare('DELETE FROM sites_demo_sessions WHERE expires_at<?').bind(Date.now()),db.prepare('INSERT INTO sites_demo_sessions VALUES (?,?,?)').bind(sha(token),accountId,Date.now()+28800000)]);headers['set-cookie']=cookie(token);return response({account:accounts.find(a=>a.id===accountId),demo:true})}
+ const token=request.headers.get('cookie')?.split(';').map(s=>s.trim()).find(s=>s.startsWith('molly_employee_demo='))?.split('=')[1];
+ if(path==='/logout'&&method==='POST'){if(token)await db.prepare('DELETE FROM sites_demo_sessions WHERE token_hash=?').bind(sha(token)).run();headers['set-cookie']=cookie('',0);return response({ok:true})}
+ const session=token?await db.prepare('SELECT account_id FROM sites_demo_sessions WHERE token_hash=? AND expires_at>?').bind(sha(token),Date.now()).first():null;const user=accounts.find(a=>a.id===session?.account_id);if(!user)fail(401,'请先选择演示员工账号');
+ if(path==='/me'&&method==='GET')return response({account:user,demo:true});
+ const week=weekSchema.parse(method==='GET'?url.searchParams.get('week'):body?.week),dates=datesFor(week);
+ const source=JSON.parse((await db.prepare("SELECT body FROM sites_source WHERE id='demo-rules'").first())?.body??'null');if(!source)fail(503,'门店报班规则尚未迁移');
+ const shortcut=await db.prepare("SELECT shortcuts,version FROM availability_script_shortcuts WHERE storeId='hurstville'").first();if(!shortcut)fail(503,'门店报班代码尚未配置');
+ const config={shortcuts:JSON.parse(shortcut.shortcuts),version:shortcut.version},rules=source.overrides?.[week]??source.rules;const ruleVersion=sha(JSON.stringify({rules,config}));
+ const reports=await db.prepare('SELECT * FROM sites_demo_reports WHERE week=?').bind(week).all();
+ function view(){const mine=reports.results.find(r=>r.account_id===user.id);const days=mine?JSON.parse(mine.days):dates.map(date=>({date,status:'UNKNOWN',slots:[]}));const capacity=dates.map((date,index)=>{const cells=[];for(const band of rules.weekly[String(index)]??[]){const format=n=>`${String(Math.floor(n/60)).padStart(2,'0')}:${String(n%60).padStart(2,'0')}`;for(let m=clockMinutes(band.start);m<clockMinutes(band.end);m+=30){const start=format(m),end=format(m+30);const reported=reportingHeadcount(accounts.map(a=>{const r=reports.results.find(r=>r.account_id===a.id);return (r?JSON.parse(r.days):[]).find(d=>d.date===date&&d.status==='AVAILABLE')?.slots??[]}),start,end);const signal=capacitySignal(band.staff,reported);const previous=cells.at(-1);if(previous?.end===start&&previous.signal===signal)previous.end=end;else cells.push({start,end,signal})}}return {date,bands:cells}});return {accountId:user.id,week,timezone:rules.timezone,ruleVersion,ruleScope:rules.scope,shortcuts:config.shortcuts,shortcutsVersion:config.version,revision:mine?.revision??0,updatedAt:mine?.updated_at??null,days,capacity}}
+ function convert(script){const result=parsePresetTimeSlotScript({script:user.name+'\t'+script.trim(),shortcuts:config.shortcuts,employees:[{id:user.id,displayName:user.name,storeId:user.storeId,isActive:true}],storeId:user.storeId,today:week,week:'CURRENT',timezone:rules.timezone});if(result.issues.length)fail(400,result.issues.map(i=>i.message).join('；'));return dates.map(date=>{const slot=result.slots.find(s=>s.date===date);return slot?{date,status:'AVAILABLE',shortcut:slot.shortcut,slots:[{start:zonedLocalParts(new Date(slot.startAt),rules.timezone).time,end:zonedLocalParts(new Date(slot.endAt),rules.timezone).time}]}:{date,status:'UNKNOWN',slots:[]}})}
+ if(path==='/week'&&method==='GET')return response(view());
+ if(body?.expectedAccountId!==user.id)fail(409,'当前员工账号已切换，请重新读取');
+ if(path==='/preview'&&method==='POST'){const {script}=z.object({script:z.string().trim().min(1).max(500)}).parse(body);return response({...view(),days:convert(script)})}
+ if(path==='/week'&&method==='PUT'){const input=z.object({expectedAccountId:z.string(),week:weekSchema,expectedRevision:z.number().int().nonnegative(),ruleVersion:z.string(),days:z.array(day).length(7)}).strict().parse(body);const current=view();if(input.expectedRevision!==current.revision||input.ruleVersion!==current.ruleVersion)fail(409,'报班或规则已更新，请重新读取');if(new Set(input.days.map(d=>d.date)).size!==7||input.days.some(d=>!dates.includes(d.date)))fail(400,'请提交本周七天记录');const selected=input.days.filter(d=>d.status==='AVAILABLE');if(input.days.some(d=>d.status!=='AVAILABLE'&&(d.shortcut||d.slots.length))||selected.some(d=>!d.shortcut))fail(400,'报班状态与代码不一致');const normalized=selected.length?convert(selected.map(d=>(dates.indexOf(d.date)+1)+d.shortcut).join(' ')):[];for(const d of selected){const expected=normalized.find(x=>x.date===d.date);if(!expected||d.shortcut!==expected.shortcut||JSON.stringify(d.slots)!==JSON.stringify(expected.slots))fail(400,'报班时段与门店代码不一致')}
+ const now=new Date().toISOString();let result;if(current.revision===0){try{result=await db.prepare('INSERT INTO sites_demo_reports VALUES (?,?,?,?,?) RETURNING revision').bind(user.id,week,1,now,JSON.stringify(input.days)).first()}catch(e){if(String(e).includes('UNIQUE'))fail(409,'报班已更新，请重新读取');throw e}}else result=await db.prepare('UPDATE sites_demo_reports SET revision=revision+1,updated_at=?,days=? WHERE account_id=? AND week=? AND revision=? RETURNING revision').bind(now,JSON.stringify(input.days),user.id,week,current.revision).first();if(!result)fail(409,'报班已更新，请重新读取');return response({...view(),revision:result.revision,updatedAt:now,days:input.days})}
+ fail(404,'Unknown employee demo route')
+}

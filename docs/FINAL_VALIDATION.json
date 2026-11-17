@@ -1,0 +1,19 @@
+{
+  "checkedAt": "2026-11-17T06:56:35.561123+00:00",
+  "scope": "Sanitized source worktree; new Git history scanned separately before push",
+  "filesScanned": 1565,
+  "knownSourceSecretsOrPersonalIdentifiers": 0,
+  "credentialPatternFindings": 0,
+  "apiRoutesVerified": 287,
+  "brokenHandoverMarkdownLinks": 0,
+  "reviewedContactPatterns": "Only synthetic phone fixtures in automated tests; example DB connection formats contain placeholders",
+  "sourceProtection": "Original Git heads/remotes/worktrees untouched; status counts verified unchanged (collapsed 547/140, expanded 962/188); no production DB writes/migrations/deployments",
+  "artifactExclusions": [
+    "node_modules",
+    "dist",
+    "generated/assets.json",
+    "original .git history",
+    "private audit workspace",
+    "real environment/data/credentials"
+  ]
+}

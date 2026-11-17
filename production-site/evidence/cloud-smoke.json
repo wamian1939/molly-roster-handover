@@ -1,0 +1,28 @@
+{
+  "url": "https://molly-tea-roster-migration-20261115.light-lyric-6601.chatgpt.site",
+  "passed": true,
+  "checks": [
+    "deployed database and workforce ready",
+    "original React login document served",
+    "manager APIs reject anonymous access",
+    "imported Argon2id verification executes and invalid login is rejected",
+    "cross-origin mutation rejected",
+    "deployed mock employee login, code preview, durable report and duplicate rejection",
+    "mock report reload matches submitted days",
+    "mock logout revokes session",
+    "formal schedule and availability counts unchanged by mock workflow"
+  ],
+  "health": {
+    "ok": true,
+    "services": {
+      "database": true,
+      "evaluateMolly": true,
+      "automaticScheduling": false
+    },
+    "deployment": "Sites D1",
+    "employeeMode": "mock"
+  },
+  "browserVisualAcceptance": false,
+  "realManagerInteractiveAcceptance": false,
+  "automaticSchedulingAvailable": false
+}

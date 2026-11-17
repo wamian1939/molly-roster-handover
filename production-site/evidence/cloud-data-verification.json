@@ -1,0 +1,36 @@
+{
+  "rosterCounts": {
+    "roster_periods": 7,
+    "shift_roles": 9,
+    "shifts": 104,
+    "shift_assignments": 117,
+    "shift_create_requests": 105,
+    "employee_availability": 169,
+    "availability_script_imports": 5,
+    "availability_script_shortcuts": 1,
+    "shift_templates": 5,
+    "availability_templates": 2,
+    "roster_publications": 5,
+    "roster_store_settings": 1
+  },
+  "rosterDigests": {
+    "roster_periods": "adfdc988b790937b29dd38ed5923965d7f5c5401857ce529071287d2d2f1ff27",
+    "shift_roles": "8ea56e8b5e6c72251dfcbbccc36c9d1907053c2d162c784aee95db713f554d48",
+    "shifts": "a80f4143e554bf61cd3c3436020a8f9cbf8ab0fa59a567154a1f7d19f5adb4a2",
+    "shift_assignments": "9c0c01e066d3fb655d5c3bbf57cd884381ba6246933e58cf439bec86bbf6125d",
+    "shift_create_requests": "86fdb248874806d4b7819308c5dd3e76604017f21d269116288c71f4b7e14e72",
+    "employee_availability": "f84ba77f8c516cd9d17adce717de39eecb0d6d6f4e915f4e9a00e9649180fd34",
+    "availability_script_imports": "99d8b09e404e6caa5d4cf0f55b0525d0131d8ac18154e36067dd9f03f0aeb667",
+    "availability_script_shortcuts": "efed0e91a964dd5b9411b0894e4e478547ec9bec1c6d4df0c0aadec3ae535e5c",
+    "shift_templates": "a7995992fc0319866064bde05554a3e3109749b4b37c4730ca02558ae9308233",
+    "availability_templates": "a3ed3897d26f884b91e5c1bb7d6ca1f6b109fe31b856c98ff0ce399098b7d0e8",
+    "roster_publications": "59abb2aee9152711dc3dd9bc4f59cf080a43375fee039502abfa12a7e5dcf50e",
+    "roster_store_settings": "76536a4c7a0e278beb1c69b2779d645db501536bd33a1ba1096b865d7d605f79"
+  },
+  "evaluateArchiveRows": 1416,
+  "evaluateArchiveDigest": "96afcb95dce840f34ba619bee9b2f9b03d5b67bc8c6db4af9af7ec11e05f4dc1",
+  "accounts": 6,
+  "foreignKeyViolations": 0,
+  "sealed": true,
+  "allFieldsReconciled": true
+}

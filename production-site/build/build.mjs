@@ -1,0 +1,16 @@
+import './prepare.mjs';
+import './evaluate-prepare.mjs';
+import {build} from 'esbuild';
+import {readFile,writeFile,mkdir,readdir} from 'node:fs/promises';
+import path from 'node:path';
+import {execFileSync} from 'node:child_process';
+const site=path.resolve(import.meta.dirname,'..');
+execFileSync(process.execPath,[path.join(site,'node_modules/vite/bin/vite.js'),'build'],{cwd:path.join(site,'frontend'),stdio:'inherit',env:{...process.env,VITE_API_BASE_URL:'/api'}});
+execFileSync(process.execPath,[path.join(site,'node_modules/vite/bin/vite.js'),'build'],{cwd:path.join(site,'evaluate-frontend'),stdio:'inherit'});
+const assets={};async function collect(dir){for(const item of await readdir(dir,{withFileTypes:true})){const file=path.join(dir,item.name);if(item.isDirectory())await collect(file);else assets['/'+path.relative(path.join(site,'dist/client'),file).replaceAll('\\','/')]=(await readFile(file)).toString('base64')}}await collect(path.join(site,'dist/client'));
+async function evaluateAssets(dir){for(const item of await readdir(dir,{withFileTypes:true})){const file=path.join(dir,item.name);if(item.isDirectory())await evaluateAssets(file);else assets['/evaluate/'+path.relative(path.join(site,'dist/evaluate'),file).replaceAll('\\','/')]=(await readFile(file)).toString('base64')}}await evaluateAssets(path.join(site,'dist/evaluate'));
+await writeFile(path.join(site,'generated/assets.json'),JSON.stringify(assets));
+await mkdir(path.join(site,'dist/server'),{recursive:true});
+await build({entryPoints:[path.join(site,'server/worker.mjs')],outfile:path.join(site,'dist/server/index.js'),bundle:true,format:'esm',platform:'browser',target:'es2022',minify:true,alias:{express:path.join(site,'server/router.mjs'),'@prisma/client':path.join(site,'server/prisma-shim.mjs'),'@node-rs/argon2':path.join(site,'server/argon2.mjs'),'node:crypto':path.join(site,'server/crypto.mjs'),'node:fs/promises':path.join(site,'server/unavailable-fs.mjs'),'node:path':path.join(site,'server/path.mjs')},define:{'process.env.NODE_ENV':'"production"','process.env.MULTI_AGENT_AUDIT_DIR':'undefined'}});
+await mkdir(path.join(site,'dist/.openai'),{recursive:true});await writeFile(path.join(site,'dist/.openai/hosting.json'),await readFile(path.join(site,'.openai/hosting.json')));
+console.log('Built original React UI and self-contained Worker ESM.');

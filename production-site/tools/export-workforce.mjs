@@ -1,0 +1,11 @@
+// Read-only derivation using Evaluate's original CLOSED-round implementation.
+import {readFile,writeFile,mkdir} from 'node:fs/promises';
+import path from 'node:path';import {pathToFileURL} from 'node:url';import {createHash} from 'node:crypto';
+const root=path.resolve(import.meta.dirname,'../../..'),evaluate=path.resolve(root,'../Evaluate Molly');
+const env=await readFile(path.join(evaluate,'backend/.env'),'utf8');const match=/^DATABASE_URL=(.+)$/m.exec(env);process.env.DATABASE_URL=match[1].trim().replace(/^["']|["']$/g,'');
+const {PrismaClient}=await import(pathToFileURL(path.join(evaluate,'backend/node_modules/@prisma/client/default.js')).href);
+const {RosterIntegrationService}=await import(pathToFileURL(path.join(evaluate,'backend/src/rosterIntegrationService.ts')).href);
+const db=new PrismaClient();try{
+ const output=await db.$transaction(async tx=>{const service=new RosterIntegrationService(tx);const {stores}=await service.listStores();const {skills}=await service.listSkillDefinitions();const ids=await tx.employee.findMany({select:{id:true}});const employees=[];for(const {id}of ids){const {employee}=await service.getEmployee(id);if(employee)employees.push(employee)}const jobs=await tx.storeJobDefinition.findMany({orderBy:[{storeId:'asc'},{displayOrder:'asc'}]});const raw=await tx.userAccount.findMany({include:{storeAccesses:{where:{store:{isActive:true}},select:{store:{select:{id:true,name:true}}}}}});const accounts=raw.map(a=>{const stores=a.role==='ADMIN'?[]:a.storeAccesses.map(x=>x.store);return {id:a.id,username:a.username,passwordHash:a.passwordHash,isActive:a.isActive,deletedAt:a.deletedAt,user:{id:a.id,accountId:a.id,userId:a.id,username:a.username,displayName:a.displayName,role:a.role,stores,storeIds:stores.map(s=>s.id),canAccessAllStores:a.role==='ADMIN'}}});const workforce={stores,skills,employees,jobs};workforce.revision=createHash('sha256').update(JSON.stringify(workforce)).digest('hex');return {workforce,accounts}}, {isolationLevel:'RepeatableRead',timeout:60000});
+ const local=path.join(root,'sites/roster/.local');await mkdir(local,{recursive:true});await writeFile(path.join(local,'workforce-export.json'),JSON.stringify(output));console.log(JSON.stringify({employees:output.workforce.employees.length,accounts:output.accounts.length,revision:output.workforce.revision}));
+}finally{await db.$disconnect()}

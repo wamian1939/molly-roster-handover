@@ -1,0 +1,490 @@
+{
+  "excludedFiles": [
+    {
+      "path": "production-site/.openai/hosting.json",
+      "reason": "active deployment binding; replaced by inert example where needed"
+    },
+    {
+      "path": "production-site/evaluate-frontend/Molly LOGO/Molly LOGO/logo中文-黑字.jpg",
+      "reason": "data, credential, document, binary or screenshot artifact"
+    },
+    {
+      "path": "production-site/evaluate-frontend/Molly LOGO/Molly LOGO/logo中英文-黑字.jpg",
+      "reason": "data, credential, document, binary or screenshot artifact"
+    },
+    {
+      "path": "production-site/evaluate-frontend/Molly LOGO/Molly LOGO/logo组合英文-黑字.jpg",
+      "reason": "data, credential, document, binary or screenshot artifact"
+    },
+    {
+      "path": "production-site/evaluate-frontend/Molly LOGO/__MACOSX/Molly LOGO/._logo中文-黑字.jpg",
+      "reason": "data, credential, document, binary or screenshot artifact"
+    },
+    {
+      "path": "production-site/evaluate-frontend/Molly LOGO/__MACOSX/Molly LOGO/._logo中英文-黑字.jpg",
+      "reason": "data, credential, document, binary or screenshot artifact"
+    },
+    {
+      "path": "production-site/evaluate-frontend/Molly LOGO/__MACOSX/Molly LOGO/._logo组合英文-黑字.jpg",
+      "reason": "data, credential, document, binary or screenshot artifact"
+    },
+    {
+      "path": "production-site/generated/evaluate/generated/prisma/client.d.ts",
+      "reason": "reproducible Prisma client/runtime; retain schema and lockfiles"
+    },
+    {
+      "path": "production-site/generated/evaluate/generated/prisma/client.js",
+      "reason": "reproducible Prisma client/runtime; retain schema and lockfiles"
+    },
+    {
+      "path": "production-site/generated/evaluate/generated/prisma/default.d.ts",
+      "reason": "reproducible Prisma client/runtime; retain schema and lockfiles"
+    },
+    {
+      "path": "production-site/generated/evaluate/generated/prisma/default.js",
+      "reason": "reproducible Prisma client/runtime; retain schema and lockfiles"
+    },
+    {
+      "path": "production-site/generated/evaluate/generated/prisma/edge.d.ts",
+      "reason": "reproducible Prisma client/runtime; retain schema and lockfiles"
+    },
+    {
+      "path": "production-site/generated/evaluate/generated/prisma/edge.js",
+      "reason": "reproducible Prisma client/runtime; retain schema and lockfiles"
+    },
+    {
+      "path": "production-site/generated/evaluate/generated/prisma/index-browser.js",
+      "reason": "reproducible Prisma client/runtime; retain schema and lockfiles"
+    },
+    {
+      "path": "production-site/generated/evaluate/generated/prisma/index.d.ts",
+      "reason": "reproducible Prisma client/runtime; retain schema and lockfiles"
+    },
+    {
+      "path": "production-site/generated/evaluate/generated/prisma/index.js",
+      "reason": "reproducible Prisma client/runtime; retain schema and lockfiles"
+    },
+    {
+      "path": "production-site/generated/evaluate/generated/prisma/package.json",
+      "reason": "reproducible Prisma client/runtime; retain schema and lockfiles"
+    },
+    {
+      "path": "production-site/generated/evaluate/generated/prisma/query_engine-windows.dll.node",
+      "reason": "reproducible Prisma client/runtime; retain schema and lockfiles"
+    },
+    {
+      "path": "production-site/generated/evaluate/generated/prisma/query_engine_bg.js",
+      "reason": "reproducible Prisma client/runtime; retain schema and lockfiles"
+    },
+    {
+      "path": "production-site/generated/evaluate/generated/prisma/query_engine_bg.wasm",
+      "reason": "reproducible Prisma client/runtime; retain schema and lockfiles"
+    },
+    {
+      "path": "production-site/generated/evaluate/generated/prisma/runtime/edge-esm.js",
+      "reason": "reproducible Prisma client/runtime; retain schema and lockfiles"
+    },
+    {
+      "path": "production-site/generated/evaluate/generated/prisma/runtime/edge.js",
+      "reason": "reproducible Prisma client/runtime; retain schema and lockfiles"
+    },
+    {
+      "path": "production-site/generated/evaluate/generated/prisma/runtime/index-browser.d.ts",
+      "reason": "reproducible Prisma client/runtime; retain schema and lockfiles"
+    },
+    {
+      "path": "production-site/generated/evaluate/generated/prisma/runtime/index-browser.js",
+      "reason": "reproducible Prisma client/runtime; retain schema and lockfiles"
+    },
+    {
+      "path": "production-site/generated/evaluate/generated/prisma/runtime/library.d.ts",
+      "reason": "reproducible Prisma client/runtime; retain schema and lockfiles"
+    },
+    {
+      "path": "production-site/generated/evaluate/generated/prisma/runtime/library.js",
+      "reason": "reproducible Prisma client/runtime; retain schema and lockfiles"
+    },
+    {
+      "path": "production-site/generated/evaluate/generated/prisma/runtime/react-native.js",
+      "reason": "reproducible Prisma client/runtime; retain schema and lockfiles"
+    },
+    {
+      "path": "production-site/generated/evaluate/generated/prisma/runtime/wasm-compiler-edge.js",
+      "reason": "reproducible Prisma client/runtime; retain schema and lockfiles"
+    },
+    {
+      "path": "production-site/generated/evaluate/generated/prisma/runtime/wasm-engine-edge.js",
+      "reason": "reproducible Prisma client/runtime; retain schema and lockfiles"
+    },
+    {
+      "path": "production-site/generated/evaluate/generated/prisma/schema.prisma",
+      "reason": "reproducible Prisma client/runtime; retain schema and lockfiles"
+    },
+    {
+      "path": "production-site/generated/evaluate/generated/prisma/wasm-edge-light-loader.mjs",
+      "reason": "reproducible Prisma client/runtime; retain schema and lockfiles"
+    },
+    {
+      "path": "production-site/generated/evaluate/generated/prisma/wasm-worker-loader.mjs",
+      "reason": "reproducible Prisma client/runtime; retain schema and lockfiles"
+    },
+    {
+      "path": "production-site/generated/evaluate/generated/prisma/wasm.d.ts",
+      "reason": "reproducible Prisma client/runtime; retain schema and lockfiles"
+    },
+    {
+      "path": "production-site/generated/evaluate/generated/prisma/wasm.js",
+      "reason": "reproducible Prisma client/runtime; retain schema and lockfiles"
+    },
+    {
+      "path": "local/roster/.env",
+      "reason": "real environment configuration"
+    },
+    {
+      "path": "local/roster/backend/.env",
+      "reason": "real environment configuration"
+    },
+    {
+      "path": "local/roster/docs/evidence/bhs-job-list-cropped-2026-10-21.png",
+      "reason": "data, credential, document, binary or screenshot artifact"
+    },
+    {
+      "path": "local/roster/docs/evidence/calendar-500-employee-detail-2026-10-09.png",
+      "reason": "data, credential, document, binary or screenshot artifact"
+    },
+    {
+      "path": "local/roster/docs/evidence/calendar-500-employee-overview-2026-10-09.png",
+      "reason": "data, credential, document, binary or screenshot artifact"
+    },
+    {
+      "path": "local/roster/docs/evidence/calendar-availability-fallback-2026-10-15.png",
+      "reason": "data, credential, document, binary or screenshot artifact"
+    },
+    {
+      "path": "local/roster/docs/evidence/calendar-availability-fallback-distinct-2026-10-20.png",
+      "reason": "data, credential, document, binary or screenshot artifact"
+    },
+    {
+      "path": "local/roster/docs/evidence/calendar-employee-row-create-2026-10-15.png",
+      "reason": "data, credential, document, binary or screenshot artifact"
+    },
+    {
+      "path": "local/roster/docs/evidence/calendar-published-employee-rename-2026-10-17.png",
+      "reason": "data, credential, document, binary or screenshot artifact"
+    },
+    {
+      "path": "local/roster/docs/evidence/calendar-published-name-search-2026-10-17.png",
+      "reason": "data, credential, document, binary or screenshot artifact"
+    },
+    {
+      "path": "local/roster/docs/evidence/calendar-week-availability-2026-10-15.png",
+      "reason": "data, credential, document, binary or screenshot artifact"
+    },
+    {
+      "path": "local/roster/docs/evidence/fallback-publication-export-2026-10-16.png",
+      "reason": "data, credential, document, binary or screenshot artifact"
+    },
+    {
+      "path": "local/roster/docs/evidence/legacy-publication-utc-2026-10-16.png",
+      "reason": "data, credential, document, binary or screenshot artifact"
+    },
+    {
+      "path": "local/roster/docs/evidence/live-roster-login-2026-10-16.png",
+      "reason": "data, credential, document, binary or screenshot artifact"
+    },
+    {
+      "path": "local/roster/docs/evidence/merged-shift-editor-2026-10-23.png",
+      "reason": "data, credential, document, binary or screenshot artifact"
+    },
+    {
+      "path": "local/roster/docs/evidence/molly-bhs-joined-script-preview-2026-10-21.png",
+      "reason": "data, credential, document, binary or screenshot artifact"
+    },
+    {
+      "path": "local/roster/docs/evidence/molly-copy-day-simplified-preview-2026-10-21.png",
+      "reason": "data, credential, document, binary or screenshot artifact"
+    },
+    {
+      "path": "local/roster/docs/evidence/molly-day-compact-copy-menu-2026-10-21.png",
+      "reason": "data, credential, document, binary or screenshot artifact"
+    },
+    {
+      "path": "local/roster/docs/evidence/molly-day-current-reference-viewport-2026-10-21.png",
+      "reason": "data, credential, document, binary or screenshot artifact"
+    },
+    {
+      "path": "local/roster/docs/evidence/molly-day-date-scoped-job-filter-2026-10-21.png",
+      "reason": "data, credential, document, binary or screenshot artifact"
+    },
+    {
+      "path": "local/roster/docs/evidence/molly-day-date-scoped-job-selection-2026-10-21.png",
+      "reason": "data, credential, document, binary or screenshot artifact"
+    },
+    {
+      "path": "local/roster/docs/evidence/molly-day-drag-save-current-2026-10-21.png",
+      "reason": "data, credential, document, binary or screenshot artifact"
+    },
+    {
+      "path": "local/roster/docs/evidence/molly-day-eligible-staff-2026-10-21.png",
+      "reason": "data, credential, document, binary or screenshot artifact"
+    },
+    {
+      "path": "local/roster/docs/evidence/molly-day-employee-formal-jobs-2026-10-21.png",
+      "reason": "data, credential, document, binary or screenshot artifact"
+    },
+    {
+      "path": "local/roster/docs/evidence/molly-day-five-card-reference-viewport-2026-10-21.png",
+      "reason": "data, credential, document, binary or screenshot artifact"
+    },
+    {
+      "path": "local/roster/docs/evidence/molly-day-footer-actions-2026-10-21.png",
+      "reason": "data, credential, document, binary or screenshot artifact"
+    },
+    {
+      "path": "local/roster/docs/evidence/molly-day-formal-job-filter-2026-10-21.png",
+      "reason": "data, credential, document, binary or screenshot artifact"
+    },
+    {
+      "path": "local/roster/docs/evidence/molly-day-minimal-top-2026-10-21.png",
+      "reason": "data, credential, document, binary or screenshot artifact"
+    },
+    {
+      "path": "local/roster/docs/evidence/molly-day-reference-viewport-2026-10-20.png",
+      "reason": "data, credential, document, binary or screenshot artifact"
+    },
+    {
+      "path": "local/roster/docs/evidence/molly-day-same-viewport-2026-10-21.png",
+      "reason": "data, credential, document, binary or screenshot artifact"
+    },
+    {
+      "path": "local/roster/docs/evidence/molly-day-scheduled-range-2026-10-21.png",
+      "reason": "data, credential, document, binary or screenshot artifact"
+    },
+    {
+      "path": "local/roster/docs/evidence/molly-day-scheduled-sidebar-2026-10-21.png",
+      "reason": "data, credential, document, binary or screenshot artifact"
+    },
+    {
+      "path": "local/roster/docs/evidence/molly-day-scheduled-sidebar-reference-viewport-2026-10-21.png",
+      "reason": "data, credential, document, binary or screenshot artifact"
+    },
+    {
+      "path": "local/roster/docs/evidence/molly-day-sidebar-month-year-2026-10-21.png",
+      "reason": "data, credential, document, binary or screenshot artifact"
+    },
+    {
+      "path": "local/roster/docs/evidence/molly-day-sidebar-narrow-current-2026-10-21.png",
+      "reason": "data, credential, document, binary or screenshot artifact"
+    },
+    {
+      "path": "local/roster/docs/evidence/molly-day-sidebar-open-narrow-current-2026-10-21.png",
+      "reason": "data, credential, document, binary or screenshot artifact"
+    },
+    {
+      "path": "local/roster/docs/evidence/molly-day-simplified-toolbar-2026-10-21.png",
+      "reason": "data, credential, document, binary or screenshot artifact"
+    },
+    {
+      "path": "local/roster/docs/evidence/molly-day-single-store-toolbar-2026-10-21.png",
+      "reason": "data, credential, document, binary or screenshot artifact"
+    },
+    {
+      "path": "local/roster/docs/evidence/molly-day-worklog-card-desktop-2026-10-21.png",
+      "reason": "data, credential, document, binary or screenshot artifact"
+    },
+    {
+      "path": "local/roster/docs/evidence/molly-day-worklog-card-narrow-2026-10-21.png",
+      "reason": "data, credential, document, binary or screenshot artifact"
+    },
+    {
+      "path": "local/roster/docs/evidence/molly-formal-job-grants-2026-10-21.png",
+      "reason": "data, credential, document, binary or screenshot artifact"
+    },
+    {
+      "path": "local/roster/docs/evidence/molly-month-sidebar-collapsed-2026-10-20.png",
+      "reason": "data, credential, document, binary or screenshot artifact"
+    },
+    {
+      "path": "local/roster/docs/evidence/molly-month-sidebar-expanded-2026-10-20.png",
+      "reason": "data, credential, document, binary or screenshot artifact"
+    },
+    {
+      "path": "local/roster/docs/evidence/molly-script-duplicate-day-preview-2026-10-21.png",
+      "reason": "data, credential, document, binary or screenshot artifact"
+    },
+    {
+      "path": "local/roster/docs/evidence/molly-script-overlap-blocked-2026-10-21.png",
+      "reason": "data, credential, document, binary or screenshot artifact"
+    },
+    {
+      "path": "local/roster/docs/evidence/molly-script-overnight-preview-2026-10-21.png",
+      "reason": "data, credential, document, binary or screenshot artifact"
+    },
+    {
+      "path": "local/roster/docs/evidence/molly-script-seven-row-preview-2026-10-21.png",
+      "reason": "data, credential, document, binary or screenshot artifact"
+    },
+    {
+      "path": "local/roster/docs/evidence/molly-script-tabs-edit-2026-10-20.png",
+      "reason": "data, credential, document, binary or screenshot artifact"
+    },
+    {
+      "path": "local/roster/docs/evidence/molly-script-tabs-no-overlap-2026-10-21.png",
+      "reason": "data, credential, document, binary or screenshot artifact"
+    },
+    {
+      "path": "local/roster/docs/evidence/molly-script-tabs-time-2026-10-20.png",
+      "reason": "data, credential, document, binary or screenshot artifact"
+    },
+    {
+      "path": "local/roster/docs/evidence/molly-settings-formal-first-2026-10-21.png",
+      "reason": "data, credential, document, binary or screenshot artifact"
+    },
+    {
+      "path": "local/roster/docs/evidence/molly-week-reference-viewport-2026-10-20.png",
+      "reason": "data, credential, document, binary or screenshot artifact"
+    },
+    {
+      "path": "local/roster/docs/evidence/roster-day-30-minute-browser-2026-10-21.png",
+      "reason": "data, credential, document, binary or screenshot artifact"
+    },
+    {
+      "path": "local/roster/docs/evidence/shift-dialog-compact-2026-10-23.png",
+      "reason": "data, credential, document, binary or screenshot artifact"
+    },
+    {
+      "path": "local/roster/docs/evidence/shift-dialog-compact-grid-2026-10-23.png",
+      "reason": "data, credential, document, binary or screenshot artifact"
+    },
+    {
+      "path": "local/roster/docs/evidence/staff-availability-concurrency-2026-10-15.png",
+      "reason": "data, credential, document, binary or screenshot artifact"
+    },
+    {
+      "path": "local/roster/docs/evidence/staff-cross-store-selection-2026-10-20.png",
+      "reason": "data, credential, document, binary or screenshot artifact"
+    },
+    {
+      "path": "local/roster/docs/evidence/staff-fallback-occurrence-2026-10-15.png",
+      "reason": "data, credential, document, binary or screenshot artifact"
+    },
+    {
+      "path": "local/roster/scheduling-engine/.env",
+      "reason": "real environment configuration"
+    },
+    {
+      "path": "local/roster/scheduling-engine/docs/pattern-only-rules-hurstville.png",
+      "reason": "data, credential, document, binary or screenshot artifact"
+    },
+    {
+      "path": "local/roster/scheduling-engine/docs/unified-daily-rules.png",
+      "reason": "data, credential, document, binary or screenshot artifact"
+    },
+    {
+      "path": "local/roster/scheduling-engine/scripts/export_real_snapshot.py",
+      "reason": "private real-data fixture/export"
+    },
+    {
+      "path": "local/evaluate/.backend-dev.err.log",
+      "reason": "data, credential, document, binary or screenshot artifact"
+    },
+    {
+      "path": "local/evaluate/.backend-dev.log",
+      "reason": "data, credential, document, binary or screenshot artifact"
+    },
+    {
+      "path": "local/evaluate/.env",
+      "reason": "real environment configuration"
+    },
+    {
+      "path": "local/evaluate/.frontend-dev.err.log",
+      "reason": "data, credential, document, binary or screenshot artifact"
+    },
+    {
+      "path": "local/evaluate/.frontend-dev.log",
+      "reason": "data, credential, document, binary or screenshot artifact"
+    },
+    {
+      "path": "local/evaluate/.vite-dev.err.log",
+      "reason": "data, credential, document, binary or screenshot artifact"
+    },
+    {
+      "path": "local/evaluate/.vite-dev.log",
+      "reason": "data, credential, document, binary or screenshot artifact"
+    },
+    {
+      "path": "local/evaluate/AGENTS.md",
+      "reason": "agent workflow instructions; not application source"
+    },
+    {
+      "path": "local/evaluate/backend-dev-error.log",
+      "reason": "data, credential, document, binary or screenshot artifact"
+    },
+    {
+      "path": "local/evaluate/backend-dev.log",
+      "reason": "data, credential, document, binary or screenshot artifact"
+    },
+    {
+      "path": "local/evaluate/frontend-dev-error.log",
+      "reason": "data, credential, document, binary or screenshot artifact"
+    },
+    {
+      "path": "local/evaluate/frontend-dev.log",
+      "reason": "data, credential, document, binary or screenshot artifact"
+    },
+    {
+      "path": "local/evaluate/backend/.env",
+      "reason": "real environment configuration"
+    },
+    {
+      "path": "local/evaluate/backend/backend-dev.err.log",
+      "reason": "data, credential, document, binary or screenshot artifact"
+    },
+    {
+      "path": "local/evaluate/backend/backend-dev.error.log",
+      "reason": "data, credential, document, binary or screenshot artifact"
+    },
+    {
+      "path": "local/evaluate/backend/backend-dev.log",
+      "reason": "data, credential, document, binary or screenshot artifact"
+    },
+    {
+      "path": "local/evaluate/Molly LOGO/Molly LOGO/logo中文-黑字.jpg",
+      "reason": "data, credential, document, binary or screenshot artifact"
+    },
+    {
+      "path": "local/evaluate/Molly LOGO/Molly LOGO/logo中英文-黑字.jpg",
+      "reason": "data, credential, document, binary or screenshot artifact"
+    },
+    {
+      "path": "local/evaluate/Molly LOGO/Molly LOGO/logo组合英文-黑字.jpg",
+      "reason": "data, credential, document, binary or screenshot artifact"
+    },
+    {
+      "path": "local/evaluate/Molly LOGO/__MACOSX/Molly LOGO/._logo中文-黑字.jpg",
+      "reason": "data, credential, document, binary or screenshot artifact"
+    },
+    {
+      "path": "local/evaluate/Molly LOGO/__MACOSX/Molly LOGO/._logo中英文-黑字.jpg",
+      "reason": "data, credential, document, binary or screenshot artifact"
+    },
+    {
+      "path": "local/evaluate/Molly LOGO/__MACOSX/Molly LOGO/._logo组合英文-黑字.jpg",
+      "reason": "data, credential, document, binary or screenshot artifact"
+    }
+  ],
+  "excludedDirectoryCategories": [
+    ".git",
+    "node_modules",
+    "dist",
+    ".local",
+    ".data",
+    ".deployment-local",
+    "backups",
+    "logs",
+    "outputs",
+    ".venv*",
+    "agent/tool private state"
+  ],
+  "note": "Directory contents intentionally not enumerated; excludes real environment and data artifacts."
+}

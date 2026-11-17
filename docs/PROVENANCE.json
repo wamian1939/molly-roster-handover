@@ -1,0 +1,64 @@
+{
+  "checkedAt": "2026-11-17T06:35:31.575Z",
+  "production": {
+    "url": "https://molly-tea-roster-migration-20261115.light-lyric-6601.chatgpt.site",
+    "siteVersion": 5,
+    "commit": "1029bad20c64e48cc937b5acec12a6e33e650b89",
+    "branch": "main",
+    "commitVerification": "VERIFIED: saved Sites source provenance plus clean dedicated checkout",
+    "deploymentId": "appgdep_6afbeaaa65148191a856943eafad86b1",
+    "deployedAt": "2026-11-17T05:48:44.911200+00:00",
+    "status": "succeeded",
+    "accessMode": "public"
+  },
+  "localRoster": {
+    "branch": "master",
+    "head": "5d2c9f6ba13d159acc99835e7970b1539dce45b3",
+    "dirtyEntries": 547
+  },
+  "localEvaluate": {
+    "branch": "main",
+    "head": "001af5453e0cc5540dc0fb711efcb213d784ad6a",
+    "dirtyEntries": 140
+  },
+  "database": {
+    "binding": "DB",
+    "tables": [
+      "availability_script_imports",
+      "availability_script_shortcuts",
+      "availability_templates",
+      "employee_availability",
+      "payroll_audit",
+      "payroll_documents",
+      "payroll_locks",
+      "roster_periods",
+      "roster_publications",
+      "roster_store_settings",
+      "shift_assignments",
+      "shift_create_requests",
+      "shift_roles",
+      "shift_templates",
+      "shifts",
+      "sites_accounts",
+      "sites_demo_reports",
+      "sites_demo_sessions",
+      "sites_epoch",
+      "sites_evaluate_archive",
+      "sites_guards",
+      "sites_imports",
+      "sites_login_limits",
+      "sites_sessions",
+      "sites_source"
+    ]
+  },
+  "stores": [
+    {
+      "id": "greensquare",
+      "name": "Green Square"
+    },
+    {
+      "id": "hurstville",
+      "name": "Hurstville"
+    }
+  ]
+}
